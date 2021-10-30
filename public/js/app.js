@@ -2314,6 +2314,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -4085,6 +4089,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -4151,6 +4159,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+//
+//
+//
+//
 //
 //
 //
@@ -5111,6 +5123,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -5233,6 +5249,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+//
+//
+//
+//
 //
 //
 //
@@ -8046,6 +8066,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -8999,6 +9024,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -9007,6 +9040,7 @@ __webpack_require__.r(__webpack_exports__);
       contactNumber: '',
       company: '',
       address: '',
+      position: '',
       one: false,
       last: false,
       two: false,
@@ -9098,6 +9132,7 @@ __webpack_require__.r(__webpack_exports__);
       formData.append("contactNumber", this.contactNumber);
       formData.append("company", this.company);
       formData.append("address", this.address);
+      formData.append("position", this.position);
       axios.post('/NoiseVibrationAndVehicleSafetyTrainingCourse', formData, config);
     }
   },
@@ -9390,6 +9425,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+//
+//
+//
+//
+//
 //
 //
 //
@@ -10243,6 +10283,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -10251,6 +10295,7 @@ __webpack_require__.r(__webpack_exports__);
       contactNumber: '',
       company: '',
       address: '',
+      position: '',
       firstSubmit: false,
       secondSubmit: false,
       question_1: "0",
@@ -10299,6 +10344,7 @@ __webpack_require__.r(__webpack_exports__);
       formData.append("contactNumber", this.contactNumber);
       formData.append("company", this.company);
       formData.append("address", this.address);
+      formData.append("position", this.position);
       formData.append("question_1", this.question_1);
       formData.append("question_2", this.question_2);
       formData.append("question_3", this.question_3);
@@ -10698,6 +10744,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+//
+//
+//
+//
+//
 //
 //
 //
@@ -11512,6 +11563,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -11520,6 +11576,7 @@ __webpack_require__.r(__webpack_exports__);
       contactNumber: '',
       company: '',
       address: '',
+      position: '',
       one: false,
       last: false,
       two: false,
@@ -47382,7 +47439,7 @@ var render = function () {
                           "button",
                           {
                             staticClass: "btn btn-success col-xs-3",
-                            attrs: { type: "button" },
+                            attrs: { type: "button", href: "#" },
                             on: { click: _vm.nextFour },
                           },
                           [_vm._v("Next")]
@@ -47511,7 +47568,7 @@ var render = function () {
                           "button",
                           {
                             staticClass: "btn btn-success col-xs-3",
-                            attrs: { type: "button" },
+                            attrs: { type: "button", href: "#" },
                             on: { click: _vm.nextFive },
                           },
                           [_vm._v("Next")]
@@ -47678,6 +47735,39 @@ var render = function () {
                             return
                           }
                           _vm.email = $event.target.value
+                        },
+                      },
+                    }),
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "form-group col-xs-12" }, [
+                    _c("label", { attrs: { for: "position" } }, [
+                      _vm._v("Position in Company"),
+                    ]),
+                    _vm._v(" "),
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.position,
+                          expression: "position",
+                        },
+                      ],
+                      staticClass: "form-control",
+                      attrs: {
+                        type: "text",
+                        name: "position",
+                        placeholder: "Position",
+                        value: "",
+                      },
+                      domProps: { value: _vm.position },
+                      on: {
+                        input: function ($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.position = $event.target.value
                         },
                       },
                     }),
@@ -52334,6 +52424,39 @@ var render = function () {
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "form-group col-xs-12" }, [
+                  _c("label", { attrs: { for: "position" } }, [
+                    _vm._v("Position in Company"),
+                  ]),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.position,
+                        expression: "position",
+                      },
+                    ],
+                    staticClass: "form-control",
+                    attrs: {
+                      type: "text",
+                      name: "position",
+                      placeholder: "Position",
+                      value: "",
+                    },
+                    domProps: { value: _vm.position },
+                    on: {
+                      input: function ($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.position = $event.target.value
+                      },
+                    },
+                  }),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group col-xs-12" }, [
                   _c("label", { attrs: { for: "address" } }, [
                     _vm._v("Address"),
                   ]),
@@ -54969,6 +55092,39 @@ var render = function () {
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "form-group col-xs-12" }, [
+                  _c("label", { attrs: { for: "position" } }, [
+                    _vm._v("Position in Company"),
+                  ]),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.position,
+                        expression: "position",
+                      },
+                    ],
+                    staticClass: "form-control",
+                    attrs: {
+                      type: "text",
+                      name: "position",
+                      placeholder: "Position",
+                      value: "",
+                    },
+                    domProps: { value: _vm.position },
+                    on: {
+                      input: function ($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.position = $event.target.value
+                      },
+                    },
+                  }),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group col-xs-12" }, [
                   _c("label", { attrs: { for: "address" } }, [
                     _vm._v("Address"),
                   ]),
@@ -56245,6 +56401,39 @@ var render = function () {
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "form-group col-xs-12" }, [
+                  _c("label", { attrs: { for: "position" } }, [
+                    _vm._v("Position in Company"),
+                  ]),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.position,
+                        expression: "position",
+                      },
+                    ],
+                    staticClass: "form-control",
+                    attrs: {
+                      type: "text",
+                      name: "position",
+                      placeholder: "Position",
+                      value: "",
+                    },
+                    domProps: { value: _vm.position },
+                    on: {
+                      input: function ($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.position = $event.target.value
+                      },
+                    },
+                  }),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group col-xs-12" }, [
                   _c("label", { attrs: { for: "address" } }, [
                     _vm._v("Address"),
                   ]),
@@ -57118,7 +57307,7 @@ var render = function () {
                           "button",
                           {
                             staticClass: "btn btn-success col-xs-3",
-                            attrs: { type: "button" },
+                            attrs: { type: "button", href: "#" },
                             on: { click: _vm.nextFour },
                           },
                           [_vm._v("Next")]
@@ -57245,7 +57434,7 @@ var render = function () {
                           "button",
                           {
                             staticClass: "btn btn-success col-xs-3",
-                            attrs: { type: "button" },
+                            attrs: { type: "button", href: "#" },
                             on: { click: _vm.nextFive },
                           },
                           [_vm._v("Next")]
@@ -57370,7 +57559,7 @@ var render = function () {
                           "button",
                           {
                             staticClass: "btn btn-success col-xs-3",
-                            attrs: { type: "button" },
+                            attrs: { type: "button", href: "#" },
                             on: { click: _vm.nextSix },
                           },
                           [_vm._v("Next")]
@@ -57487,7 +57676,7 @@ var render = function () {
                           "button",
                           {
                             staticClass: "btn btn-success col-xs-3",
-                            attrs: { type: "button" },
+                            attrs: { type: "button", href: "#" },
                             on: { click: _vm.nextSeven },
                           },
                           [_vm._v("Next")]
@@ -57616,7 +57805,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextEight },
                             },
                             [_vm._v("Next")]
@@ -57744,7 +57933,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextNine },
                             },
                             [_vm._v("Next")]
@@ -57864,7 +58053,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextTen },
                             },
                             [_vm._v("Next")]
@@ -57984,7 +58173,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextEleven },
                             },
                             [_vm._v("Next")]
@@ -58104,7 +58293,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextTwelve },
                             },
                             [_vm._v("Next")]
@@ -58260,7 +58449,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextThirteen },
                             },
                             [_vm._v("Next")]
@@ -58434,7 +58623,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextFourteen },
                             },
                             [_vm._v("Next")]
@@ -58574,7 +58763,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextFifteen },
                             },
                             [_vm._v("Next")]
@@ -58728,7 +58917,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextSixteen },
                             },
                             [_vm._v("Next")]
@@ -58892,7 +59081,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextSeventeen },
                             },
                             [_vm._v("Next")]
@@ -59066,7 +59255,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextEighteen },
                             },
                             [_vm._v("Next")]
@@ -59214,7 +59403,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextNineteen },
                             },
                             [_vm._v("Next")]
@@ -59350,7 +59539,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextTwenty },
                             },
                             [_vm._v("Next")]
@@ -59510,7 +59699,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextTwentyone },
                             },
                             [_vm._v("Next")]
@@ -59640,7 +59829,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextTwentytwo },
                             },
                             [_vm._v("Next")]
@@ -59817,6 +60006,39 @@ var render = function () {
                             return
                           }
                           _vm.email = $event.target.value
+                        },
+                      },
+                    }),
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "form-group col-xs-12" }, [
+                    _c("label", { attrs: { for: "position" } }, [
+                      _vm._v("Position in Company"),
+                    ]),
+                    _vm._v(" "),
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.position,
+                          expression: "position",
+                        },
+                      ],
+                      staticClass: "form-control",
+                      attrs: {
+                        type: "text",
+                        name: "position",
+                        placeholder: "Position",
+                        value: "",
+                      },
+                      domProps: { value: _vm.position },
+                      on: {
+                        input: function ($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.position = $event.target.value
                         },
                       },
                     }),
@@ -61286,7 +61508,7 @@ var render = function () {
                           "button",
                           {
                             staticClass: "btn btn-success col-xs-3",
-                            attrs: { type: "button" },
+                            attrs: { type: "button", href: "#" },
                             on: { click: _vm.nextFour },
                           },
                           [_vm._v("Next")]
@@ -61399,7 +61621,7 @@ var render = function () {
                           "button",
                           {
                             staticClass: "btn btn-success col-xs-3",
-                            attrs: { type: "button" },
+                            attrs: { type: "button", href: "#" },
                             on: { click: _vm.nextFive },
                           },
                           [_vm._v("Next")]
@@ -61520,7 +61742,7 @@ var render = function () {
                           "button",
                           {
                             staticClass: "btn btn-success col-xs-3",
-                            attrs: { type: "button" },
+                            attrs: { type: "button", href: "#" },
                             on: { click: _vm.nextSix },
                           },
                           [_vm._v("Next")]
@@ -61637,7 +61859,7 @@ var render = function () {
                           "button",
                           {
                             staticClass: "btn btn-success col-xs-3",
-                            attrs: { type: "button" },
+                            attrs: { type: "button", href: "#" },
                             on: { click: _vm.nextSeven },
                           },
                           [_vm._v("Next")]
@@ -61780,7 +62002,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextEight },
                             },
                             [_vm._v("Next")]
@@ -61910,7 +62132,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextNine },
                             },
                             [_vm._v("Next")]
@@ -62046,7 +62268,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextTen },
                             },
                             [_vm._v("Next")]
@@ -62182,7 +62404,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextEleven },
                             },
                             [_vm._v("Next")]
@@ -62324,7 +62546,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextTwelve },
                             },
                             [_vm._v("Next")]
@@ -62488,7 +62710,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextThirteen },
                             },
                             [_vm._v("Next")]
@@ -62608,7 +62830,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextFourteen },
                             },
                             [_vm._v("Next")]
@@ -62734,7 +62956,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextFifteen },
                             },
                             [_vm._v("Next")]
@@ -62880,7 +63102,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextSixteen },
                             },
                             [_vm._v("Next")]
@@ -63034,7 +63256,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextSeventeen },
                             },
                             [_vm._v("Next")]
@@ -63164,7 +63386,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextEighteen },
                             },
                             [_vm._v("Next")]
@@ -63288,7 +63510,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextNineteen },
                             },
                             [_vm._v("Next")]
@@ -63414,7 +63636,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextTwenty },
                             },
                             [_vm._v("Next")]
@@ -63554,7 +63776,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextTwentyone },
                             },
                             [_vm._v("Next")]
@@ -63684,7 +63906,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextTwentytwo },
                             },
                             [_vm._v("Next")]
@@ -63826,7 +64048,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextTwentythree },
                             },
                             [_vm._v("Next")]
@@ -63960,7 +64182,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextTwentyfour },
                             },
                             [_vm._v("Next")]
@@ -65864,7 +66086,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextThirtyeight },
                             },
                             [_vm._v("Next")]
@@ -66004,7 +66226,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextThirtynine },
                             },
                             [_vm._v("Next")]
@@ -66130,7 +66352,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextFourty },
                             },
                             [_vm._v("Next")]
@@ -66254,7 +66476,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextFourtyone },
                             },
                             [_vm._v("Next")]
@@ -66392,7 +66614,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextFourtytwo },
                             },
                             [_vm._v("Next")]
@@ -66576,6 +66798,40 @@ var render = function () {
                                 return
                               }
                               _vm.email = $event.target.value
+                            },
+                          },
+                        }),
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "form-group col-xs-12" }, [
+                        _c("label", { attrs: { for: "position" } }, [
+                          _vm._v("Position in Company"),
+                        ]),
+                        _vm._v(" "),
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.position,
+                              expression: "position",
+                            },
+                          ],
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "text",
+                            name: "position",
+                            id: "position",
+                            placeholder: "Position",
+                            value: "",
+                          },
+                          domProps: { value: _vm.position },
+                          on: {
+                            input: function ($event) {
+                              if ($event.target.composing) {
+                                return
+                              }
+                              _vm.position = $event.target.value
                             },
                           },
                         }),
@@ -67570,6 +67826,39 @@ var render = function () {
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "form-group col-xs-12" }, [
+                  _c("label", { attrs: { for: "position" } }, [
+                    _vm._v("Position in Company"),
+                  ]),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.position,
+                        expression: "position",
+                      },
+                    ],
+                    staticClass: "form-control",
+                    attrs: {
+                      type: "text",
+                      name: "position",
+                      placeholder: "Position",
+                      value: "",
+                    },
+                    domProps: { value: _vm.position },
+                    on: {
+                      input: function ($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.position = $event.target.value
+                      },
+                    },
+                  }),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group col-xs-12" }, [
                   _c("label", { attrs: { for: "address" } }, [
                     _vm._v("Address"),
                   ]),
@@ -68249,6 +68538,39 @@ var render = function () {
                             return
                           }
                           _vm.email = $event.target.value
+                        },
+                      },
+                    }),
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "form-group col-xs-12" }, [
+                    _c("label", { attrs: { for: "position" } }, [
+                      _vm._v("Position in Company"),
+                    ]),
+                    _vm._v(" "),
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.position,
+                          expression: "position",
+                        },
+                      ],
+                      staticClass: "form-control",
+                      attrs: {
+                        type: "text",
+                        name: "position",
+                        placeholder: "Position",
+                        value: "",
+                      },
+                      domProps: { value: _vm.position },
+                      on: {
+                        input: function ($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.position = $event.target.value
                         },
                       },
                     }),
@@ -70128,6 +70450,40 @@ var render = function () {
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "form-group col-xs-12" }, [
+                  _c("label", { attrs: { for: "position" } }, [
+                    _vm._v("Position in Company"),
+                  ]),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.position,
+                        expression: "position",
+                      },
+                    ],
+                    staticClass: "form-control",
+                    attrs: {
+                      type: "text",
+                      name: "position",
+                      id: "position",
+                      placeholder: "Position",
+                      value: "",
+                    },
+                    domProps: { value: _vm.position },
+                    on: {
+                      input: function ($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.position = $event.target.value
+                      },
+                    },
+                  }),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group col-xs-12" }, [
                   _c("label", { attrs: { for: "address" } }, [
                     _vm._v("Address"),
                   ]),
@@ -70452,6 +70808,39 @@ var render = function () {
                           return
                         }
                         _vm.email = $event.target.value
+                      },
+                    },
+                  }),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group col-xs-12" }, [
+                  _c("label", { attrs: { for: "position" } }, [
+                    _vm._v("Position in Company"),
+                  ]),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.position,
+                        expression: "position",
+                      },
+                    ],
+                    staticClass: "form-control",
+                    attrs: {
+                      type: "text",
+                      name: "position",
+                      placeholder: "Position",
+                      value: "",
+                    },
+                    domProps: { value: _vm.position },
+                    on: {
+                      input: function ($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.position = $event.target.value
                       },
                     },
                   }),
@@ -73856,7 +74245,7 @@ var render = function () {
                           "button",
                           {
                             staticClass: "btn btn-success col-xs-3",
-                            attrs: { type: "button" },
+                            attrs: { type: "button", href: "#" },
                             on: { click: _vm.nextFour },
                           },
                           [_vm._v("Next")]
@@ -73989,7 +74378,7 @@ var render = function () {
                           "button",
                           {
                             staticClass: "btn btn-success col-xs-3",
-                            attrs: { type: "button" },
+                            attrs: { type: "button", href: "#" },
                             on: { click: _vm.nextFive },
                           },
                           [_vm._v("Next")]
@@ -74134,7 +74523,7 @@ var render = function () {
                           "button",
                           {
                             staticClass: "btn btn-success col-xs-3",
-                            attrs: { type: "button" },
+                            attrs: { type: "button", href: "#" },
                             on: { click: _vm.nextSix },
                           },
                           [_vm._v("Next")]
@@ -74273,7 +74662,7 @@ var render = function () {
                           "button",
                           {
                             staticClass: "btn btn-success col-xs-3",
-                            attrs: { type: "button" },
+                            attrs: { type: "button", href: "#" },
                             on: { click: _vm.nextSeven },
                           },
                           [_vm._v("Next")]
@@ -74449,6 +74838,40 @@ var render = function () {
                             return
                           }
                           _vm.email = $event.target.value
+                        },
+                      },
+                    }),
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "form-group col-xs-12" }, [
+                    _c("label", { attrs: { for: "position" } }, [
+                      _vm._v("Position in Company"),
+                    ]),
+                    _vm._v(" "),
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.position,
+                          expression: "position",
+                        },
+                      ],
+                      staticClass: "form-control",
+                      attrs: {
+                        type: "text",
+                        name: "position",
+                        id: "position",
+                        placeholder: "Position",
+                        value: "",
+                      },
+                      domProps: { value: _vm.position },
+                      on: {
+                        input: function ($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.position = $event.target.value
                         },
                       },
                     }),
@@ -76099,6 +76522,40 @@ var render = function () {
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "form-group col-xs-12" }, [
+                    _c("label", { attrs: { for: "position" } }, [
+                      _vm._v("Position in Company"),
+                    ]),
+                    _vm._v(" "),
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.position,
+                          expression: "position",
+                        },
+                      ],
+                      staticClass: "form-control",
+                      attrs: {
+                        type: "text",
+                        name: "position",
+                        id: "position",
+                        placeholder: "Position",
+                        value: "",
+                      },
+                      domProps: { value: _vm.position },
+                      on: {
+                        input: function ($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.position = $event.target.value
+                        },
+                      },
+                    }),
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "form-group col-xs-12" }, [
                     _c("label", { attrs: { for: "address" } }, [
                       _vm._v("Address"),
                     ]),
@@ -77179,7 +77636,7 @@ var render = function () {
                           "button",
                           {
                             staticClass: "btn btn-success col-xs-3",
-                            attrs: { type: "button" },
+                            attrs: { type: "button", href: "#" },
                             on: { click: _vm.nextThree },
                           },
                           [_vm._v("Next\n                            ")]
@@ -77380,7 +77837,7 @@ var render = function () {
                           "button",
                           {
                             staticClass: "btn btn-success col-xs-3",
-                            attrs: { type: "button" },
+                            attrs: { type: "button", href: "#" },
                             on: { click: _vm.nextFour },
                           },
                           [_vm._v("Next\n                            ")]
@@ -77529,7 +77986,7 @@ var render = function () {
                           "button",
                           {
                             staticClass: "btn btn-success col-xs-3",
-                            attrs: { type: "button" },
+                            attrs: { type: "button", href: "#" },
                             on: { click: _vm.nextFive },
                           },
                           [_vm._v("Next\n                            ")]
@@ -77680,7 +78137,7 @@ var render = function () {
                           "button",
                           {
                             staticClass: "btn btn-success col-xs-3",
-                            attrs: { type: "button" },
+                            attrs: { type: "button", href: "#" },
                             on: { click: _vm.nextSix },
                           },
                           [_vm._v("Next\n                            ")]
