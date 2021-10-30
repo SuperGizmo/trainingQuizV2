@@ -407,7 +407,6 @@
                         </ul>
                     </nav>
                 </div>
-
                 <div v-if="seven == true">
                     <div>
                         <h2>Summary</h2>

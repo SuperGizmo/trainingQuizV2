@@ -27,6 +27,11 @@
                             <input type="email" class="form-control" v-model="email" name="email" placeholder="Email" value="">
                         </div>
                         <div class="form-group col-xs-12">
+                            <label for="position">Position in Company</label>
+                            <input type="text" class="form-control" v-model="position" name="position"
+                                   id="position" placeholder="Position" value="">
+                        </div>
+                        <div class="form-group col-xs-12">
                             <label for="address">Address</label>
                             <textarea type="text" class="form-control" v-model="address" name="address" style="height: 114px" placeholder="Your Address"></textarea>
                         </div>
@@ -211,6 +216,11 @@
                                 <input type="email" class="form-control" v-model="email" name="email" id="email" placeholder="Email" value="">
                             </div>
                             <div class="form-group col-xs-12">
+                                <label for="position">Position in Company</label>
+                                <input type="text" class="form-control" v-model="position" name="position"
+                                       id="position" placeholder="Position" value="">
+                            </div>
+                            <div class="form-group col-xs-12">
                                 <label for="address">Address</label>
                                 <textarea type="text" class="form-control" v-model="address" name="address" id="address" style="height: 114px" placeholder="Your Address"></textarea>
                             </div>
@@ -236,6 +246,7 @@
                 contactNumber: '',
                 company: '',
                 address: '',
+                position: '',
 
                 one: false,
                 last: false,
@@ -322,6 +333,7 @@
                 formData.append("contactNumber", this.contactNumber);
                 formData.append("company", this.company);
                 formData.append("address", this.address);
+                formData.append("position", this.position);
                 axios.post('/RiskAssessmentTrainingCourse', formData, config);
             },
         },
