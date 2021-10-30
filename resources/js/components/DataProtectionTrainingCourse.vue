@@ -232,6 +232,10 @@
                                 <input type="email" class="form-control" v-model="email" name="email" id="email" placeholder="Email" value="">
                             </div>
                             <div class="form-group col-xs-12">
+                                <label for="position">Position in Company</label>
+                                <input type="text" class="form-control" v-model="position" name="position" placeholder="Position" value="">
+                            </div>
+                            <div class="form-group col-xs-12">
                                 <label for="address">Address</label>
                                 <textarea type="text" class="form-control" v-model="address" name="address" id="address" placeholder="Your Address"></textarea>
                             </div>
@@ -399,7 +403,7 @@
                 formData.append("contactNumber", this.contactNumber);
                 formData.append("company", this.company);
                 formData.append("address", this.address);
-            formData.append("position", this.position);
+                formData.append("position", this.position);
                 axios.post('/DataProtectionTrainingCourse', formData, config);
             },
         },
