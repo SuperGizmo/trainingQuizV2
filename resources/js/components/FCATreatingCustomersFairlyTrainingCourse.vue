@@ -61,10 +61,10 @@
 
                 <div class="alert alert-danger" role="alert">Have you read and fully understood this section? Click the "Accept Page" button and then fill out the short question. If you would need extra information please call {{ contactName }} on {{ companyNumber }} or email <a v-bind:href="adminEmail">{{ adminEmail }}</a></div>
                 <div class="form-group">
-                    <a href="#" v-on:click="submitTwo" class="btn btn-success col-xs-12" >Accept Page</a>
+                    <a href="#acceptPage" v-on:click="submitTwo" class="btn btn-success col-xs-12" >Accept Page</a>
                 </div>
                 <div v-if="acceptTwo == true" class="form-group" id="questionTwo" style=" margin-top: 95px;">
-                    <label >Short question</label>
+                    <label id="acceptPage" >Short question</label>
                     <p>If you have read the above document, please type "yes" into the box below and then click next</p>
                     <input type="text" class="form-control" v-model="answerTwo" placeholder="Answer">
                 </div>
@@ -120,10 +120,10 @@
                 <p>By the way, you should not assume that a person who is vulnerable or who has a mental capacity issue cannot make an informed decision as this could be seen as discrimination.</p>
                 <div class="alert alert-danger" role="alert">Have you read and fully understood this section? Click the "Accept Page" button and then fill out the short question. If you would need extra information please call {{ contactName }} on {{ companyNumber }} or email <a v-bind:href="adminEmail">{{ adminEmail }}</a></div>
                 <div class="form-group">
-                    <a href="#" v-on:click="submitThree" class="btn btn-success col-xs-12" >Accept Page</a>
+                    <a href="#acceptPage" v-on:click="submitThree" class="btn btn-success col-xs-12" >Accept Page</a>
                 </div>
                 <div v-if="acceptThree == true" class="form-group" id="questionThree" style=" margin-top: 95px;">
-                    <label >Short question</label>
+                    <label id="acceptPage" >Short question</label>
                     <p>If you have read the above document, please type "yes" into the box below and then click next</p>
                     <input type="text" class="form-control" v-model="answerThree" placeholder="Answer">
                 </div>
@@ -159,10 +159,10 @@
 
                 <div class="alert alert-danger" role="alert">Have you read and fully understood this section? Click the "Accept Page" button and then fill out the short question. If you would need extra information please call {{ contactName }} on {{ companyNumber }} or email <a v-bind:href="adminEmail">{{ adminEmail }}</a></div>
                 <div class="form-group">
-                    <a href="#" v-on:click="submitFour" class="btn btn-success col-xs-12" >Accept Page</a>
+                    <a href="#acceptPage" v-on:click="submitFour" class="btn btn-success col-xs-12" >Accept Page</a>
                 </div>
                 <div v-if="acceptFour == true" class="form-group" id="questionFour" style=" margin-top: 95px;">
-                    <label >Short question</label>
+                    <label id="acceptPage" >Short question</label>
                     <p>If you have read the above document, please type "yes" into the box below and then click next</p>
                     <input type="text" class="form-control" v-model="answerFour" placeholder="Answer">
                 </div>

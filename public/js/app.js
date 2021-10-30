@@ -9629,9 +9629,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -12592,6 +12589,170 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -12599,6 +12760,7 @@ __webpack_require__.r(__webpack_exports__);
       email: '',
       contactNumber: '',
       company: '',
+      position: '',
       address: '',
       one: false,
       last: false,
@@ -12719,6 +12881,7 @@ __webpack_require__.r(__webpack_exports__);
       formData.append("contactNumber", this.contactNumber);
       formData.append("company", this.company);
       formData.append("address", this.address);
+      formData.append("position", this.position);
       axios.post('/Quality-Health-Safety-Environmental-Course', formData, config);
     }
   },
@@ -55467,7 +55630,7 @@ var render = function () {
                   "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitTwo },
                   },
                   [_vm._v("Accept Page")]
@@ -55483,7 +55646,9 @@ var render = function () {
                       attrs: { id: "questionTwo" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
@@ -55642,7 +55807,7 @@ var render = function () {
                   "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitThree },
                   },
                   [_vm._v("Accept Page")]
@@ -55658,7 +55823,9 @@ var render = function () {
                       attrs: { id: "questionThree" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
@@ -55796,7 +55963,7 @@ var render = function () {
                   "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitFour },
                   },
                   [_vm._v("Accept Page")]
@@ -55812,7 +55979,9 @@ var render = function () {
                       attrs: { id: "questionFour" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
@@ -69017,7 +69186,7 @@ var render = function () {
                   "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitTwo },
                   },
                   [_vm._v("Accept Page")]
@@ -69033,7 +69202,9 @@ var render = function () {
                       attrs: { id: "questionTwo" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
@@ -69120,7 +69291,7 @@ var render = function () {
                   "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitThree },
                   },
                   [_vm._v("Accept Page")]
@@ -69136,7 +69307,9 @@ var render = function () {
                       attrs: { id: "questionThree" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
@@ -69252,7 +69425,7 @@ var render = function () {
                   "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitFour },
                   },
                   [_vm._v("Accept Page")]
@@ -69268,7 +69441,9 @@ var render = function () {
                       attrs: { id: "questionFour" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
@@ -69405,7 +69580,7 @@ var render = function () {
                   "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitFive },
                   },
                   [_vm._v("Accept Page")]
@@ -69421,7 +69596,9 @@ var render = function () {
                       attrs: { id: "questionFive" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
@@ -69544,7 +69721,7 @@ var render = function () {
                   "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitSix },
                   },
                   [_vm._v("Accept Page")]
@@ -69560,7 +69737,9 @@ var render = function () {
                       attrs: { id: "questionSix" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
@@ -69669,7 +69848,7 @@ var render = function () {
                   "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitSeven },
                   },
                   [_vm._v("Accept Page")]
@@ -69685,7 +69864,9 @@ var render = function () {
                       attrs: { id: "questionSeven" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
@@ -78118,6 +78299,40 @@ var render = function () {
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "form-group col-xs-12" }, [
+                  _c("label", { attrs: { for: "position" } }, [
+                    _vm._v("Position in Company"),
+                  ]),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.position,
+                        expression: "position",
+                      },
+                    ],
+                    staticClass: "form-control",
+                    attrs: {
+                      type: "text",
+                      name: "position",
+                      id: "position",
+                      placeholder: "Position",
+                      value: "",
+                    },
+                    domProps: { value: _vm.position },
+                    on: {
+                      input: function ($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.position = $event.target.value
+                      },
+                    },
+                  }),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group col-xs-12" }, [
                   _c("label", { attrs: { for: "address" } }, [
                     _vm._v("Address"),
                   ]),
@@ -78132,7 +78347,6 @@ var render = function () {
                       },
                     ],
                     staticClass: "form-control",
-                    staticStyle: { height: "114px" },
                     attrs: {
                       type: "text",
                       name: "address",
@@ -78165,7 +78379,7 @@ var render = function () {
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n            Welcome and thank you for taking part in this e-learning training presentation.\n        "
+                  "\n                    Welcome and thank you for taking part in this e-learning training presentation.\n                "
                 ),
               ]),
               _vm._v(" "),
@@ -78175,13 +78389,13 @@ var render = function () {
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n            It is important that any organisation providing installations can demonstrate that they have a level of business integrity and ethics and at a minimum have a documented Quality, Health & Safety and Environmental Management System that they follow to meet the requirements of any legislation and codes of practice showing commitment to all aspects of the work it undertakes.\n        "
+                  "\n                    It is important that any organisation providing installations can demonstrate that they have a\n                    level of business integrity and ethics and at a minimum have a documented Quality, Health &\n                    Safety and Environmental Management System that they follow to meet the requirements of any\n                    legislation and codes of practice showing commitment to all aspects of the work it undertakes.\n                "
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n            This training course helps you to understand some of the main requirements and responsibilities.\n        "
+                  "\n                    This training course helps you to understand some of the main requirements and responsibilities.\n                "
                 ),
               ]),
               _vm._v(" "),
@@ -78189,19 +78403,19 @@ var render = function () {
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n            The specification and accreditation required for the installation of energy efficiency measures in existing buildings (PAS – Publicly Available Specification) was commissioned by the Department for Business, Energy & Industrial Strategy (BEIS) and documents the range of measures and necessary design and installation processes, management process and service provision for energy efficiency improvements made to existing UK residential and commercial properties.\n        "
+                  "\n                    The specification and accreditation required for the installation of energy efficiency measures\n                    in existing buildings (PAS – Publicly Available Specification) was commissioned by the\n                    Department for Business, Energy & Industrial Strategy (BEIS) and documents the range of measures\n                    and necessary design and installation processes, management process and service provision for\n                    energy efficiency improvements made to existing UK residential and commercial properties.\n                "
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n            A Quality Management System (QMS) should contain all the documents, records, legislation and procedures to ensure quality in all aspects of work undertaken and ideally this should be assured by an accreditation body. A formal document control process should be in place including issuing and withdrawal of documents, document archiving, secure disposal of confidential documentation and a master list of controlled documents.\n        "
+                  "\n                    A Quality Management System (QMS) should contain all the documents, records, legislation and\n                    procedures to ensure quality in all aspects of work undertaken and ideally this should be\n                    assured by an accreditation body. A formal document control process should be in place including\n                    issuing and withdrawal of documents, document archiving, secure disposal of confidential\n                    documentation and a master list of controlled documents.\n                "
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n            There should be a documented process for Quality Control which would include the management of documentation and processes for completion of agreed contractual work and specifications of how long the handover records will be retained. Internal audit inspections should take place that are regularly programmed with a register retained for any outstanding issues raised through audit in order to close out non-conformities from previous audits.\n        "
+                  "\n                    There should be a documented process for Quality Control which would include the management of\n                    documentation and processes for completion of agreed contractual work and specifications of how\n                    long the handover records will be retained. Internal audit inspections should take place that\n                    are regularly programmed with a register retained for any outstanding issues raised through\n                    audit in order to close out non-conformities from previous audits.\n                "
                 ),
               ]),
               _vm._v(" "),
@@ -78209,7 +78423,7 @@ var render = function () {
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n            Your organisation should have a policy statement that is reviewed at least on an annual basis and is signed and endorsed by a senior management representative. The policy should relate to the company activities and the period for review documented.\n        "
+                  "\n                    Your organisation should have a policy statement that is reviewed at least on an annual basis\n                    and is signed and endorsed by a senior management representative. The policy should relate to\n                    the company activities and the period for review documented.\n                "
                 ),
               ]),
               _vm._v(" "),
@@ -78217,7 +78431,7 @@ var render = function () {
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          Your organisation should appoint someone with the competency requirements who is ultimately responsible for the Quality Management System.\n        "
+                  "\n                    Your organisation should appoint someone with the competency requirements who is ultimately\n                    responsible for the Quality Management System.\n                "
                 ),
               ]),
               _vm._v(" "),
@@ -78229,7 +78443,7 @@ var render = function () {
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          An organisation should be able to demonstrate compliance with the Construction, Design and Management Regulations (CDM). The CDM Regulations cover the management of health, safety and welfare when carrying out construction projects and applies to the whole construction process. Areas to be considered include:\n        "
+                  "\n                    An organisation should be able to demonstrate compliance with the Construction, Design and\n                    Management Regulations (CDM). The CDM Regulations cover the management of health, safety and\n                    welfare when carrying out construction projects and applies to the whole construction process.\n                    Areas to be considered include:\n                "
                 ),
               ]),
               _vm._v(" "),
@@ -78237,13 +78451,13 @@ var render = function () {
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          Although you may not carry out any major construction or installation work, boilers, CWI, IWI and Loft Insulation are fairly typical under the Energy Company Obligation scheme, you must still document your processes for meeting and discharging your duties under CDM 2015 which should include Health and Safety Procedures, Quality Manual and a procedure for monitoring and effective ongoing safety management of contractors.\n        "
+                  "\n                    Although you may not carry out any major construction or installation work, boilers, CWI, IWI\n                    and Loft Insulation are fairly typical under the Energy Company Obligation scheme, you must\n                    still document your processes for meeting and discharging your duties under CDM 2015 which\n                    should include Health and Safety Procedures, Quality Manual and a procedure for monitoring and\n                    effective ongoing safety management of contractors.\n                "
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          Your company should identify all applicable licenses and permits for the scope of services it provides and ensure contractors dispose of all waste in a legal and proper manner.\n        "
+                  "\n                    Your company should identify all applicable licenses and permits for the scope of services it\n                    provides and ensure contractors dispose of all waste in a legal and proper manner.\n                "
                 ),
               ]),
               _vm._v(" "),
@@ -78252,7 +78466,7 @@ var render = function () {
                 { staticClass: "alert alert-danger", attrs: { role: "alert" } },
                 [
                   _vm._v(
-                    'Have you read and fully understood this section? Click the "Accept Page" button and then fill out the short question. If you would need extra information please contact ' +
+                    'Have you read and fully understood this section? Click\n                    the "Accept Page" button and then fill out the short question. If you would need extra\n                    information please contact ' +
                       _vm._s(_vm.contactName) +
                       " on " +
                       _vm._s(_vm.companyNumber) +
@@ -78269,10 +78483,14 @@ var render = function () {
                   "button",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitTwo },
                   },
-                  [_vm._v("Accept Page")]
+                  [
+                    _vm._v(
+                      "Accept\n                        Page\n                    "
+                    ),
+                  ]
                 ),
               ]),
               _vm._v(" "),
@@ -78285,11 +78503,13 @@ var render = function () {
                       attrs: { id: "questionTwo" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
-                          'If you have read the above document, please type "yes" into the box below and then click next'
+                          'If you have read the above document, please type "yes" into the box below and then click\n                        next'
                         ),
                       ]),
                       _vm._v(" "),
@@ -78344,7 +78564,7 @@ var render = function () {
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          An organisation should have a documented management system in place which mitigates your environmental impact and is aligned to the principles of ISO14001. The system requires you to have a working knowledge of applicable legislations, standards and codes of practice and to demonstrate statutory compliance.\n        "
+                  "\n                    An organisation should have a documented management system in place which mitigates your\n                    environmental impact and is aligned to the principles of ISO14001. The system requires you to\n                    have a working knowledge of applicable legislations, standards and codes of practice and to\n                    demonstrate statutory compliance.\n                "
                 ),
               ]),
               _vm._v(" "),
@@ -78352,25 +78572,25 @@ var render = function () {
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          Your company should have an Environmental Policy Statement as part of its Environmental Management System that is endorsed by a senior management representative and which relates to your activities and is signed and reviewed at least on an annual basis. This will identify, assess and manage environmental risks identified in your supply chain/subcontractors along with having a formal process for recording, reporting and investigating environmental incidents and near misses.\n        "
+                  "\n                    Your company should have an Environmental Policy Statement as part of its Environmental\n                    Management System that is endorsed by a senior management representative and which relates to\n                    your activities and is signed and reviewed at least on an annual basis. This will identify,\n                    assess and manage environmental risks identified in your supply chain/subcontractors along with\n                    having a formal process for recording, reporting and investigating environmental incidents and\n                    near misses.\n                "
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          You should utilise a variety of sources to ensure the content of the EMS is appropriate and up to date and maintain a register of appropriate legislation and sign up to a subscription for legislations with gov.uk.\n        "
+                  "\n                    You should utilise a variety of sources to ensure the content of the EMS is appropriate and up\n                    to date and maintain a register of appropriate legislation and sign up to a subscription for\n                    legislations with gov.uk.\n                "
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          When it comes to the scope of services associated with your installation work you should manage the Aspects and Impacts of this. This would include completing an Aspects and Impacts Register and Risk Assessment with control measures put in place to reduce/remove identified environmental risk.\n        "
+                  "\n                    When it comes to the scope of services associated with your installation work you should manage\n                    the Aspects and Impacts of this. This would include completing an Aspects and Impacts Register\n                    and Risk Assessment with control measures put in place to reduce/remove identified environmental\n                    risk.\n                "
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          You should also be able to provide the number of environmental incidents and near misses per calendar year, including those that relate to sub-contractors working on your behalf.\n        "
+                  "\n                    You should also be able to provide the number of environmental incidents and near misses per\n                    calendar year, including those that relate to sub-contractors working on your behalf.\n                "
                 ),
               ]),
               _vm._v(" "),
@@ -78378,13 +78598,13 @@ var render = function () {
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          You should have a nominated representative within your organisation to assist you with the identification and management of environmental responsibilities.\n        "
+                  "\n                    You should have a nominated representative within your organisation to assist you with the\n                    identification and management of environmental responsibilities.\n                "
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          The person should be suitably qualified with relevant experience and it should be their responsibility to identify environmental laws and regulations which apply to your business and ensure there is a procedure to comply with them.\n        "
+                  "\n                    The person should be suitably qualified with relevant experience and it should be their\n                    responsibility to identify environmental laws and regulations which apply to your business and\n                    ensure there is a procedure to comply with them.\n                "
                 ),
               ]),
               _vm._v(" "),
@@ -78392,25 +78612,25 @@ var render = function () {
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          You should have processes or systems in place to manage waste produced as a result of your activities on site so that it is managed in a controlled way. A Waste Management Procedure would typically form part of an Environmental Management System and it is likely you would complete a Waste Transfer Note and have a Waste Transfer License.\n        "
+                  "\n                    You should have processes or systems in place to manage waste produced as a result of your\n                    activities on site so that it is managed in a controlled way. A Waste Management Procedure would\n                    typically form part of an Environmental Management System and it is likely you would complete a\n                    Waste Transfer Note and have a Waste Transfer License.\n                "
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          Any waste that has been created inside the customer’s home, usually packaging and the removal of old parts, must be disposed of using a licensed waste company in a legal and proper manner. Any waste stored on site should be stored and handled correctly and within certain documented guidelines and procedures which includes solid wastes, waste water, materials handling, storage and spill control.\n        "
+                  "\n                    Any waste that has been created inside the customer’s home, usually packaging and the removal of\n                    old parts, must be disposed of using a licensed waste company in a legal and proper manner. Any\n                    waste stored on site should be stored and handled correctly and within certain documented\n                    guidelines and procedures which includes solid wastes, waste water, materials handling, storage\n                    and spill control.\n                "
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          You should make a list of the environmental permits which your company requires to have in place to undertake the activities.\n        "
+                  "\n                    You should make a list of the environmental permits which your company requires to have in place\n                    to undertake the activities.\n                "
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          Waste can also relate to internal office waste, such as paper shredding, ink cartridges, old office equipment, recycling bins and so this should also be identified and any risks mitigated.\n        "
+                  "\n                    Waste can also relate to internal office waste, such as paper shredding, ink cartridges, old\n                    office equipment, recycling bins and so this should also be identified and any risks mitigated.\n                "
                 ),
               ]),
               _vm._v(" "),
@@ -78419,7 +78639,7 @@ var render = function () {
                 { staticClass: "alert alert-danger", attrs: { role: "alert" } },
                 [
                   _vm._v(
-                    'Have you read and fully understood this section? Click the "Accept Page" button and then fill out the short question. If you would need extra information please contact ' +
+                    'Have you read and fully understood this section? Click\n                    the "Accept Page" button and then fill out the short question. If you would need extra\n                    information please contact ' +
                       _vm._s(_vm.contactName) +
                       " on " +
                       _vm._s(_vm.companyNumber) +
@@ -78436,7 +78656,7 @@ var render = function () {
                   "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitThree },
                   },
                   [_vm._v("Accept Page")]
@@ -78452,11 +78672,13 @@ var render = function () {
                       attrs: { id: "questionThree" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
-                          'If you have read the above document, please type "yes" into the box below and then click next'
+                          'If you have read the above document, please type "yes" into the box below and then click\n                        next'
                         ),
                       ]),
                       _vm._v(" "),
@@ -78525,7 +78747,7 @@ var render = function () {
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          The Health and Safety at Work etc. Act 1974, often referred to as HASAW or HSW, is an Act of Parliament and the main piece of UK health and safety legislation. It places a duty on all employers “to ensure, so far as is reasonably practicable, the health, safety and welfare at work” of all employees and includes work processes (e.g. manual handling, use of display screen equipment), and specific standards such as the controlling, keeping, use and prevention of dangerous substances and controlling certain emissions into the atmosphere (e.g. exposure to chemicals).\n        "
+                  "\n                    The Health and Safety at Work etc. Act 1974, often referred to as HASAW or HSW, is an Act of\n                    Parliament and the main piece of UK health and safety legislation. It places a duty on all\n                    employers “to ensure, so far as is reasonably practicable, the health, safety and welfare at\n                    work” of all employees and includes work processes (e.g. manual handling, use of display screen\n                    equipment), and specific standards such as the controlling, keeping, use and prevention of\n                    dangerous substances and controlling certain emissions into the atmosphere (e.g. exposure to\n                    chemicals).\n                "
                 ),
               ]),
               _vm._v(" "),
@@ -78533,25 +78755,25 @@ var render = function () {
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          Your company should have a clear Health and Safety Policy Statement relating to the provision of health and safety in the workplace which extends to not only workers but also third parties and people who are not employed but may be affected by your activities. This should be signed by a senior member of staff and reviewed at least on an annual basis.\n        "
+                  "\n                    Your company should have a clear Health and Safety Policy Statement relating to the provision of\n                    health and safety in the workplace which extends to not only workers but also third parties and\n                    people who are not employed but may be affected by your activities. This should be signed by a\n                    senior member of staff and reviewed at least on an annual basis.\n                "
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          Your company should then have a communication process to provide guidance to the workforce on workplace safety issues. This can be achieved in a number of ways such as supplying a copy of the Health and Safety Procedures and Handbook, providing initial and ongoing training and encouraging all employees and suppliers to participate in all elements of health and safety management. An up to date organisational chart with individual duties and responsibilities will help along with implementing initiatives such as fortnightly toolbox talks around the office, posters around the office enforcing the health and safety message, and internal health and safety updates and extracts from related bulletins and articles. Regular management meetings with minutes recorded discussing areas for improvement will also help you evidence your approach to this.\n        "
+                  "\n                    Your company should then have a communication process to provide guidance to the workforce on\n                    workplace safety issues. This can be achieved in a number of ways such as supplying a copy of\n                    the Health and Safety Procedures and Handbook, providing initial and ongoing training and\n                    encouraging all employees and suppliers to participate in all elements of health and safety\n                    management. An up to date organisational chart with individual duties and responsibilities will\n                    help along with implementing initiatives such as fortnightly toolbox talks around the office,\n                    posters around the office enforcing the health and safety message, and internal health and\n                    safety updates and extracts from related bulletins and articles. Regular management meetings\n                    with minutes recorded discussing areas for improvement will also help you evidence your approach\n                    to this.\n                "
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          Your company should also have established and documented processes to ensure compliance to legal and other legislative requirements that are applicable.\n        "
+                  "\n                    Your company should also have established and documented processes to ensure compliance to legal\n                    and other legislative requirements that are applicable.\n                "
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          You should sign up to the HSE Legislative Notification Service in order to keep in touch with any potential alerts, notices and advisories issued by HSE and maintain a register and documented procedure which specifically details a process for ensuring compliance to legislative requirements and Health and Safety Legal Changes.\n        "
+                  "\n                    You should sign up to the HSE Legislative Notification Service in order to keep in touch with\n                    any potential alerts, notices and advisories issued by HSE and maintain a register and\n                    documented procedure which specifically details a process for ensuring compliance to legislative\n                    requirements and Health and Safety Legal Changes.\n                "
                 ),
               ]),
               _vm._v(" "),
@@ -78559,19 +78781,19 @@ var render = function () {
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          A person should be chosen within your organisation who has the delegated responsibility for workplace and products safety. The person responsible should hold a recognised Health and Safety Qualification or alternatively appoint a qualified Health and Safety Consultant in order to provide specialised advice and responsibility.\n        "
+                  "\n                    A person should be chosen within your organisation who has the delegated responsibility for\n                    workplace and products safety. The person responsible should hold a recognised Health and Safety\n                    Qualification or alternatively appoint a qualified Health and Safety Consultant in order to\n                    provide specialised advice and responsibility.\n                "
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          Areas to consider are formal health and safety targets and objectives and introducing measures and procedures to reduce/remove identified Health and Safety Risks.\n        "
+                  "\n                    Areas to consider are formal health and safety targets and objectives and introducing measures\n                    and procedures to reduce/remove identified Health and Safety Risks.\n                "
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          Risk assessments should be used that are not templates, but site specific and developed in advance of any installation and read and understood by all operatives involved in the work on that day. The company Installation Methods Procedure outlines how all installations should be carried out in an appropriate manner and that hazards should be identified and documented pre-installation and on a Method Statement. Additional evidence is in the form of the Permit to Work Procedure and Permit to Work Forms and Driver Risk Assessments.\n        "
+                  "\n                    Risk assessments should be used that are not templates, but site specific and developed in\n                    advance of any installation and read and understood by all operatives involved in the work on\n                    that day. The company Installation Methods Procedure outlines how all installations should be\n                    carried out in an appropriate manner and that hazards should be identified and documented\n                    pre-installation and on a Method Statement. Additional evidence is in the form of the Permit to\n                    Work Procedure and Permit to Work Forms and Driver Risk Assessments.\n                "
                 ),
               ]),
               _vm._v(" "),
@@ -78579,7 +78801,7 @@ var render = function () {
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          These should be issued free of charge to all workers (migrant workers, contract/labour, full time) that may be exposed to workplace hazards. A PPE Issue Record Sheet should be used in conjunction with a Personal Protective Equipment Policy. It is necessary for each employee to sign and date the sheet each time a new item of PPE is issued.\n        "
+                  "\n                    These should be issued free of charge to all workers (migrant workers, contract/labour, full\n                    time) that may be exposed to workplace hazards. A PPE Issue Record Sheet should be used in\n                    conjunction with a Personal Protective Equipment Policy. It is necessary for each employee to\n                    sign and date the sheet each time a new item of PPE is issued.\n                "
                 ),
               ]),
               _vm._v(" "),
@@ -78588,7 +78810,7 @@ var render = function () {
                 { staticClass: "alert alert-danger", attrs: { role: "alert" } },
                 [
                   _vm._v(
-                    'Have you read and fully understood this section? Click the "Accept Page" button and then fill out the short question. If you would need extra information please contact ' +
+                    'Have you read and fully understood this section? Click\n                    the "Accept Page" button and then fill out the short question. If you would need extra\n                    information please contact ' +
                       _vm._s(_vm.contactName) +
                       " on " +
                       _vm._s(_vm.companyNumber) +
@@ -78605,7 +78827,7 @@ var render = function () {
                   "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitFour },
                   },
                   [_vm._v("Accept Page")]
@@ -78621,11 +78843,13 @@ var render = function () {
                       attrs: { id: "questionFour" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
-                          'If you have read the above document, please type "yes" into the box below and then click next'
+                          'If you have read the above document, please type "yes" into the box below and then click\n                        next'
                         ),
                       ]),
                       _vm._v(" "),
@@ -78688,31 +78912,31 @@ var render = function () {
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          COSHH is the law that requires employers to control substances that are hazardous to health. A company must prevent or reduce workers exposure to hazardous substances by providing information, instruction and training for employees and others and you should have a clear Hazardous Substances Procedure that also demonstrates that you have assessed the hazards associated with applicable chemicals and/or hazardous substances by putting in place a collection of documents that has been divided into categories to ensure someone can quickly and easily find the file needed.\n        "
+                  "\n                    COSHH is the law that requires employers to control substances that are hazardous to health. A\n                    company must prevent or reduce workers exposure to hazardous substances by providing\n                    information, instruction and training for employees and others and you should have a clear\n                    Hazardous Substances Procedure that also demonstrates that you have assessed the hazards\n                    associated with applicable chemicals and/or hazardous substances by putting in place a\n                    collection of documents that has been divided into categories to ensure someone can quickly and\n                    easily find the file needed.\n                "
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          There should be a system and directive in place for the correct handling and storage of hazardous substances and goods.\n        "
+                  "\n                    There should be a system and directive in place for the correct handling and storage of\n                    hazardous substances and goods.\n                "
                 ),
               ]),
               _vm._v(" "),
               _c("h2", [
                 _vm._v(
-                  "Injury in the workplace and Reporting of Injuries, Diseases and Dangerous Occurrences (RIDDOR)"
+                  "Injury in the workplace and Reporting of Injuries, Diseases and Dangerous Occurrences\n                    (RIDDOR)"
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          In the event of an injury in the workplace a company must be able to demonstrate that they have adequate emergency first aid facilities on site. This can include medical points and qualified first aid personnel that are easily identified. An accident book should be used to report accidents to members of staff.\n        "
+                  "\n                    In the event of an injury in the workplace a company must be able to demonstrate that they have\n                    adequate emergency first aid facilities on site. This can include medical points and qualified\n                    first aid personnel that are easily identified. An accident book should be used to report\n                    accidents to members of staff.\n                "
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          Arrangements must be in place for investigating and report of Accidents and Near Misses. A nominated person should report all accidents and incidents as part of an Accident and Incident Reporting Investigation Procedure and a procedure for incident reporting and the requirements under RIDDOR regulations are detailed.\n        "
+                  "\n                    Arrangements must be in place for investigating and report of Accidents and Near Misses. A\n                    nominated person should report all accidents and incidents as part of an Accident and Incident\n                    Reporting Investigation Procedure and a procedure for incident reporting and the requirements\n                    under RIDDOR regulations are detailed.\n                "
                 ),
               ]),
               _vm._v(" "),
@@ -78720,37 +78944,37 @@ var render = function () {
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          An organisation should communicate it’s quality, environmental and health and safety requirements effectively and  induct new and existing workers into these processes when they first start on site. This should include employees, sub-contractors, self-employed and visitors.\n        "
+                  "\n                    An organisation should communicate it’s quality, environmental and health and safety\n                    requirements effectively and induct new and existing workers into these processes when they\n                    first start on site. This should include employees, sub-contractors, self-employed and visitors.\n                "
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          The purpose of the induction policy for staff is to ensure that all employees have the benefit of a properly structured induction programme that will help them to integrate into their role in the organisation quickly and effectively.\n        "
+                  "\n                    The purpose of the induction policy for staff is to ensure that all employees have the benefit\n                    of a properly structured induction programme that will help them to integrate into their role in\n                    the organisation quickly and effectively.\n                "
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          The purpose of the induction policy for workers/subcontractors is to ensure they are selected and approved to ensure that work carried out is in compliance with the appropriate standards and within the current versions of the Code of Practices and regulations.\n        "
+                  "\n                    The purpose of the induction policy for workers/subcontractors is to ensure they are selected\n                    and approved to ensure that work carried out is in compliance with the appropriate standards and\n                    within the current versions of the Code of Practices and regulations.\n                "
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          An organisation should identify the training standards and all work activities relating to their scope of service that requires formal training and deliver that training in order to ensure the competency to carry out the tasks that your business requires and identify where staff may require further training or are suitable for advancement.\n        "
+                  "\n                    An organisation should identify the training standards and all work activities relating to their\n                    scope of service that requires formal training and deliver that training in order to ensure the\n                    competency to carry out the tasks that your business requires and identify where staff may\n                    require further training or are suitable for advancement.\n                "
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          At a minimum you should provide your staff with your Environmental, Health and Safety and Quality Management Policies and Procedures in writing and then through one to one meetings and training courses effectively deploy these polices.\n        "
+                  "\n                    At a minimum you should provide your staff with your Environmental, Health and Safety and\n                    Quality Management Policies and Procedures in writing and then through one to one meetings and\n                    training courses effectively deploy these polices.\n                "
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          Any training certificates should be checked and validated on a regular basis.\n        "
+                  "\n                    Any training certificates should be checked and validated on a regular basis.\n                "
                 ),
               ]),
               _vm._v(" "),
@@ -78758,7 +78982,7 @@ var render = function () {
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          An organisation should be able to demonstrate that it’s quality, environmental and health and safety management systems have been audited, at least on an annual basis, and achieve an acceptable level of achievement.\n        "
+                  "\n                    An organisation should be able to demonstrate that it’s quality, environmental and health and\n                    safety management systems have been audited, at least on an annual basis, and achieve an\n                    acceptable level of achievement.\n                "
                 ),
               ]),
               _vm._v(" "),
@@ -78767,7 +78991,7 @@ var render = function () {
                 { staticClass: "alert alert-danger", attrs: { role: "alert" } },
                 [
                   _vm._v(
-                    'Have you read and fully understood this section? Click the "Accept Page" button and then fill out the short question. If you would need extra information please contact ' +
+                    'Have you read and fully understood this section? Click\n                    the "Accept Page" button and then fill out the short question. If you would need extra\n                    information please contact ' +
                       _vm._s(_vm.contactName) +
                       " on " +
                       _vm._s(_vm.companyNumber) +
@@ -78784,7 +79008,7 @@ var render = function () {
                   "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitFive },
                   },
                   [_vm._v("Accept Page")]
@@ -78800,11 +79024,13 @@ var render = function () {
                       attrs: { id: "questionFive" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
-                          'If you have read the above document, please type "yes" into the box below and then click next'
+                          'If you have read the above document, please type "yes" into the box below and then click\n                        next'
                         ),
                       ]),
                       _vm._v(" "),
@@ -78868,7 +79094,7 @@ var render = function () {
                 _vm._v(" "),
                 _c("p", [
                   _vm._v(
-                    "Many thanks for taking the time to read this training course, which we hope has helped to educate you."
+                    "Many thanks for taking the time to read this training course, which we hope has helped to\n                        educate you."
                   ),
                 ]),
                 _vm._v(" "),
@@ -78891,7 +79117,7 @@ var render = function () {
                 _vm._v(" "),
                 _c("p", [
                   _vm._v(
-                    "If your details below are correct, please click on the submit bar below to submit your details."
+                    "If your details below are correct, please click on the submit bar below to submit your\n                        details."
                   ),
                 ]),
                 _vm._v(" "),
@@ -79031,6 +79257,40 @@ var render = function () {
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "form-group col-xs-12" }, [
+                    _c("label", { attrs: { for: "position" } }, [
+                      _vm._v("Position in Company"),
+                    ]),
+                    _vm._v(" "),
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.position,
+                          expression: "position",
+                        },
+                      ],
+                      staticClass: "form-control",
+                      attrs: {
+                        type: "text",
+                        name: "position",
+                        id: "position",
+                        placeholder: "Position",
+                        value: "",
+                      },
+                      domProps: { value: _vm.position },
+                      on: {
+                        input: function ($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.position = $event.target.value
+                        },
+                      },
+                    }),
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "form-group col-xs-12" }, [
                     _c("label", { attrs: { for: "address" } }, [
                       _vm._v("Address"),
                     ]),
@@ -79045,7 +79305,6 @@ var render = function () {
                         },
                       ],
                       staticClass: "form-control",
-                      staticStyle: { height: "114px" },
                       attrs: {
                         type: "text",
                         name: "address",
@@ -79077,7 +79336,7 @@ var render = function () {
         _vm.last == true
           ? _c("div", { staticClass: "alert alert-success" }, [
               _vm._v(
-                "\n        Thank you, Your details have been sent!\n      "
+                "\n                Thank you, Your details have been sent!\n            "
               ),
             ])
           : _vm._e(),
