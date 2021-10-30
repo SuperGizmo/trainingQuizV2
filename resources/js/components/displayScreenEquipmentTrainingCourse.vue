@@ -27,8 +27,12 @@
                             <input type="email" class="form-control" v-model="email" name="email" placeholder="Email" value="">
                         </div>
                         <div class="form-group col-xs-12">
+                            <label for="position">Position in company</label>
+                            <input type="text" class="form-control" v-model="position" name="position" placeholder="Position" value="">
+                        </div>
+                        <div class="form-group col-xs-12">
                             <label for="address">Address</label>
-                            <textarea type="text" class="form-control" v-model="address" name="address" style="height: 114px" placeholder="Your Address"></textarea>
+                            <textarea type="text" class="form-control" v-model="address" name="address" placeholder="Your Address"></textarea>
                         </div>
                     </div>
                     <input type="submit" v-on:click="submitOne" class="btn btn-success col-xs-12" name="submit">
@@ -100,10 +104,10 @@
 
                     <div class="alert alert-danger" role="alert">Have you read and fully understood this section? Click the "Accept Page" button and then fill out the short question. If you would need extra information please contact {{ contactName }} on {{ companyNumber }} or email <a v-bind:href="adminEmail">{{ adminEmail }}</a></div>
                     <div class="form-group">
-                        <button href="#" v-on:click="submitTwo" class="btn btn-success col-xs-12" >Accept Page</button>
+                        <button href="#acceptPage" v-on:click="submitTwo" class="btn btn-success col-xs-12" >Accept Page</button>
                     </div>
                     <div v-if="acceptTwo == true" class="form-group" id="questionTwo" style=" margin-top: 95px;">
-                        <label >Short question</label>
+                        <label id="acceptPage" >Short question</label>
                         <p>If you have read the above document, please type "yes" into the box below and then click next</p>
                         <input name="answerTwo" type="text" class="form-control" v-model="answerTwo" placeholder="Answer">
                     </div>
@@ -126,10 +130,10 @@
                     </p>
                     <div class="alert alert-danger" role="alert">Have you read and fully understood this section? Click the "Accept Page" button and then fill out the short question. If you would need extra information please contact {{ contactName }} on {{ companyNumber }} or email <a v-bind:href="adminEmail">{{ adminEmail }}</a></div>
                     <div class="form-group">
-                        <a href="#" v-on:click="submitThree" class="btn btn-success col-xs-12" >Accept Page</a>
+                        <a href="#acceptPage" v-on:click="submitThree" class="btn btn-success col-xs-12" >Accept Page</a>
                     </div>
                     <div v-if="acceptThree == true" class="form-group" id="questionThree" style=" margin-top: 95px;">
-                        <label >Short question</label>
+                        <label id="acceptPage" >Short question</label>
                         <p>If you have read the above document, please type "yes" into the box below and then click next</p>
                         <input name="answerThree" type="text" class="form-control" v-model="answerThree" placeholder="Answer">
                     </div>
@@ -164,10 +168,10 @@
                     </p>
                     <div class="alert alert-danger" role="alert">Have you read and fully understood this section? Click the "Accept Page" button and then fill out the short question. If you would need extra information please contact {{ contactName }} on {{ companyNumber }} or email <a v-bind:href="adminEmail">{{ adminEmail }}</a></div>
                     <div class="form-group">
-                        <a href="#" v-on:click="submitFour" class="btn btn-success col-xs-12" >Accept Page</a>
+                        <a href="#acceptPage" v-on:click="submitFour" class="btn btn-success col-xs-12" >Accept Page</a>
                     </div>
                     <div v-if="acceptFour == true" class="form-group" id="questionFour" style=" margin-top: 95px;">
-                        <label >Short question</label>
+                        <label id="acceptPage" >Short question</label>
                         <p>If you have read the above document, please type "yes" into the box below and then click next</p>
                         <input name="answerFour" type="text" class="form-control" v-model="answerFour" placeholder="Answer">
                     </div>
@@ -207,8 +211,12 @@
                                 <input type="email" class="form-control" v-model="email" name="email" id="email" placeholder="Email" value="">
                             </div>
                             <div class="form-group col-xs-12">
+                                <label for="position">Position in company</label>
+                                <input type="text" class="form-control" v-model="position" name="position" placeholder="Position" value="">
+                            </div>
+                            <div class="form-group col-xs-12">
                                 <label for="address">Address</label>
-                                <textarea type="text" class="form-control" v-model="address" name="address" id="address" style="height: 114px" placeholder="Your Address"></textarea>
+                                <textarea type="text" class="form-control" v-model="address" name="address" id="address" placeholder="Your Address"></textarea>
                             </div>
                         </div>
                         <input type="submit" v-on:click="submitForm" class="btn btn-success col-xs-12" name="submit">
@@ -232,6 +240,7 @@
                 contactNumber: '',
                 company: '',
                 address: '',
+                position: '',
 
                 one: false,
                 last: false,
@@ -345,6 +354,7 @@
                 formData.append("contactNumber", this.contactNumber);
                 formData.append("company", this.company);
                 formData.append("address", this.address);
+                formData.append("position", this.position);
 
                 axios.post('/DisplayScreenEquipmentTrainingCourse', formData, config);
 

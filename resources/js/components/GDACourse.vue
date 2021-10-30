@@ -137,7 +137,7 @@
                     <nav>
                         <ul class="pager">
                             <li style="display: inline;"><a v-on:click="previousFour" class=" col-xs-3"  href="#">Previous</a></li>
-                            <li v-if="answerFour.toLowerCase() == 'yes'"  style="display: inline;"><button type="button" class="btn btn-success col-xs-3" v-on:click="nextFour">Next</button></li>
+                            <li v-if="answerFour.toLowerCase() == 'yes'"  style="display: inline;"><button type="button" class="btn btn-success col-xs-3" href="#" v-on:click="nextFour">Next</button></li>
                         </ul>
                     </nav>
                 </div>
@@ -191,7 +191,7 @@
                     <nav>
                         <ul class="pager">
                             <li style="display: inline;"><a v-on:click="previousFive" class=" col-xs-3"  href="#">Previous</a></li>
-                            <li v-if="answerFive.toLowerCase() == 'yes' "  style="display: inline;"><button type="button" class="btn btn-success col-xs-3" v-on:click="nextFive">Next</button></li>
+                            <li v-if="answerFive.toLowerCase() == 'yes' "  style="display: inline;"><button type="button" class="btn btn-success col-xs-3" href="#" v-on:click="nextFive">Next</button></li>
                         </ul>
                     </nav>
                 </div>
@@ -225,7 +225,7 @@
                     <nav>
                         <ul class="pager">
                             <li style="display: inline;"><a v-on:click="previousSix" class=" col-xs-3"  href="#">Previous</a></li>
-                            <li v-if="answerSix.toLowerCase() == 'yes' "  style="display: inline;"><button type="button" class="btn btn-success col-xs-3" v-on:click="nextSix">Next</button></li>
+                            <li v-if="answerSix.toLowerCase() == 'yes' "  style="display: inline;"><button type="button" class="btn btn-success col-xs-3" href="#" v-on:click="nextSix">Next</button></li>
                         </ul>
                     </nav>
                 </div>
@@ -275,7 +275,7 @@
                     <nav>
                         <ul class="pager">
                             <li style="display: inline;"><a v-on:click="previousSeven" class=" col-xs-3"  href="#">Previous</a></li>
-                            <li v-if="answerSeven.toLowerCase() == 'yes'"  style="display: inline;"><button type="button" class="btn btn-success col-xs-3" v-on:click="nextSeven">Next</button></li>
+                            <li v-if="answerSeven.toLowerCase() == 'yes'"  style="display: inline;"><button type="button" class="btn btn-success col-xs-3" href="#" v-on:click="nextSeven">Next</button></li>
                         </ul>
                     </nav>
                 </div>
@@ -327,7 +327,7 @@
                     <nav>
                         <ul class="pager">
                             <li style="display: inline;"><a v-on:click="previousEight" class=" col-xs-3"  href="#">Previous</a></li>
-                            <li v-if="answerEight.toLowerCase() == 'yes' " id="buttonEight" style="display: inline;"><button type="button" class="btn btn-success col-xs-3" v-on:click="nextEight">Next</button></li>
+                            <li v-if="answerEight.toLowerCase() == 'yes' " id="buttonEight" style="display: inline;"><button type="button" class="btn btn-success col-xs-3" href="#" v-on:click="nextEight">Next</button></li>
                         </ul>
                     </nav>
                 </div>
@@ -377,7 +377,7 @@
                     <nav>
                         <ul class="pager">
                             <li style="display: inline;"><a v-on:click="previousNine" class=" col-xs-3"  href="#">Previous</a></li>
-                            <li v-if="answerNine.toLowerCase() == 'yes'" id="buttonNine" style="display: inline;"><button type="button" class="btn btn-success col-xs-3" v-on:click="nextNine">Next</button></li>
+                            <li v-if="answerNine.toLowerCase() == 'yes'" id="buttonNine" style="display: inline;"><button type="button" class="btn btn-success col-xs-3" href="#" v-on:click="nextNine">Next</button></li>
                         </ul>
                     </nav>
                 </div>
@@ -440,7 +440,7 @@
                     <nav>
                         <ul class="pager">
                             <li style="display: inline;"><a v-on:click="previousTen" class=" col-xs-3"  href="#">Previous</a></li>
-                            <li v-if="answerTen.toLowerCase() == 'yes'" id="buttonTen" style="display: inline;"><button type="button" class="btn btn-success col-xs-3" v-on:click="nextTen">Next</button></li>
+                            <li v-if="answerTen.toLowerCase() == 'yes'" id="buttonTen" style="display: inline;"><button type="button" class="btn btn-success col-xs-3" href="#" v-on:click="nextTen">Next</button></li>
                         </ul>
                     </nav>
                 </div>
@@ -481,7 +481,7 @@
                     <nav>
                         <ul class="pager">
                             <li style="display: inline;"><a v-on:click="previousEleven" class=" col-xs-3"  href="#">Previous</a></li>
-                            <li v-if="answerEleven.toLowerCase() == 'yes'" id="buttonEleven" style="display: inline;"><button type="button" class="btn btn-success col-xs-3" v-on:click="nextEleven">Next</button></li>
+                            <li v-if="answerEleven.toLowerCase() == 'yes'" id="buttonEleven" style="display: inline;"><button type="button" class="btn btn-success col-xs-3" href="#" v-on:click="nextEleven">Next</button></li>
                         </ul>
                     </nav>
                 </div>
@@ -516,7 +516,7 @@
                     <nav>
                         <ul class="pager">
                             <li style="display: inline;"><a v-on:click="previousTwelve" class=" col-xs-3"  href="#">Previous</a></li>
-                            <li v-if="answerTwelve.toLowerCase() == 'yes'" id="buttonTwelve" style="display: inline;"><button type="button" class="btn btn-success col-xs-3" v-on:click="nextTwelve">Next</button></li>
+                            <li v-if="answerTwelve.toLowerCase() == 'yes'" id="buttonTwelve" style="display: inline;"><button type="button" class="btn btn-success col-xs-3" href="#" v-on:click="nextTwelve">Next</button></li>
                         </ul>
                     </nav>
                 </div>
@@ -565,7 +565,7 @@
                     <nav>
                         <ul class="pager">
                             <li style="display: inline;"><a v-on:click="previousThirteen" class=" col-xs-3"  href="#">Previous</a></li>
-                            <li v-if="answerThirteen.toLowerCase() == 'yes'" id="buttonThirteen" style="display: inline;"><button type="button" class="btn btn-success col-xs-3" v-on:click="nextThirteen">Next</button></li>
+                            <li v-if="answerThirteen.toLowerCase() == 'yes'" id="buttonThirteen" style="display: inline;"><button type="button" class="btn btn-success col-xs-3" href="#" v-on:click="nextThirteen">Next</button></li>
                         </ul>
                     </nav>
                 </div>
@@ -610,7 +610,7 @@
                     <nav>
                         <ul class="pager">
                             <li style="display: inline;"><a v-on:click="previousFourteen" class=" col-xs-3"  href="#">Previous</a></li>
-                            <li v-if="answerFourteen.toLowerCase() == 'yes'" id="buttonFourteen" style="display: inline;"><button type="button" class="btn btn-success col-xs-3" v-on:click="nextFourteen">Next</button></li>
+                            <li v-if="answerFourteen.toLowerCase() == 'yes'" id="buttonFourteen" style="display: inline;"><button type="button" class="btn btn-success col-xs-3" href="#" v-on:click="nextFourteen">Next</button></li>
                         </ul>
                     </nav>
                 </div>
@@ -657,7 +657,7 @@
                     <nav>
                         <ul class="pager">
                             <li style="display: inline;"><a v-on:click="previousFifteen" class=" col-xs-3"  href="#">Previous</a></li>
-                            <li v-if="answerFifteen.toLowerCase() == 'yes'" id="buttonFifteen" style="display: inline;"><button type="button" class="btn btn-success col-xs-3" v-on:click="nextFifteen">Next</button></li>
+                            <li v-if="answerFifteen.toLowerCase() == 'yes'" id="buttonFifteen" style="display: inline;"><button type="button" class="btn btn-success col-xs-3" href="#" v-on:click="nextFifteen">Next</button></li>
                         </ul>
                     </nav>
                 </div>
@@ -695,7 +695,7 @@
                     <nav>
                         <ul class="pager">
                             <li style="display: inline;"><a v-on:click="previousSixteen" class=" col-xs-3"  href="#">Previous</a></li>
-                            <li v-if="answerSixteen.toLowerCase() == 'yes'" id="buttonSixteen" style="display: inline;"><button type="button" class="btn btn-success col-xs-3" v-on:click="nextSixteen">Next</button></li>
+                            <li v-if="answerSixteen.toLowerCase() == 'yes'" id="buttonSixteen" style="display: inline;"><button type="button" class="btn btn-success col-xs-3" href="#" v-on:click="nextSixteen">Next</button></li>
                         </ul>
                     </nav>
                 </div>
@@ -744,7 +744,7 @@
                     <nav>
                         <ul class="pager">
                             <li style="display: inline;"><a v-on:click="previousSeventeen" class=" col-xs-3"  href="#">Previous</a></li>
-                            <li v-if="answerSeventeen.toLowerCase() == 'yes'" id="buttonSeventeen" style="display: inline;"><button type="button" class="btn btn-success col-xs-3" v-on:click="nextSeventeen">Next</button></li>
+                            <li v-if="answerSeventeen.toLowerCase() == 'yes'" id="buttonSeventeen" style="display: inline;"><button type="button" class="btn btn-success col-xs-3" href="#" v-on:click="nextSeventeen">Next</button></li>
                         </ul>
                     </nav>
                 </div>
@@ -790,7 +790,7 @@
                     <nav>
                         <ul class="pager">
                             <li style="display: inline;"><a v-on:click="previousEighteen" class=" col-xs-3"  href="#">Previous</a></li>
-                            <li v-if="answerEighteen.toLowerCase() == 'yes'" id="buttonEighteen" style="display: inline;"><button type="button" class="btn btn-success col-xs-3" v-on:click="nextEighteen">Next</button></li>
+                            <li v-if="answerEighteen.toLowerCase() == 'yes'" id="buttonEighteen" style="display: inline;"><button type="button" class="btn btn-success col-xs-3" href="#" v-on:click="nextEighteen">Next</button></li>
                         </ul>
                     </nav>
                 </div>
@@ -825,7 +825,7 @@
                     <nav>
                         <ul class="pager">
                             <li style="display: inline;"><a v-on:click="previousNineteen" class=" col-xs-3"  href="#">Previous</a></li>
-                            <li v-if="answerNineteen.toLowerCase() == 'yes'" id="buttonNineteen" style="display: inline;"><button type="button" class="btn btn-success col-xs-3" v-on:click="nextNineteen">Next</button></li>
+                            <li v-if="answerNineteen.toLowerCase() == 'yes'" id="buttonNineteen" style="display: inline;"><button type="button" class="btn btn-success col-xs-3" href="#" v-on:click="nextNineteen">Next</button></li>
                         </ul>
                     </nav>
                 </div>
@@ -857,7 +857,7 @@
                     <nav>
                         <ul class="pager">
                             <li style="display: inline;"><a v-on:click="previousTwenty" class=" col-xs-3"  href="#">Previous</a></li>
-                            <li v-if="answerTwenty.toLowerCase() == 'yes'" id="buttonTwenty" style="display: inline;"><button type="button" class="btn btn-success col-xs-3" v-on:click="nextTwenty">Next</button></li>
+                            <li v-if="answerTwenty.toLowerCase() == 'yes'" id="buttonTwenty" style="display: inline;"><button type="button" class="btn btn-success col-xs-3" href="#" v-on:click="nextTwenty">Next</button></li>
                         </ul>
                     </nav>
                 </div>
@@ -897,7 +897,7 @@
                     <nav>
                         <ul class="pager">
                             <li style="display: inline;"><a v-on:click="previousTwentyone" class=" col-xs-3"  href="#">Previous</a></li>
-                            <li v-if="answerTwentyone.toLowerCase() == 'yes'" id="buttonTwentyone" style="display: inline;"><button type="button" class="btn btn-success col-xs-3" v-on:click="nextTwentyone">Next</button></li>
+                            <li v-if="answerTwentyone.toLowerCase() == 'yes'" id="buttonTwentyone" style="display: inline;"><button type="button" class="btn btn-success col-xs-3" href="#" v-on:click="nextTwentyone">Next</button></li>
                         </ul>
                     </nav>
                 </div>
@@ -923,7 +923,7 @@
                     <nav>
                         <ul class="pager">
                             <li style="display: inline;"><a v-on:click="previousTwentytwo" class=" col-xs-3"  href="#">Previous</a></li>
-                            <li v-if="answerTwentytwo.toLowerCase() == 'yes'" id="buttonTwentytwo" style="display: inline;"><button type="button" class="btn btn-success col-xs-3" v-on:click="nextTwentytwo">Next</button></li>
+                            <li v-if="answerTwentytwo.toLowerCase() == 'yes'" id="buttonTwentytwo" style="display: inline;"><button type="button" class="btn btn-success col-xs-3" href="#" v-on:click="nextTwentytwo">Next</button></li>
                         </ul>
                     </nav>
                 </div>
@@ -957,8 +957,12 @@
                                 <input type="email" class="form-control" v-model="email" name="email" id="email" placeholder="Email" value="">
                             </div>
                             <div class="form-group col-xs-12">
+                                <label for="position">Position in Company</label>
+                                <input type="text" class="form-control" v-model="position" name="position" placeholder="Position" value="">
+                            </div>
+                            <div class="form-group col-xs-12">
                                 <label for="address">Address</label>
-                                <textarea type="text" class="form-control" v-model="address" name="address" id="address" style="height: 114px" placeholder="Your Address"></textarea>
+                                <textarea type="text" class="form-control" v-model="address" name="address" id="address" placeholder="Your Address"></textarea>
                             </div>
                         </div>
                         <input type="submit" v-on:click="submitForm" class="btn btn-success col-xs-12" name="submit">

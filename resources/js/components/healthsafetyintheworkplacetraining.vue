@@ -85,10 +85,10 @@
                         information please contact {{ contactName }} on {{ companyNumber }} or email <a
                             v-bind:href="adminEmail">{{ adminEmail }}</a></div>
                     <div class="form-group">
-                        <button href="#" v-on:click="submitTwo" class="btn btn-success col-xs-12">Accept Page</button>
+                        <a href="#acceptPage" v-on:click="submitTwo" class="btn btn-success col-xs-12">Accept Page</a>
                     </div>
                     <div v-if="acceptTwo == true" class="form-group" id="questionTwo" style=" margin-top: 95px;">
-                        <label>Short question</label>
+                        <label id="acceptPage">Short question</label>
                         <p>If you have read the above document, please type "yes" into the box below and then click
                             next</p>
                         <input name="answerTwo" type="text" class="form-control" v-model="answerTwo"
@@ -164,10 +164,10 @@
                         information please contact {{ contactName }} on {{ companyNumber }} or email <a
                             v-bind:href="adminEmail">{{ adminEmail }}</a></div>
                     <div class="form-group">
-                        <a href="#" v-on:click="submitThree" class="btn btn-success col-xs-12">Accept Page</a>
+                        <a href="#acceptPage" v-on:click="submitThree" class="btn btn-success col-xs-12">Accept Page</a>
                     </div>
                     <div v-if="acceptThree == true" class="form-group" id="questionThree" style=" margin-top: 95px;">
-                        <label>Short question</label>
+                        <label id="acceptPage">Short question</label>
                         <p>If you have read the above document, please type "yes" into the box below and then click
                             next</p>
                         <input name="answerThree" type="text" class="form-control" v-model="answerThree"
@@ -178,7 +178,7 @@
                             <li style="display: inline;"><a v-on:click="previousThree" class=" col-xs-3" href="#">Previous</a>
                             </li>
                             <li v-if="answerThree.toLowerCase() == 'yes' " style="display: inline;">
-                                <button type="button" class="btn btn-success col-xs-3" v-on:click="nextThree">Next
+                                <button type="button" class="btn btn-success col-xs-3" href="#" v-on:click="nextThree">Next
                                 </button>
                             </li>
                         </ul>
@@ -264,10 +264,10 @@
                         information please contact {{ contactName }} on {{ companyNumber }} or email <a
                             v-bind:href="adminEmail">{{ adminEmail }}</a></div>
                     <div class="form-group">
-                        <a href="#" v-on:click="submitFour" class="btn btn-success col-xs-12">Accept Page</a>
+                        <a href="#acceptPage" v-on:click="submitFour" class="btn btn-success col-xs-12">Accept Page</a>
                     </div>
                     <div v-if="acceptFour == true" class="form-group" id="questionFour" style=" margin-top: 95px;">
-                        <label>Short question</label>
+                        <label id="acceptPage">Short question</label>
                         <p>If you have read the above document, please type "yes" into the box below and then click
                             next</p>
                         <input name="answerFour" type="text" class="form-control" v-model="answerFour"
@@ -278,7 +278,7 @@
                             <li style="display: inline;"><a v-on:click="previousFour" class=" col-xs-3" href="#">Previous</a>
                             </li>
                             <li v-if="answerFour.toLowerCase() == 'yes'" style="display: inline;">
-                                <button type="button" class="btn btn-success col-xs-3" v-on:click="nextFour">Next
+                                <button type="button" class="btn btn-success col-xs-3" href="#" v-on:click="nextFour">Next
                                 </button>
                             </li>
                         </ul>
@@ -335,10 +335,10 @@
                         information please contact {{ contactName }} on {{ companyNumber }} or email <a
                             v-bind:href="adminEmail">{{ adminEmail }}</a></div>
                     <div class="form-group">
-                        <a href="#" v-on:click="submitFive" class="btn btn-success col-xs-12">Accept Page</a>
+                        <a href="#acceptPage" v-on:click="submitFive" class="btn btn-success col-xs-12">Accept Page</a>
                     </div>
                     <div v-if="acceptFive == true" class="form-group" id="questionFive" style=" margin-top: 95px;">
-                        <label>Short question</label>
+                        <label id="acceptPage">Short question</label>
                         <p>If you have read the above document, please type "yes" into the box below and then click
                             next</p>
                         <input name="answerFive" type="text" class="form-control" v-model="answerFive"
@@ -349,7 +349,7 @@
                             <li style="display: inline;"><a v-on:click="previousFive" class=" col-xs-3" href="#">Previous</a>
                             </li>
                             <li v-if="answerFive.toLowerCase() == 'yes'" style="display: inline;">
-                                <button type="button" class="btn btn-success col-xs-3" v-on:click="nextFive">Next
+                                <button type="button" class="btn btn-success col-xs-3" href="#" v-on:click="nextFive">Next
                                 </button>
                             </li>
                         </ul>
@@ -387,10 +387,10 @@
                         information please contact {{ contactName }} on {{ companyNumber }} or email <a
                             v-bind:href="adminEmail">{{ adminEmail }}</a></div>
                     <div class="form-group">
-                        <a href="#" v-on:click="submitSix" class="btn btn-success col-xs-12">Accept Page</a>
+                        <a href="#acceptPage" v-on:click="submitSix" class="btn btn-success col-xs-12">Accept Page</a>
                     </div>
                     <div v-if="acceptSix == true" class="form-group" id="questionSix" style=" margin-top: 95px;">
-                        <label>Short question</label>
+                        <label id="acceptPage">Short question</label>
                         <p>If you have read the above document, please type "yes" into the box below and then click
                             next</p>
                         <input name="answerSix" type="text" class="form-control" v-model="answerSix"
@@ -401,13 +401,12 @@
                             <li style="display: inline;"><a v-on:click="previousSix" class=" col-xs-3"
                                                             href="#">Previous</a></li>
                             <li v-if="answerSix.toLowerCase() == 'yes'" style="display: inline;">
-                                <button type="button" class="btn btn-success col-xs-3" v-on:click="nextSix">Next
+                                <button type="button" class="btn btn-success col-xs-3" href="#" v-on:click="nextSix">Next
                                 </button>
                             </li>
                         </ul>
                     </nav>
                 </div>
-
                 <div v-if="seven == true">
                     <div>
                         <h2>Summary</h2>
@@ -426,9 +425,7 @@
                             accident, report it to senior staff right away.</p>
                         <p>If your details below are correct, please click on the submit bar below to submit your
                             details.</p>
-                        <p><strong>If you have any other questions or need any other support. Please call {{
-                                contactName
-                            }} on {{ companyNumber }} or email <a v-bind:href="adminEmail">{{ adminEmail }}</a></strong>
+                        <p><strong>If you have any other questions or need any other support. Please call {{ contactName }} on {{ companyNumber }} or email <a v-bind:href="adminEmail">{{ adminEmail }}</a></strong>
                         </p>
                         <p><strong>In any case, we shall be in touch to establish any other support.</strong></p>
                         <div class="col-xs-6">
@@ -457,7 +454,7 @@
                             <div class="form-group col-xs-12">
                                 <label for="address">Address</label>
                                 <textarea type="text" class="form-control" v-model="address" name="address" id="address"
-                                          style="height: 114px" placeholder="Your Address"></textarea>
+                                          placeholder="Your Address"></textarea>
                             </div>
                         </div>
                         <input type="submit" v-on:click="submitForm" class="btn btn-success col-xs-12" name="submit">

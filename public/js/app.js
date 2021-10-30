@@ -2314,6 +2314,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -2956,7 +2960,7 @@ __webpack_require__.r(__webpack_exports__);
         }
       };
       axios.get(this.pagesUrl).then(function (response) {
-        _this.coursePages = response.body;
+        _this.coursePages = response.data;
       });
     },
     submitForm: function submitForm() {
@@ -3211,7 +3215,7 @@ __webpack_require__.r(__webpack_exports__);
         }
       };
       axios.get(this.linksUrl).then(function (response) {
-        _this.legislationLinks = response.body;
+        _this.legislationLinks = response.data;
       });
     },
     submitForm: function submitForm() {
@@ -3397,7 +3401,7 @@ __webpack_require__.r(__webpack_exports__);
         }
       };
       axios.get(this.questionsUrl).then(function (response) {
-        _this.questions = response.body;
+        _this.questions = response.data;
       }, function (response) {});
     }
   },
@@ -3900,6 +3904,195 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -3909,241 +4102,26 @@ __webpack_require__.r(__webpack_exports__);
       company: '',
       address: '',
       position: '',
-      one: false,
-      last: false,
-      two: false,
-      acceptTwo: false,
-      answerTwo: '',
-      three: false,
-      acceptThree: false,
-      answerThree: '',
-      four: false,
-      acceptFour: false,
-      answerFour: '',
-      five: false,
-      acceptFive: false,
-      answerFive: '',
-      six: false,
-      acceptSix: false,
-      answerSix: '',
-      seven: false,
-      acceptSeven: false,
-      answerSeven: '',
-      eight: false,
-      acceptEight: false,
-      answerEight: '',
-      nine: false,
-      acceptNine: false,
-      answerNine: '',
-      ten: false,
-      acceptTen: false,
-      answerTen: '',
-      eleven: false,
-      acceptEleven: false,
-      answerEleven: '',
-      twelve: false,
-      acceptTwelve: false,
-      answerTwelve: '',
-      thirteen: false,
-      acceptThirteen: false,
-      answerThirteen: '',
-      fourteen: false,
-      acceptFourteen: false,
-      answerFourteen: '',
-      fifteen: false,
-      acceptFifteen: false,
-      answerFifteen: ''
+      page: 1,
+      acceptPage: 1,
+      answer: ''
     };
   },
   props: ['contactName', 'companyNumber', 'adminEmail'],
   methods: {
-    submitOne: function submitOne() {
+    nextPage: function nextPage() {
       if (this.name !== "" && this.email !== "") {
-        this.one = true;
-        this.two = true;
+        this.page + 1;
+        this.answer = '';
       }
     },
-    submitTwo: function submitTwo() {
-      this.acceptTwo = true;
+    previousPage: function previousPage() {
+      this.page - 1;
+      this.answer = '';
     },
-    nextTwo: function nextTwo() {
-      this.acceptTwo = false;
-      this.answerTwo = '';
-      this.two = false;
-      this.three = true;
-    },
-    previousTwo: function previousTwo() {
-      this.two = false;
-      this.one = true;
-    },
-    submitThree: function submitThree() {
-      this.acceptThree = true;
-    },
-    nextThree: function nextThree() {
-      this.acceptThree = false;
-      this.answerThree = '';
-      this.three = false;
-      this.four = true;
-    },
-    previousThree: function previousThree() {
-      this.three = false;
-      this.two = true;
-    },
-    submitFour: function submitFour() {
-      this.acceptFour = true;
-    },
-    nextFour: function nextFour() {
-      this.acceptFour = false;
-      this.answerFour = '';
-      this.four = false;
-      this.five = true;
-    },
-    previousFour: function previousFour() {
-      this.four = false;
-      this.three = true;
-    },
-    submitFive: function submitFive() {
-      this.acceptFive = true;
-    },
-    nextFive: function nextFive() {
-      this.acceptFive = false;
-      this.answerFive = '';
-      this.five = false;
-      this.six = true;
-    },
-    previousFive: function previousFive() {
-      this.five = false;
-      this.four = true;
-    },
-    submitSix: function submitSix() {
-      this.acceptSix = true;
-    },
-    nextSix: function nextSix() {
-      this.acceptSix = false;
-      this.answerSix = '';
-      this.six = false;
-      this.seven = true;
-    },
-    previousSix: function previousSix() {
-      this.six = false;
-      this.five = true;
-    },
-    submitSeven: function submitSeven() {
-      this.acceptSeven = true;
-    },
-    nextSeven: function nextSeven() {
-      this.acceptSeven = false;
-      this.answerSeven = '';
-      this.seven = false;
-      this.eight = true;
-    },
-    previousSeven: function previousSeven() {
-      this.seven = false;
-      this.six = true;
-    },
-    submitEight: function submitEight() {
-      this.acceptEight = true;
-    },
-    nextEight: function nextEight() {
-      this.acceptEight = false;
-      this.answerEight = '';
-      this.eight = false;
-      this.nine = true;
-    },
-    previousEight: function previousEight() {
-      this.eight = false;
-      this.seven = true;
-    },
-    submitNine: function submitNine() {
-      this.acceptNine = true;
-    },
-    nextNine: function nextNine() {
-      this.acceptNine = false;
-      this.answerNine = '';
-      this.nine = false;
-      this.ten = true;
-    },
-    previousNine: function previousNine() {
-      this.nine = false;
-      this.eight = true;
-    },
-    submitTen: function submitTen() {
-      this.acceptTen = true;
-    },
-    nextTen: function nextTen() {
-      this.acceptTen = false;
-      this.answerTen = '';
-      this.ten = false;
-      this.eleven = true;
-    },
-    previousTen: function previousTen() {
-      this.ten = false;
-      this.nine = true;
-    },
-    submitEleven: function submitEleven() {
-      this.acceptEleven = true;
-    },
-    nextEleven: function nextEleven() {
-      this.acceptEleven = false;
-      this.answerEleven = '';
-      this.eleven = false;
-      this.twelve = true;
-    },
-    previousEleven: function previousEleven() {
-      this.eleven = false;
-      this.ten = true;
-    },
-    submitTwelve: function submitTwelve() {
-      this.acceptTwelve = true;
-    },
-    nextTwelve: function nextTwelve() {
-      this.acceptTwelve = false;
-      this.answerTwelve = '';
-      this.twelve = false;
-      this.thirteen = true;
-    },
-    previousTwelve: function previousTwelve() {
-      this.twelve = false;
-      this.eleven = true;
-    },
-    submitThirteen: function submitThirteen() {
-      this.acceptThirteen = true;
-    },
-    nextThirteen: function nextThirteen() {
-      this.acceptThirteen = false;
-      this.answerThirteen = '';
-      this.thirteen = false;
-      this.fourteen = true;
-    },
-    previousThirteen: function previousThirteen() {
-      this.thirteen = false;
-      this.twelve = true;
-    },
-    submitFourteen: function submitFourteen() {
-      this.acceptFourteen = true;
-    },
-    nextFourteen: function nextFourteen() {
-      this.acceptFourteen = false;
-      this.answerFourteen = '';
-      this.fourteen = false;
-      this.fifteen = true;
-    },
-    previousFourteen: function previousFourteen() {
-      this.fourteen = false;
-      this.thirteen = true;
-    },
-    submitFifteen: function submitFifteen() {
-      this.acceptFifteen = true;
-    },
-    nextFifteen: function nextFifteen() {
-      this.acceptFifteen = false;
-      this.answerFifteen = '';
-      this.fifteen = false;
-      this.sixteen = true;
-    },
-    previousFifteen: function previousFifteen() {
-      this.fifteen = false;
-      this.fourteen = true;
+    acceptPage: function acceptPage() {
+      this.acceptPage + 1;
+      this.answer = '';
     },
     submitForm: function submitForm() {
       var config = {
@@ -4160,8 +4138,7 @@ __webpack_require__.r(__webpack_exports__);
       formData.append("address", this.address);
       formData.append("position", this.position);
       axios.post('/fcaone', formData, config);
-      this.fifteen = false;
-      this.last = true;
+      this.page + 1;
     }
   },
   mounted: function mounted() {
@@ -4182,6 +4159,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+//
+//
+//
+//
 //
 //
 //
@@ -5142,6 +5123,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -5264,6 +5249,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+//
+//
+//
+//
 //
 //
 //
@@ -8077,6 +8066,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -9030,6 +9024,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -9038,6 +9040,7 @@ __webpack_require__.r(__webpack_exports__);
       contactNumber: '',
       company: '',
       address: '',
+      position: '',
       one: false,
       last: false,
       two: false,
@@ -9129,6 +9132,7 @@ __webpack_require__.r(__webpack_exports__);
       formData.append("contactNumber", this.contactNumber);
       formData.append("company", this.company);
       formData.append("address", this.address);
+      formData.append("position", this.position);
       axios.post('/NoiseVibrationAndVehicleSafetyTrainingCourse', formData, config);
     }
   },
@@ -9421,6 +9425,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+//
+//
 //
 //
 //
@@ -10277,6 +10283,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -10285,6 +10295,7 @@ __webpack_require__.r(__webpack_exports__);
       contactNumber: '',
       company: '',
       address: '',
+      position: '',
       firstSubmit: false,
       secondSubmit: false,
       question_1: "0",
@@ -10333,6 +10344,7 @@ __webpack_require__.r(__webpack_exports__);
       formData.append("contactNumber", this.contactNumber);
       formData.append("company", this.company);
       formData.append("address", this.address);
+      formData.append("position", this.position);
       formData.append("question_1", this.question_1);
       formData.append("question_2", this.question_2);
       formData.append("question_3", this.question_3);
@@ -10604,6 +10616,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -10612,6 +10632,7 @@ __webpack_require__.r(__webpack_exports__);
       contactNumber: '',
       company: '',
       address: '',
+      position: '',
       one: false,
       last: false,
       two: false,
@@ -10703,6 +10724,7 @@ __webpack_require__.r(__webpack_exports__);
       formData.append("contactNumber", this.contactNumber);
       formData.append("company", this.company);
       formData.append("address", this.address);
+      formData.append("position", this.position);
       axios.post('/DisplayScreenEquipmentTrainingCourse', formData, config);
     }
   },
@@ -10722,6 +10744,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+//
+//
+//
+//
+//
 //
 //
 //
@@ -11536,6 +11563,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -11544,6 +11576,7 @@ __webpack_require__.r(__webpack_exports__);
       contactNumber: '',
       company: '',
       address: '',
+      position: '',
       one: false,
       last: false,
       two: false,
@@ -11703,9 +11736,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-//
-//
-//
 //
 //
 //
@@ -12623,6 +12653,170 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -12630,6 +12824,7 @@ __webpack_require__.r(__webpack_exports__);
       email: '',
       contactNumber: '',
       company: '',
+      position: '',
       address: '',
       one: false,
       last: false,
@@ -12750,6 +12945,7 @@ __webpack_require__.r(__webpack_exports__);
       formData.append("contactNumber", this.contactNumber);
       formData.append("company", this.company);
       formData.append("address", this.address);
+      formData.append("position", this.position);
       axios.post('/Quality-Health-Safety-Environmental-Course', formData, config);
     }
   },
@@ -12997,6 +13193,16 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -13005,6 +13211,7 @@ __webpack_require__.r(__webpack_exports__);
       contactNumber: '',
       company: '',
       address: '',
+      position: '',
       one: false,
       last: false,
       two: false,
@@ -13081,6 +13288,7 @@ __webpack_require__.r(__webpack_exports__);
       formData.append("contactNumber", this.contactNumber);
       formData.append("company", this.company);
       formData.append("address", this.address);
+      formData.append("position", this.position);
       axios.post('/RiskAssessmentTrainingCourse', formData, config);
     }
   },
@@ -13402,6 +13610,16 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -13410,6 +13628,7 @@ __webpack_require__.r(__webpack_exports__);
       contactNumber: '',
       company: '',
       address: '',
+      position: '',
       one: false,
       last: false,
       two: false,
@@ -13515,6 +13734,7 @@ __webpack_require__.r(__webpack_exports__);
       formData.append("contactNumber", this.contactNumber);
       formData.append("company", this.company);
       formData.append("address", this.address);
+      formData.append("position", this.position);
       axios.post('/WorkplaceSafetyandWelfareTrainingCourse', formData, config);
     }
   },
@@ -47219,7 +47439,7 @@ var render = function () {
                           "button",
                           {
                             staticClass: "btn btn-success col-xs-3",
-                            attrs: { type: "button" },
+                            attrs: { type: "button", href: "#" },
                             on: { click: _vm.nextFour },
                           },
                           [_vm._v("Next")]
@@ -47348,7 +47568,7 @@ var render = function () {
                           "button",
                           {
                             staticClass: "btn btn-success col-xs-3",
-                            attrs: { type: "button" },
+                            attrs: { type: "button", href: "#" },
                             on: { click: _vm.nextFive },
                           },
                           [_vm._v("Next")]
@@ -47521,6 +47741,39 @@ var render = function () {
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "form-group col-xs-12" }, [
+                    _c("label", { attrs: { for: "position" } }, [
+                      _vm._v("Position in Company"),
+                    ]),
+                    _vm._v(" "),
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.position,
+                          expression: "position",
+                        },
+                      ],
+                      staticClass: "form-control",
+                      attrs: {
+                        type: "text",
+                        name: "position",
+                        placeholder: "Position",
+                        value: "",
+                      },
+                      domProps: { value: _vm.position },
+                      on: {
+                        input: function ($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.position = $event.target.value
+                        },
+                      },
+                    }),
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "form-group col-xs-12" }, [
                     _c("label", { attrs: { for: "address" } }, [
                       _vm._v("Address"),
                     ]),
@@ -47535,7 +47788,6 @@ var render = function () {
                         },
                       ],
                       staticClass: "form-control",
-                      staticStyle: { height: "114px" },
                       attrs: {
                         type: "text",
                         name: "address",
@@ -48393,7 +48645,7 @@ var render = function () {
                           "a",
                           {
                             staticClass: "btn btn-success col-xs-12",
-                            attrs: { href: "#" },
+                            attrs: { href: "#pageAccepted" },
                             on: { click: _vm.pressAccept },
                           },
                           [_vm._v("Accept Page")]
@@ -48409,7 +48661,9 @@ var render = function () {
                             staticStyle: { "margin-top": "95px" },
                           },
                           [
-                            _c("label", [_vm._v("Short question")]),
+                            _c("label", { attrs: { id: "pageAccepted" } }, [
+                              _vm._v("Short question"),
+                            ]),
                             _vm._v(" "),
                             _c("p", [
                               _vm._v(
@@ -48684,7 +48938,6 @@ var render = function () {
                         },
                       ],
                       staticClass: "form-control",
-                      staticStyle: { height: "114px" },
                       attrs: {
                         type: "text",
                         name: "address",
@@ -49102,7 +49355,7 @@ var render = function () {
                   "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.pressAccept },
                   },
                   [_vm._v("Accept Page")]
@@ -49117,7 +49370,9 @@ var render = function () {
                       staticStyle: { "margin-top": "95px" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
@@ -49390,7 +49645,6 @@ var render = function () {
                       },
                     ],
                     staticClass: "form-control",
-                    staticStyle: { height: "114px" },
                     attrs: {
                       type: "text",
                       name: "address",
@@ -49936,7 +50190,7 @@ var render = function () {
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "panel-body" }, [
-        _vm.one == false
+        _vm.page == 1
           ? _c("div", [
               _c("p", [
                 _vm._v(
@@ -50144,12 +50398,12 @@ var render = function () {
               _c("input", {
                 staticClass: "btn btn-success col-xs-12",
                 attrs: { type: "submit", name: "submit" },
-                on: { click: _vm.submitOne },
+                on: { click: _vm.nextPage },
               }),
             ])
           : _vm._e(),
         _vm._v(" "),
-        _vm.two == true
+        _vm.page == 2
           ? _c("div", [
               _c("h2", [_vm._v("Introduction")]),
               _vm._v(" "),
@@ -50161,31 +50415,31 @@ var render = function () {
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "We are very pleased to be working with you to provide loans to customers and by offering finance you should improve your level of sales, service and credibility."
+                  "We are very pleased to be working with you to provide loans to customers and by offering finance\n                    you should improve your level of sales, service and credibility."
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "Offering finance is a great way to increase average order values, reduce cancellations and generate more money by providing your customers with affordability, convenience, payment flexibility and peace of mind."
+                  "Offering finance is a great way to increase average order values, reduce cancellations and\n                    generate more money by providing your customers with affordability, convenience, payment\n                    flexibility and peace of mind."
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "Within these pages we will familiarise you with certain areas of the finance industry and help you to understand your role and how important it is to treat customers fairly and ensure finance is sold correctly. Our aim in producing this training course is to break down key areas into easy to understand sections and to support your practices when offering finance to ensure at all times you recognise and meet the FCA Requirements."
+                  "Within these pages we will familiarise you with certain areas of the finance industry and help\n                    you to understand your role and how important it is to treat customers fairly and ensure finance\n                    is sold correctly. Our aim in producing this training course is to break down key areas into\n                    easy to understand sections and to support your practices when offering finance to ensure at all\n                    times you recognise and meet the FCA Requirements."
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "It is important that you complete all the sections to demonstrate that you have read and fully understood everything and if you have any questions or queries then please do not hesitate to ask."
+                  "It is important that you complete all the sections to demonstrate that you have read and fully\n                    understood everything and if you have any questions or queries then please do not hesitate to\n                    ask."
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "The FCA is the Financial Conduct Authority and is the financial regulatory body in the United Kingdom that regulates financial firms providing services to consumers and maintains the integrity of the UK’s financial markets. It handles regulated credit activities and like most financial products and services, there are very strict rules when it comes to advertising, promoting and selling loans and credits. These come from the Consumer Credit Act and the FCA Handbook."
+                  "The FCA is the Financial Conduct Authority and is the financial regulatory body in the United\n                    Kingdom that regulates financial firms providing services to consumers and maintains the\n                    integrity of the UK’s financial markets. It handles regulated credit activities and like most\n                    financial products and services, there are very strict rules when it comes to advertising,\n                    promoting and selling loans and credits. These come from the Consumer Credit Act and the FCA\n                    Handbook."
                 ),
               ]),
               _vm._v(" "),
@@ -50197,13 +50451,13 @@ var render = function () {
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "Becoming authorised and regulated by the Financial Conduct Authority is a long and complicated process taking around 8 months to complete with many detailed questions asked during this time including checking the fitness and suitability of the directors and shareholders."
+                  "Becoming authorised and regulated by the Financial Conduct Authority is a long and complicated\n                    process taking around 8 months to complete with many detailed questions asked during this time\n                    including checking the fitness and suitability of the directors and shareholders."
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "Not everyone is able or capable of obtaining a consumer credit license and so it is important when undertaking any finance arrangement that you understand the governance of the finance industry, in particular taking the principles, procedures and relevant processes seriously."
+                  "Not everyone is able or capable of obtaining a consumer credit license and so it is important\n                    when undertaking any finance arrangement that you understand the governance of the finance\n                    industry, in particular taking the principles, procedures and relevant processes seriously."
                 ),
               ]),
               _vm._v(" "),
@@ -50212,7 +50466,7 @@ var render = function () {
                 { staticClass: "alert alert-danger", attrs: { role: "alert" } },
                 [
                   _vm._v(
-                    'Have you read and fully understood this section? Click the "Accept Page" button and then fill out the short question. If you would need extra information please call ' +
+                    'Have you read and fully understood this section? Click\n                    the "Accept Page" button and then fill out the short question. If you would need extra\n                    information please call ' +
                       _vm._s(_vm.contactName) +
                       " on " +
                       _vm._s(_vm.companyNumber) +
@@ -50230,13 +50484,13 @@ var render = function () {
                   {
                     staticClass: "btn btn-success col-xs-12",
                     attrs: { href: "#" },
-                    on: { click: _vm.submitTwo },
+                    on: { click: _vm.acceptPage },
                   },
                   [_vm._v("Accept Page")]
                 ),
               ]),
               _vm._v(" "),
-              _vm.acceptTwo == true
+              _vm.acceptPage == 2
                 ? _c(
                     "div",
                     {
@@ -50249,7 +50503,7 @@ var render = function () {
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
-                          'If you have read the above document, please type "yes" into the box below and then click next'
+                          'If you have read the above document, please type "yes" into the box below and then click\n                        next'
                         ),
                       ]),
                       _vm._v(" "),
@@ -50258,19 +50512,19 @@ var render = function () {
                           {
                             name: "model",
                             rawName: "v-model",
-                            value: _vm.answerTwo,
-                            expression: "answerTwo",
+                            value: _vm.answer,
+                            expression: "answer",
                           },
                         ],
                         staticClass: "form-control",
                         attrs: { type: "text", placeholder: "Answer" },
-                        domProps: { value: _vm.answerTwo },
+                        domProps: { value: _vm.answer },
                         on: {
                           input: function ($event) {
                             if ($event.target.composing) {
                               return
                             }
-                            _vm.answerTwo = $event.target.value
+                            _vm.answer = $event.target.value
                           },
                         },
                       }),
@@ -50280,7 +50534,7 @@ var render = function () {
               _vm._v(" "),
               _c("nav", [
                 _c("ul", { staticClass: "pager" }, [
-                  _vm.answerTwo.toLowerCase() == "yes"
+                  _vm.answer.toLowerCase() == "yes"
                     ? _c(
                         "li",
                         {
@@ -50292,7 +50546,7 @@ var render = function () {
                             "a",
                             {
                               attrs: { href: "#" },
-                              on: { click: _vm.nextTwo },
+                              on: { click: _vm.nextPage },
                             },
                             [_vm._v("Next")]
                           ),
@@ -50304,31 +50558,31 @@ var render = function () {
             ])
           : _vm._e(),
         _vm._v(" "),
-        _vm.three == true
+        _vm.page == 3
           ? _c("div", [
               _c("h2", [_vm._v("What our partnership means:")]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "Our partnership means that you are able to provide loans and credit agreements through a panel of credit lenders and act under our credit license to sell them. Our firm is described as a credit broker and acts as a “go between” in order to facilitate the loan between the lender and the customer."
+                  "Our partnership means that you are able to provide loans and credit agreements through a panel of\n                    credit lenders and act under our credit license to sell them. Our firm is described as a credit\n                    broker and acts as a “go between” in order to facilitate the loan between the lender and the\n                    customer."
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "Our firm's values, and so your values, are that we act fairly, ethically and openly at all times and make sure the loans are promoted, advertised and sold appropriately and we act within the law. For example it is important that the customer understands who is providing the loan and your relationship and association with our company."
+                  "Our firm's values, and so your values, are that we act fairly, ethically and openly at all times\n                    and make sure the loans are promoted, advertised and sold appropriately and we act within the\n                    law. For example it is important that the customer understands who is providing the loan and\n                    your relationship and association with our company."
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "Every customer should fully understand their obligations and legal rights, and not be misled in any way or felt under pressure to take out a loan or make a decision to borrow quickly."
+                  "Every customer should fully understand their obligations and legal rights, and not be misled in\n                    any way or felt under pressure to take out a loan or make a decision to borrow quickly."
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "You must use customer data you collect on our behalf appropriately and only advertise and sell the loans in a way which is legal and complies with regulations."
+                  "You must use customer data you collect on our behalf appropriately and only advertise and sell\n                    the loans in a way which is legal and complies with regulations."
                 ),
               ]),
               _vm._v(" "),
@@ -50337,7 +50591,7 @@ var render = function () {
                 { staticClass: "alert alert-danger", attrs: { role: "alert" } },
                 [
                   _vm._v(
-                    'Have you read and fully understood this section? Click the "Accept Page" button and then fill out the short question. If you would need extra information please call ' +
+                    'Have you read and fully understood this section? Click\n                    the "Accept Page" button and then fill out the short question. If you would need extra\n                    information please call ' +
                       _vm._s(_vm.contactName) +
                       " on " +
                       _vm._s(_vm.companyNumber) +
@@ -50374,7 +50628,7 @@ var render = function () {
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
-                          'If you have read the above document, please type "yes" into the box below and then click next'
+                          'If you have read the above document, please type "yes" into the box below and then click\n                        next'
                         ),
                       ]),
                       _vm._v(" "),
@@ -50383,19 +50637,19 @@ var render = function () {
                           {
                             name: "model",
                             rawName: "v-model",
-                            value: _vm.answerThree,
-                            expression: "answerThree",
+                            value: _vm.answer,
+                            expression: "answer",
                           },
                         ],
                         staticClass: "form-control",
                         attrs: { type: "text", placeholder: "Answer" },
-                        domProps: { value: _vm.answerThree },
+                        domProps: { value: _vm.answer },
                         on: {
                           input: function ($event) {
                             if ($event.target.composing) {
                               return
                             }
-                            _vm.answerThree = $event.target.value
+                            _vm.answer = $event.target.value
                           },
                         },
                       }),
@@ -50416,7 +50670,7 @@ var render = function () {
                     ),
                   ]),
                   _vm._v(" "),
-                  _vm.answerThree.toLowerCase() == "yes"
+                  _vm.answer.toLowerCase() == "yes"
                     ? _c(
                         "li",
                         {
@@ -50428,7 +50682,7 @@ var render = function () {
                             "a",
                             {
                               attrs: { href: "#" },
-                              on: { click: _vm.nextThree },
+                              on: { click: _vm.nextPage },
                             },
                             [_vm._v("Next")]
                           ),
@@ -50440,7 +50694,7 @@ var render = function () {
             ])
           : _vm._e(),
         _vm._v(" "),
-        _vm.four == true
+        _vm.page == 4
           ? _c("div", [
               _c("h2", [
                 _vm._v("Consumer Credit Act & Consumer Credit Directive"),
@@ -50448,37 +50702,37 @@ var render = function () {
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "These laws and regulations cover how companies selling customer credit must act, the information they provide, how they are categorised, and the protection the law gives to consumers."
+                  "These laws and regulations cover how companies selling customer credit must act, the information\n                    they provide, how they are categorised, and the protection the law gives to consumers."
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "Customers must be provided with a verbal and written “adequate explanation” of the loan, which covers the general purpose of the loan, repayments, the customers legal right to withdraw from the agreement after they have signed it, and the consequences of not keeping up repayments."
+                  "Customers must be provided with a verbal and written “adequate explanation” of the loan, which\n                    covers the general purpose of the loan, repayments, the customers legal right to withdraw from\n                    the agreement after they have signed it, and the consequences of not keeping up repayments."
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "The “Your Loan Explained” section of a credit agreement document helps to provide an adequate explanation to the customer which is supplied by the lender."
+                  "The “Your Loan Explained” section of a credit agreement document helps to provide an adequate\n                    explanation to the customer which is supplied by the lender."
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "If speaking to a customer to support the adequate explanation it is essential that you provide the information in a clear, concise and easy to understand way, ensuring you follow the Treating Customers Fairly Procedure, which also includes Vulnerable Customers."
+                  "If speaking to a customer to support the adequate explanation it is essential that you provide\n                    the information in a clear, concise and easy to understand way, ensuring you follow the Treating\n                    Customers Fairly Procedure, which also includes Vulnerable Customers."
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "Customers have a legal right to withdraw, without giving reasons, from their loan agreement. They have a mandatory 14 days cooling off period to do this, starting from the day after the loan agreement is signed by the lender or when it has been confirmed in writing, if this is later."
+                  "Customers have a legal right to withdraw, without giving reasons, from their loan agreement. They\n                    have a mandatory 14 days cooling off period to do this, starting from the day after the loan\n                    agreement is signed by the lender or when it has been confirmed in writing, if this is\n                    later."
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "Unless otherwise set out in your contract, a customer withdrawing from the loan agreement does not cancel the purchase they have made from you. The customer will need to make separate arrangements, if any, to make payment or return the goods and services provided."
+                  "Unless otherwise set out in your contract, a customer withdrawing from the loan agreement does\n                    not cancel the purchase they have made from you. The customer will need to make separate\n                    arrangements, if any, to make payment or return the goods and services provided."
                 ),
               ]),
               _vm._v(" "),
@@ -50487,7 +50741,7 @@ var render = function () {
                 { staticClass: "alert alert-danger", attrs: { role: "alert" } },
                 [
                   _vm._v(
-                    'Have you read and fully understood this section? Click the "Accept Page" button and then fill out the short question. If you would need extra information please call ' +
+                    'Have you read and fully understood this section? Click\n                    the "Accept Page" button and then fill out the short question. If you would need extra\n                    information please call ' +
                       _vm._s(_vm.contactName) +
                       " on " +
                       _vm._s(_vm.companyNumber) +
@@ -50524,7 +50778,7 @@ var render = function () {
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
-                          'If you have read the above document, please type "yes" into the box below and then click next'
+                          'If you have read the above document, please type "yes" into the box below and then click\n                        next'
                         ),
                       ]),
                       _vm._v(" "),
@@ -50533,19 +50787,19 @@ var render = function () {
                           {
                             name: "model",
                             rawName: "v-model",
-                            value: _vm.answerFour,
-                            expression: "answerFour",
+                            value: _vm.answer,
+                            expression: "answer",
                           },
                         ],
                         staticClass: "form-control",
                         attrs: { type: "text", placeholder: "Answer" },
-                        domProps: { value: _vm.answerFour },
+                        domProps: { value: _vm.answer },
                         on: {
                           input: function ($event) {
                             if ($event.target.composing) {
                               return
                             }
-                            _vm.answerFour = $event.target.value
+                            _vm.answer = $event.target.value
                           },
                         },
                       }),
@@ -50563,7 +50817,7 @@ var render = function () {
                     ),
                   ]),
                   _vm._v(" "),
-                  _vm.answerFour.toLowerCase() == "yes"
+                  _vm.answer.toLowerCase() == "yes"
                     ? _c(
                         "li",
                         {
@@ -50575,7 +50829,7 @@ var render = function () {
                             "a",
                             {
                               attrs: { href: "#" },
-                              on: { click: _vm.nextFour },
+                              on: { click: _vm.nextPage },
                             },
                             [_vm._v("Next")]
                           ),
@@ -50587,7 +50841,7 @@ var render = function () {
             ])
           : _vm._e(),
         _vm._v(" "),
-        _vm.five == true
+        _vm.page == 5
           ? _c("div", [
               _c("h2", [
                 _vm._v(
@@ -50603,7 +50857,7 @@ var render = function () {
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "If a customer believes goods and services bought using a loan are faulty or unsatisfactory (sometimes referred to as “not of merchantable quality”), they can make a claim against the company that provided the loan."
+                  "If a customer believes goods and services bought using a loan are faulty or unsatisfactory\n                    (sometimes referred to as “not of merchantable quality”), they can make a claim against the\n                    company that provided the loan."
                 ),
               ]),
               _vm._v(" "),
@@ -50621,7 +50875,7 @@ var render = function () {
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "If a customer believes they have been disadvantaged financially because they were not given the full facts, or were given misleading facts about the loan they took out, they can make a claim against the company that provided the loan."
+                  "If a customer believes they have been disadvantaged financially because they were not given the\n                    full facts, or were given misleading facts about the loan they took out, they can make a claim\n                    against the company that provided the loan."
                 ),
               ]),
               _vm._v(" "),
@@ -50630,7 +50884,7 @@ var render = function () {
                 { staticClass: "alert alert-danger", attrs: { role: "alert" } },
                 [
                   _vm._v(
-                    'Have you read and fully understood this section? Click the "Accept Page" button and then fill out the short question. If you would need extra information please call ' +
+                    'Have you read and fully understood this section? Click\n                    the "Accept Page" button and then fill out the short question. If you would need extra\n                    information please call ' +
                       _vm._s(_vm.contactName) +
                       " on " +
                       _vm._s(_vm.companyNumber) +
@@ -50667,7 +50921,7 @@ var render = function () {
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
-                          'If you have read the above document, please type "yes" into the box below and then click next'
+                          'If you have read the above document, please type "yes" into the box below and then click\n                        next'
                         ),
                       ]),
                       _vm._v(" "),
@@ -50676,19 +50930,19 @@ var render = function () {
                           {
                             name: "model",
                             rawName: "v-model",
-                            value: _vm.answerFive,
-                            expression: "answerFive",
+                            value: _vm.answer,
+                            expression: "answer",
                           },
                         ],
                         staticClass: "form-control",
                         attrs: { type: "text", placeholder: "Answer" },
-                        domProps: { value: _vm.answerFive },
+                        domProps: { value: _vm.answer },
                         on: {
                           input: function ($event) {
                             if ($event.target.composing) {
                               return
                             }
-                            _vm.answerFive = $event.target.value
+                            _vm.answer = $event.target.value
                           },
                         },
                       }),
@@ -50706,7 +50960,7 @@ var render = function () {
                     ),
                   ]),
                   _vm._v(" "),
-                  _vm.answerFive.toLowerCase() == "yes"
+                  _vm.answer.toLowerCase() == "yes"
                     ? _c(
                         "li",
                         {
@@ -50718,7 +50972,7 @@ var render = function () {
                             "a",
                             {
                               attrs: { href: "#" },
-                              on: { click: _vm.nextFive },
+                              on: { click: _vm.nextPage },
                             },
                             [_vm._v("Next")]
                           ),
@@ -50730,7 +50984,7 @@ var render = function () {
             ])
           : _vm._e(),
         _vm._v(" "),
-        _vm.six == true
+        _vm.page == 6
           ? _c("div", [
               _c("h2", [
                 _vm._v("Treating Customers Fairly otherwise known as TCF"),
@@ -50738,13 +50992,13 @@ var render = function () {
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "We are committed to meeting customer expectations of performance, quality, price and delivery in all that we do. Treating Customers Fairly must now remain central to your conduct, and you must put the well-being of your customers at the heart of how you deal with them."
+                  "We are committed to meeting customer expectations of performance, quality, price and delivery in\n                    all that we do. Treating Customers Fairly must now remain central to your conduct, and you must\n                    put the well-being of your customers at the heart of how you deal with them."
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "TCF has six key customer outcomes that you need to demonstrate that you have delivered and we require you to achieve:"
+                  "TCF has six key customer outcomes that you need to demonstrate that you have delivered and we\n                    require you to achieve:"
                 ),
               ]),
               _vm._v(" "),
@@ -50771,7 +51025,7 @@ var render = function () {
                 { staticClass: "alert alert-danger", attrs: { role: "alert" } },
                 [
                   _vm._v(
-                    'Have you read and fully understood this section? Click the "Accept Page" button and then fill out the short question. If you would need extra information please call ' +
+                    'Have you read and fully understood this section? Click\n                    the "Accept Page" button and then fill out the short question. If you would need extra\n                    information please call ' +
                       _vm._s(_vm.contactName) +
                       " on " +
                       _vm._s(_vm.companyNumber) +
@@ -50808,7 +51062,7 @@ var render = function () {
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
-                          'If you have read the above document, please type "yes" into the box below and then click next'
+                          'If you have read the above document, please type "yes" into the box below and then click\n                        next'
                         ),
                       ]),
                       _vm._v(" "),
@@ -50817,19 +51071,19 @@ var render = function () {
                           {
                             name: "model",
                             rawName: "v-model",
-                            value: _vm.answerSix,
-                            expression: "answerSix",
+                            value: _vm.answer,
+                            expression: "answer",
                           },
                         ],
                         staticClass: "form-control",
                         attrs: { type: "text", placeholder: "Answer" },
-                        domProps: { value: _vm.answerSix },
+                        domProps: { value: _vm.answer },
                         on: {
                           input: function ($event) {
                             if ($event.target.composing) {
                               return
                             }
-                            _vm.answerSix = $event.target.value
+                            _vm.answer = $event.target.value
                           },
                         },
                       }),
@@ -50847,7 +51101,7 @@ var render = function () {
                     ),
                   ]),
                   _vm._v(" "),
-                  _vm.answerSix.toLowerCase() == "yes"
+                  _vm.answer.toLowerCase() == "yes"
                     ? _c(
                         "li",
                         {
@@ -50859,7 +51113,7 @@ var render = function () {
                             "a",
                             {
                               attrs: { href: "#" },
-                              on: { click: _vm.nextSix },
+                              on: { click: _vm.nextPage },
                             },
                             [_vm._v("Next")]
                           ),
@@ -50871,13 +51125,13 @@ var render = function () {
             ])
           : _vm._e(),
         _vm._v(" "),
-        _vm.seven == true
+        _vm.page == 7
           ? _c("div", [
               _c("h2", [_vm._v("Vulnerable Customers")]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "It is likely when selling finance that along the way you meet a vulnerable customer. We need to make sure that you can recognise the signs and signals at the beginning and then have a process to deal with the circumstances of the individuals."
+                  "It is likely when selling finance that along the way you meet a vulnerable customer. We need to\n                    make sure that you can recognise the signs and signals at the beginning and then have a process\n                    to deal with the circumstances of the individuals."
                 ),
               ]),
               _vm._v(" "),
@@ -50889,19 +51143,19 @@ var render = function () {
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "These may be people affected by Dementia. In the UK for example 800,000 people live with dementia and this is expected to double in the next 40 years."
+                  "These may be people affected by Dementia. In the UK for example 800,000 people live with dementia\n                    and this is expected to double in the next 40 years."
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "It could perhaps be somebody who has suffered a bereavement who isn’t really in the right state of mind, particularly when it comes down to making complex financial decisions."
+                  "It could perhaps be somebody who has suffered a bereavement who isn’t really in the right state\n                    of mind, particularly when it comes down to making complex financial decisions."
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "It could be even be people perhaps preparing parents to go into a care home and having to pay the fees associated with that."
+                  "It could be even be people perhaps preparing parents to go into a care home and having to pay the\n                    fees associated with that."
                 ),
               ]),
               _vm._v(" "),
@@ -50930,7 +51184,7 @@ var render = function () {
                 { staticClass: "alert alert-danger", attrs: { role: "alert" } },
                 [
                   _vm._v(
-                    'Have you read and fully understood this section? Click the "Accept Page" button and then fill out the short question. If you would need extra information please call ' +
+                    'Have you read and fully understood this section? Click\n                    the "Accept Page" button and then fill out the short question. If you would need extra\n                    information please call ' +
                       _vm._s(_vm.contactName) +
                       " on " +
                       _vm._s(_vm.companyNumber) +
@@ -50967,7 +51221,7 @@ var render = function () {
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
-                          'If you have read the above document, please type "yes" into the box below and then click next'
+                          'If you have read the above document, please type "yes" into the box below and then click\n                        next'
                         ),
                       ]),
                       _vm._v(" "),
@@ -50976,19 +51230,19 @@ var render = function () {
                           {
                             name: "model",
                             rawName: "v-model",
-                            value: _vm.answerSeven,
-                            expression: "answerSeven",
+                            value: _vm.answer,
+                            expression: "answer",
                           },
                         ],
                         staticClass: "form-control",
                         attrs: { type: "text", placeholder: "Answer" },
-                        domProps: { value: _vm.answerSeven },
+                        domProps: { value: _vm.answer },
                         on: {
                           input: function ($event) {
                             if ($event.target.composing) {
                               return
                             }
-                            _vm.answerSeven = $event.target.value
+                            _vm.answer = $event.target.value
                           },
                         },
                       }),
@@ -51009,7 +51263,7 @@ var render = function () {
                     ),
                   ]),
                   _vm._v(" "),
-                  _vm.answerSeven.toLowerCase() == "yes"
+                  _vm.answer.toLowerCase() == "yes"
                     ? _c(
                         "li",
                         {
@@ -51021,7 +51275,7 @@ var render = function () {
                             "a",
                             {
                               attrs: { href: "#" },
-                              on: { click: _vm.nextSeven },
+                              on: { click: _vm.nextPage },
                             },
                             [_vm._v("Next")]
                           ),
@@ -51033,7 +51287,7 @@ var render = function () {
             ])
           : _vm._e(),
         _vm._v(" "),
-        _vm.eight == true
+        _vm.page == 8
           ? _c("div", [
               _c("h2", [
                 _vm._v("What to do under any of these circumstances?"),
@@ -51041,7 +51295,7 @@ var render = function () {
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "There are actions that you should consider, and although not an exhaustive list, sometimes common sense needs to be applied. For example:-"
+                  "There are actions that you should consider, and although not an exhaustive list, sometimes common\n                    sense needs to be applied. For example:-"
                 ),
               ]),
               _vm._v(" "),
@@ -51063,13 +51317,13 @@ var render = function () {
               _vm._v(" "),
               _c("p", { staticStyle: { color: "red" } }, [
                 _vm._v(
-                  "Document the response of the customer and why you consider they may be vulnerable"
+                  "Document the response of the customer and why you consider they may be\n                    vulnerable"
                 ),
               ]),
               _vm._v(" "),
               _c("p", { staticStyle: { color: "red" } }, [
                 _vm._v(
-                  "Ask the customer to repeat back to you their understanding of the sale and product"
+                  "Ask the customer to repeat back to you their understanding of the sale and\n                    product"
                 ),
               ]),
               _vm._v(" "),
@@ -51083,13 +51337,13 @@ var render = function () {
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "Remember it could be your relative or a close friend and so treat the customer with respect and don’t always just go for the sale."
+                  "Remember it could be your relative or a close friend and so treat the customer with respect and\n                    don’t always just go for the sale."
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "By the way, you should not assume that a person who is vulnerable or who has a mental capacity issue cannot make an informed decision as this could be seen as discrimination."
+                  "By the way, you should not assume that a person who is vulnerable or who has a mental capacity\n                    issue cannot make an informed decision as this could be seen as discrimination."
                 ),
               ]),
               _vm._v(" "),
@@ -51098,7 +51352,7 @@ var render = function () {
                 { staticClass: "alert alert-danger", attrs: { role: "alert" } },
                 [
                   _vm._v(
-                    'Have you read and fully understood this section? Click the "Accept Page" button and then fill out the short question. If you would need extra information please call ' +
+                    'Have you read and fully understood this section? Click\n                    the "Accept Page" button and then fill out the short question. If you would need extra\n                    information please call ' +
                       _vm._s(_vm.contactName) +
                       " on " +
                       _vm._s(_vm.companyNumber) +
@@ -51135,7 +51389,7 @@ var render = function () {
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
-                          'If you have read the above document, please type "yes" into the box below and then click next'
+                          'If you have read the above document, please type "yes" into the box below and then click\n                        next'
                         ),
                       ]),
                       _vm._v(" "),
@@ -51144,19 +51398,19 @@ var render = function () {
                           {
                             name: "model",
                             rawName: "v-model",
-                            value: _vm.answerEight,
-                            expression: "answerEight",
+                            value: _vm.answer,
+                            expression: "answer",
                           },
                         ],
                         staticClass: "form-control",
                         attrs: { type: "text", placeholder: "Answer" },
-                        domProps: { value: _vm.answerEight },
+                        domProps: { value: _vm.answer },
                         on: {
                           input: function ($event) {
                             if ($event.target.composing) {
                               return
                             }
-                            _vm.answerEight = $event.target.value
+                            _vm.answer = $event.target.value
                           },
                         },
                       }),
@@ -51177,7 +51431,7 @@ var render = function () {
                     ),
                   ]),
                   _vm._v(" "),
-                  _vm.answerEight.toLowerCase() == "yes"
+                  _vm.answer.toLowerCase() == "yes"
                     ? _c(
                         "li",
                         {
@@ -51189,7 +51443,7 @@ var render = function () {
                             "a",
                             {
                               attrs: { href: "#" },
-                              on: { click: _vm.nextEight },
+                              on: { click: _vm.nextPage },
                             },
                             [_vm._v("Next")]
                           ),
@@ -51201,7 +51455,7 @@ var render = function () {
             ])
           : _vm._e(),
         _vm._v(" "),
-        _vm.nine == true
+        _vm.page == 9
           ? _c("div", [
               _c("h2", [_vm._v("Your Role and Responsibilities:")]),
               _vm._v(" "),
@@ -51209,7 +51463,7 @@ var render = function () {
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "As part of our obligations monitoring calls will be made to your customers in order to check that the sales process is being carried out correctly."
+                  "As part of our obligations monitoring calls will be made to your customers in order to check that\n                    the sales process is being carried out correctly."
                 ),
               ]),
               _vm._v(" "),
@@ -51218,7 +51472,7 @@ var render = function () {
                 { staticClass: "alert alert-danger", attrs: { role: "alert" } },
                 [
                   _vm._v(
-                    'Have you read and fully understood this section? Click the "Accept Page" button and then fill out the short question. If you would need extra information please call ' +
+                    'Have you read and fully understood this section? Click\n                    the "Accept Page" button and then fill out the short question. If you would need extra\n                    information please call ' +
                       _vm._s(_vm.contactName) +
                       " on " +
                       _vm._s(_vm.companyNumber) +
@@ -51255,7 +51509,7 @@ var render = function () {
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
-                          'If you have read the above document, please type "yes" into the box below and then click next'
+                          'If you have read the above document, please type "yes" into the box below and then click\n                        next'
                         ),
                       ]),
                       _vm._v(" "),
@@ -51264,19 +51518,19 @@ var render = function () {
                           {
                             name: "model",
                             rawName: "v-model",
-                            value: _vm.answerNine,
-                            expression: "answerNine",
+                            value: _vm.answer,
+                            expression: "answer",
                           },
                         ],
                         staticClass: "form-control",
                         attrs: { type: "text", placeholder: "Answer" },
-                        domProps: { value: _vm.answerNine },
+                        domProps: { value: _vm.answer },
                         on: {
                           input: function ($event) {
                             if ($event.target.composing) {
                               return
                             }
-                            _vm.answerNine = $event.target.value
+                            _vm.answer = $event.target.value
                           },
                         },
                       }),
@@ -51294,7 +51548,7 @@ var render = function () {
                     ),
                   ]),
                   _vm._v(" "),
-                  _vm.answerNine.toLowerCase() == "yes"
+                  _vm.answer.toLowerCase() == "yes"
                     ? _c(
                         "li",
                         {
@@ -51306,7 +51560,7 @@ var render = function () {
                             "a",
                             {
                               attrs: { href: "#" },
-                              on: { click: _vm.nextNine },
+                              on: { click: _vm.nextPage },
                             },
                             [_vm._v("Next")]
                           ),
@@ -51318,7 +51572,7 @@ var render = function () {
             ])
           : _vm._e(),
         _vm._v(" "),
-        _vm.ten == true
+        _vm.page == 10
           ? _c("div", [
               _c("h2", [
                 _vm._v(
@@ -51328,7 +51582,7 @@ var render = function () {
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "If your activities involve visiting a consumer in their home, then the FCA expects all of us to have tight controls and systems in place."
+                  "If your activities involve visiting a consumer in their home, then the FCA expects all of us to\n                    have tight controls and systems in place."
                 ),
               ]),
               _vm._v(" "),
@@ -51338,13 +51592,13 @@ var render = function () {
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "It is also important that you document this process, otherwise if it isn’t written down it is seen by the FCA as not happening, and so evidence will be required."
+                  "It is also important that you document this process, otherwise if it isn’t written down it is\n                    seen by the FCA as not happening, and so evidence will be required."
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "Staff visiting consumers in their home will also need to undergo a Disclosure and Barring Service (DBS) check to prevent unsuitable people from working with vulnerable groups."
+                  "Staff visiting consumers in their home will also need to undergo a Disclosure and Barring Service\n                    (DBS) check to prevent unsuitable people from working with vulnerable groups."
                 ),
               ]),
               _vm._v(" "),
@@ -51353,7 +51607,7 @@ var render = function () {
                 { staticClass: "alert alert-danger", attrs: { role: "alert" } },
                 [
                   _vm._v(
-                    'Have you read and fully understood this section? Click the "Accept Page" button and then fill out the short question. If you would need extra information please call ' +
+                    'Have you read and fully understood this section? Click\n                    the "Accept Page" button and then fill out the short question. If you would need extra\n                    information please call ' +
                       _vm._s(_vm.contactName) +
                       " on " +
                       _vm._s(_vm.companyNumber) +
@@ -51390,7 +51644,7 @@ var render = function () {
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
-                          'If you have read the above document, please type "yes" into the box below and then click next'
+                          'If you have read the above document, please type "yes" into the box below and then click\n                        next'
                         ),
                       ]),
                       _vm._v(" "),
@@ -51399,19 +51653,19 @@ var render = function () {
                           {
                             name: "model",
                             rawName: "v-model",
-                            value: _vm.answerTen,
-                            expression: "answerTen",
+                            value: _vm.answer,
+                            expression: "answer",
                           },
                         ],
                         staticClass: "form-control",
                         attrs: { type: "text", placeholder: "Answer" },
-                        domProps: { value: _vm.answerTen },
+                        domProps: { value: _vm.answer },
                         on: {
                           input: function ($event) {
                             if ($event.target.composing) {
                               return
                             }
-                            _vm.answerTen = $event.target.value
+                            _vm.answer = $event.target.value
                           },
                         },
                       }),
@@ -51429,7 +51683,7 @@ var render = function () {
                     ),
                   ]),
                   _vm._v(" "),
-                  _vm.answerTen.toLowerCase() == "yes"
+                  _vm.answer.toLowerCase() == "yes"
                     ? _c(
                         "li",
                         {
@@ -51441,7 +51695,7 @@ var render = function () {
                             "a",
                             {
                               attrs: { href: "#" },
-                              on: { click: _vm.nextTen },
+                              on: { click: _vm.nextPage },
                             },
                             [_vm._v("Next")]
                           ),
@@ -51453,7 +51707,7 @@ var render = function () {
             ])
           : _vm._e(),
         _vm._v(" "),
-        _vm.eleven == true
+        _vm.page == 11
           ? _c("div", [
               _c("h2", [
                 _vm._v("Getting your adverts and promotions approved"),
@@ -51461,13 +51715,13 @@ var render = function () {
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "If you are planning on undertaking any advertising or promotional activity relating to the finance then you must inform us in advance and obtain written approval to ensure that you fully comply with the Financial Promotions Rules and Regulations around the advertising of loans and credit. This includes your website and any internal as well as external materials."
+                  "If you are planning on undertaking any advertising or promotional activity relating to the\n                    finance then you must inform us in advance and obtain written approval to ensure that you fully\n                    comply with the Financial Promotions Rules and Regulations around the advertising of loans and\n                    credit. This includes your website and any internal as well as external materials."
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "We are here to help and assist you to ensure you remain compliant throughout and avoid any fines and prosecutions and remember:-"
+                  "We are here to help and assist you to ensure you remain compliant throughout and avoid any fines\n                    and prosecutions and remember:-"
                 ),
               ]),
               _vm._v(" "),
@@ -51478,7 +51732,7 @@ var render = function () {
                 { staticClass: "alert alert-danger", attrs: { role: "alert" } },
                 [
                   _vm._v(
-                    'Have you read and fully understood this section? Click the "Accept Page" button and then fill out the short question. If you would need extra information please call ' +
+                    'Have you read and fully understood this section? Click\n                    the "Accept Page" button and then fill out the short question. If you would need extra\n                    information please call ' +
                       _vm._s(_vm.contactName) +
                       " on " +
                       _vm._s(_vm.companyNumber) +
@@ -51515,7 +51769,7 @@ var render = function () {
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
-                          'If you have read the above document, please type "yes" into the box below and then click next'
+                          'If you have read the above document, please type "yes" into the box below and then click\n                        next'
                         ),
                       ]),
                       _vm._v(" "),
@@ -51524,19 +51778,19 @@ var render = function () {
                           {
                             name: "model",
                             rawName: "v-model",
-                            value: _vm.answerEleven,
-                            expression: "answerEleven",
+                            value: _vm.answer,
+                            expression: "answer",
                           },
                         ],
                         staticClass: "form-control",
                         attrs: { type: "text", placeholder: "Answer" },
-                        domProps: { value: _vm.answerEleven },
+                        domProps: { value: _vm.answer },
                         on: {
                           input: function ($event) {
                             if ($event.target.composing) {
                               return
                             }
-                            _vm.answerEleven = $event.target.value
+                            _vm.answer = $event.target.value
                           },
                         },
                       }),
@@ -51557,7 +51811,7 @@ var render = function () {
                     ),
                   ]),
                   _vm._v(" "),
-                  _vm.answerEleven.toLowerCase() == "yes"
+                  _vm.answer.toLowerCase() == "yes"
                     ? _c(
                         "li",
                         {
@@ -51569,7 +51823,7 @@ var render = function () {
                             "a",
                             {
                               attrs: { href: "#" },
-                              on: { click: _vm.nextEleven },
+                              on: { click: _vm.nextPage },
                             },
                             [_vm._v("Next")]
                           ),
@@ -51581,31 +51835,31 @@ var render = function () {
             ])
           : _vm._e(),
         _vm._v(" "),
-        _vm.twelve == true
+        _vm.page == 12
           ? _c("div", [
               _c("h2", [_vm._v("Data Protection")]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "The Data Protection Act defines UK law on the processing of personal data. Personal data is any data you collect that can identify a living individual."
+                  "The Data Protection Act defines UK law on the processing of personal data. Personal data is any\n                    data you collect that can identify a living individual."
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "If you help a customer apply for a loan you could be perceived as collecting and storing their personal data on the lender’s behalf as some of this data is used to make a decision about their creditworthiness and to administer their loan."
+                  "If you help a customer apply for a loan you could be perceived as collecting and storing their\n                    personal data on the lender’s behalf as some of this data is used to make a decision about their\n                    creditworthiness and to administer their loan."
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "You have a legal obligation to protect your customer’s personal information and we recommend that you register with ICO which stands for the Information Commissioners Office and deals with issues about data protection."
+                  "You have a legal obligation to protect your customer’s personal information and we recommend that\n                    you register with ICO which stands for the Information Commissioners Office and deals with\n                    issues about data protection."
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "Before commencing the sale of finance please ensure you are covered and protected and read and understand the Data Protection Act and the 8 principles."
+                  "Before commencing the sale of finance please ensure you are covered and protected and read and\n                    understand the Data Protection Act and the 8 principles."
                 ),
               ]),
               _vm._v(" "),
@@ -51614,7 +51868,7 @@ var render = function () {
                 { staticClass: "alert alert-danger", attrs: { role: "alert" } },
                 [
                   _vm._v(
-                    'Have you read and fully understood this section? Click the "Accept Page" button and then fill out the short question. If you would need extra information please call ' +
+                    'Have you read and fully understood this section? Click\n                    the "Accept Page" button and then fill out the short question. If you would need extra\n                    information please call ' +
                       _vm._s(_vm.contactName) +
                       " on " +
                       _vm._s(_vm.companyNumber) +
@@ -51651,7 +51905,7 @@ var render = function () {
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
-                          'If you have read the above document, please type "yes" into the box below and then click next'
+                          'If you have read the above document, please type "yes" into the box below and then click\n                        next'
                         ),
                       ]),
                       _vm._v(" "),
@@ -51660,19 +51914,19 @@ var render = function () {
                           {
                             name: "model",
                             rawName: "v-model",
-                            value: _vm.answerTwelve,
-                            expression: "answerTwelve",
+                            value: _vm.answer,
+                            expression: "answer",
                           },
                         ],
                         staticClass: "form-control",
                         attrs: { type: "text", placeholder: "Answer" },
-                        domProps: { value: _vm.answerTwelve },
+                        domProps: { value: _vm.answer },
                         on: {
                           input: function ($event) {
                             if ($event.target.composing) {
                               return
                             }
-                            _vm.answerTwelve = $event.target.value
+                            _vm.answer = $event.target.value
                           },
                         },
                       }),
@@ -51693,7 +51947,7 @@ var render = function () {
                     ),
                   ]),
                   _vm._v(" "),
-                  _vm.answerTwelve.toLowerCase() == "yes"
+                  _vm.answer.toLowerCase() == "yes"
                     ? _c(
                         "li",
                         {
@@ -51705,7 +51959,7 @@ var render = function () {
                             "a",
                             {
                               attrs: { href: "#" },
-                              on: { click: _vm.nextTwelve },
+                              on: { click: _vm.nextPage },
                             },
                             [_vm._v("Next")]
                           ),
@@ -51717,25 +51971,25 @@ var render = function () {
             ])
           : _vm._e(),
         _vm._v(" "),
-        _vm.thirteen == true
+        _vm.page == 13
           ? _c("div", [
               _c("h2", [_vm._v("Anti-Money Laundering or AML")]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "Money laundering means exchanging money or assets that were obtained criminally for money or other assets that are “clean”. The clean money or assets don’t have an obvious link with any criminal activity. Money laundering also includes money that’s used to fund terrorism, however it’s obtained."
+                  "Money laundering means exchanging money or assets that were obtained criminally for money or\n                    other assets that are “clean”. The clean money or assets don’t have an obvious link with any\n                    criminal activity. Money laundering also includes money that’s used to fund terrorism, however\n                    it’s obtained."
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "The Proceeds of Crime Act contains the principal money laundering legislation in the UK and deals with a wide range of matters relevant to UK law on proceeds of crime issues."
+                  "The Proceeds of Crime Act contains the principal money laundering legislation in the UK and deals\n                    with a wide range of matters relevant to UK law on proceeds of crime issues."
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "You must be aware of AML and put in place certain control measures in order to prevent you or your business being used for money laundering which includes nominating a person to inform us if you know or suspect that another person is laundering money or financing terrorism. You don’t need any proof or evidence just a reasonable suspicion."
+                  "You must be aware of AML and put in place certain control measures in order to prevent you or\n                    your business being used for money laundering which includes nominating a person to inform us if\n                    you know or suspect that another person is laundering money or financing terrorism. You don’t\n                    need any proof or evidence just a reasonable suspicion."
                 ),
               ]),
               _vm._v(" "),
@@ -51744,7 +51998,7 @@ var render = function () {
                 { staticClass: "alert alert-danger", attrs: { role: "alert" } },
                 [
                   _vm._v(
-                    'Have you read and fully understood this section? Click the "Accept Page" button and then fill out the short question. If you would need extra information please call ' +
+                    'Have you read and fully understood this section? Click\n                    the "Accept Page" button and then fill out the short question. If you would need extra\n                    information please call ' +
                       _vm._s(_vm.contactName) +
                       " on " +
                       _vm._s(_vm.companyNumber) +
@@ -51781,7 +52035,7 @@ var render = function () {
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
-                          'If you have read the above document, please type "yes" into the box below and then click next'
+                          'If you have read the above document, please type "yes" into the box below and then click\n                        next'
                         ),
                       ]),
                       _vm._v(" "),
@@ -51790,19 +52044,19 @@ var render = function () {
                           {
                             name: "model",
                             rawName: "v-model",
-                            value: _vm.answerThirteen,
-                            expression: "answerThirteen",
+                            value: _vm.answer,
+                            expression: "answer",
                           },
                         ],
                         staticClass: "form-control",
                         attrs: { type: "text", placeholder: "Answer" },
-                        domProps: { value: _vm.answerThirteen },
+                        domProps: { value: _vm.answer },
                         on: {
                           input: function ($event) {
                             if ($event.target.composing) {
                               return
                             }
-                            _vm.answerThirteen = $event.target.value
+                            _vm.answer = $event.target.value
                           },
                         },
                       }),
@@ -51823,7 +52077,7 @@ var render = function () {
                     ),
                   ]),
                   _vm._v(" "),
-                  _vm.answerThirteen.toLowerCase() == "yes"
+                  _vm.answer.toLowerCase() == "yes"
                     ? _c(
                         "li",
                         {
@@ -51835,7 +52089,7 @@ var render = function () {
                             "a",
                             {
                               attrs: { href: "#" },
-                              on: { click: _vm.nextThirteen },
+                              on: { click: _vm.nextPage },
                             },
                             [_vm._v("Next")]
                           ),
@@ -51847,37 +52101,37 @@ var render = function () {
             ])
           : _vm._e(),
         _vm._v(" "),
-        _vm.fourteen == true
+        _vm.page == 14
           ? _c("div", [
               _c("h2", [_vm._v("Complaints")]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "A complaint is an indication of dissatisfaction and can be made by a customer in writing or verbally."
+                  "A complaint is an indication of dissatisfaction and can be made by a customer in writing or\n                    verbally."
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "There are strict regulatory rules and requirements around how complaints about financial products and services are handled and we publish our complaints handling procedure on our website and have to report to the FCA any complaints that we receive."
+                  "There are strict regulatory rules and requirements around how complaints about financial products\n                    and services are handled and we publish our complaints handling procedure on our website and\n                    have to report to the FCA any complaints that we receive."
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "If you receive a complaint regarding finance then you must pass it to us within the same business day that you receive it and complete any actions that we give you to solve a complaint in the timescale agreed at the time."
+                  "If you receive a complaint regarding finance then you must pass it to us within the same business\n                    day that you receive it and complete any actions that we give you to solve a complaint in the\n                    timescale agreed at the time."
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "We must make reasonable efforts to settle the complaint or dispute about the product or service."
+                  "We must make reasonable efforts to settle the complaint or dispute about the product or\n                    service."
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "The Financial Ombudsman Service can become involved to settle a complaint if a customer is not satisfied with the response from a financial provider about their products and services, but we should be given the opportunity to settle it before they become involved."
+                  "The Financial Ombudsman Service can become involved to settle a complaint if a customer is not\n                    satisfied with the response from a financial provider about their products and services, but we\n                    should be given the opportunity to settle it before they become involved."
                 ),
               ]),
               _vm._v(" "),
@@ -51886,7 +52140,7 @@ var render = function () {
                 { staticClass: "alert alert-danger", attrs: { role: "alert" } },
                 [
                   _vm._v(
-                    'Have you read and fully understood this section? Click the "Accept Page" button and then fill out the short question. If you would need extra information please contact ' +
+                    'Have you read and fully understood this section? Click\n                    the "Accept Page" button and then fill out the short question. If you would need extra\n                    information please contact ' +
                       _vm._s(_vm.contactName) +
                       " on " +
                       _vm._s(_vm.companyNumber) +
@@ -51923,7 +52177,7 @@ var render = function () {
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
-                          'If you have read the above document, please type "yes" into the box below and then click next'
+                          'If you have read the above document, please type "yes" into the box below and then click\n                        next'
                         ),
                       ]),
                       _vm._v(" "),
@@ -51932,19 +52186,19 @@ var render = function () {
                           {
                             name: "model",
                             rawName: "v-model",
-                            value: _vm.answerFourteen,
-                            expression: "answerFourteen",
+                            value: _vm.answer,
+                            expression: "answer",
                           },
                         ],
                         staticClass: "form-control",
                         attrs: { type: "text", placeholder: "Answer" },
-                        domProps: { value: _vm.answerFourteen },
+                        domProps: { value: _vm.answer },
                         on: {
                           input: function ($event) {
                             if ($event.target.composing) {
                               return
                             }
-                            _vm.answerFourteen = $event.target.value
+                            _vm.answer = $event.target.value
                           },
                         },
                       }),
@@ -51965,7 +52219,7 @@ var render = function () {
                     ),
                   ]),
                   _vm._v(" "),
-                  _vm.answerFourteen.toLowerCase() == "yes"
+                  _vm.answer.toLowerCase() == "yes"
                     ? _c(
                         "li",
                         {
@@ -51977,7 +52231,7 @@ var render = function () {
                             "a",
                             {
                               attrs: { href: "#" },
-                              on: { click: _vm.nextFourteen },
+                              on: { click: _vm.nextPage },
                             },
                             [_vm._v("Next")]
                           ),
@@ -51989,25 +52243,25 @@ var render = function () {
             ])
           : _vm._e(),
         _vm._v(" "),
-        _vm.fifteen == true
+        _vm.page == 15
           ? _c("div", [
               _c("h2", [_vm._v("Summary")]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "Many thanks for taking the time to read this training website, which we hope has helped to educate you on selling finance products and given you a background to the financial industry as a whole."
+                  "Many thanks for taking the time to read this training website, which we hope has helped to\n                    educate you on selling finance products and given you a background to the financial industry as\n                    a whole."
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "With access to this finance facility you could be winning more quotes and expanding your sales."
+                  "With access to this finance facility you could be winning more quotes and expanding your\n                    sales."
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "Remember we are also on hand to provide you with further help, guidance and advice to meet requirements."
+                  "Remember we are also on hand to provide you with further help, guidance and advice to meet\n                    requirements."
                 ),
               ]),
               _vm._v(" "),
@@ -52016,7 +52270,7 @@ var render = function () {
                   _vm._v(
                     "If you have any other questions or need any other support. Please call " +
                       _vm._s(_vm.contactName) +
-                      " on " +
+                      "\n                    on " +
                       _vm._s(_vm.companyNumber) +
                       " or email "
                   ),
@@ -52170,6 +52424,39 @@ var render = function () {
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "form-group col-xs-12" }, [
+                  _c("label", { attrs: { for: "position" } }, [
+                    _vm._v("Position in Company"),
+                  ]),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.position,
+                        expression: "position",
+                      },
+                    ],
+                    staticClass: "form-control",
+                    attrs: {
+                      type: "text",
+                      name: "position",
+                      placeholder: "Position",
+                      value: "",
+                    },
+                    domProps: { value: _vm.position },
+                    on: {
+                      input: function ($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.position = $event.target.value
+                      },
+                    },
+                  }),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group col-xs-12" }, [
                   _c("label", { attrs: { for: "address" } }, [
                     _vm._v("Address"),
                   ]),
@@ -52184,7 +52471,6 @@ var render = function () {
                       },
                     ],
                     staticClass: "form-control",
-                    staticStyle: { height: "114px" },
                     attrs: {
                       type: "text",
                       name: "address",
@@ -52212,7 +52498,7 @@ var render = function () {
             ])
           : _vm._e(),
         _vm._v(" "),
-        _vm.last == true
+        _vm.page == 16
           ? _c("div", [
               _c("div", { staticClass: "alert alert-success" }, [
                 _vm._v(
@@ -52261,7 +52547,7 @@ var staticRenderFns = [
       _vm._v("- CULTURE"),
       _c("br"),
       _vm._v(
-        "Consumers must be confident that they are dealing with a firm or individual where the fair treatment of customers is central to the corporate culture."
+        "Consumers must be confident that they\n                    are dealing with a firm or individual where the fair treatment of customers is central to the\n                    corporate culture."
       ),
     ])
   },
@@ -52274,7 +52560,7 @@ var staticRenderFns = [
       _vm._v("- MARKETING"),
       _c("br"),
       _vm._v(
-        "Products and services marketed and sold must be designed to meet the needs of identified consumer groups and targeted accordingly."
+        "Products and services marketed and\n                    sold must be designed to meet the needs of identified consumer groups and targeted accordingly.\n                "
       ),
     ])
   },
@@ -52287,7 +52573,7 @@ var staticRenderFns = [
       _vm._v("- INFORMATION"),
       _c("br"),
       _vm._v(
-        "Consumers must be provided with clear information and kept appropriately informed, before, during and after the point of sale."
+        "Consumers must be provided with\n                    clear information and kept appropriately informed, before, during and after the point of sale.\n                "
       ),
     ])
   },
@@ -52300,7 +52586,7 @@ var staticRenderFns = [
       _vm._v("- ADVICE"),
       _c("br"),
       _vm._v(
-        "Where consumers receive advice, the advice must be suitable and takes account of their circumstances."
+        "Where consumers receive advice, the\n                    advice must be suitable and takes account of their circumstances."
       ),
     ])
   },
@@ -52313,7 +52599,7 @@ var staticRenderFns = [
       _vm._v("- PRODUCT"),
       _c("br"),
       _vm._v(
-        "Consumers must be provided with products that perform as they have been led to expect, and the associated service is of an acceptable standard."
+        "Consumers must be provided with\n                    products that perform as they have been led to expect, and the associated service is of an\n                    acceptable standard."
       ),
     ])
   },
@@ -52326,7 +52612,7 @@ var staticRenderFns = [
       _vm._v("- BARRIERS"),
       _c("br"),
       _vm._v(
-        "Consumers must not face unreasonable post-sale barriers to change products, switch providers, submit claims or make a complaint."
+        "Consumers must not face unreasonable\n                    post-sale barriers to change products, switch providers, submit claims or make a complaint."
       ),
     ])
   },
@@ -52348,10 +52634,12 @@ var staticRenderFns = [
         _vm._v("\n                        Recently Bereaved"),
         _c("br"),
         _c("br"),
-        _vm._v("\n                        Bi-Polar\t"),
+        _vm._v("\n                        Bi-Polar "),
         _c("br"),
         _c("br"),
-        _vm._v("\n                        Post-Traumatic Stress Disorder"),
+        _vm._v(
+          "\n                        Post-Traumatic Stress Disorder\n                    "
+        ),
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "col-xs-6", staticStyle: { color: "red" } }, [
@@ -52419,7 +52707,7 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("li", [
         _vm._v(
-          "Identify the person and the firm at the outset and make clear the purpose of the communication"
+          "Identify the person and the firm at the outset and make clear the purpose of the\n                        communication\n                    "
         ),
       ]),
       _vm._v(" "),
@@ -52477,13 +52765,13 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("li", [
         _vm._v(
-          "For the consent to be given, the information to the customer must have been given in a clear, concise and fair way by the sales person;"
+          "For the consent to be given, the information to the customer must have been given in a\n                        clear, concise and fair way by the sales person;\n                    "
         ),
       ]),
       _vm._v(" "),
       _c("li", [
         _vm._v(
-          "You need to identify the person and the firm at the outset and make clear the purpose of the communication;"
+          "You need to identify the person and the firm at the outset and make clear the purpose of the\n                        communication;\n                    "
         ),
       ]),
       _vm._v(" "),
@@ -52493,7 +52781,7 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("li", [
         _vm._v(
-          "State any relationship which is relevant to the services offered. In other words make it clear if you are acting as an associate."
+          "State any relationship which is relevant to the services offered. In other words make it\n                        clear if you are acting as an associate.\n                    "
         ),
       ]),
     ])
@@ -52505,7 +52793,7 @@ var staticRenderFns = [
     return _c("ul", { staticStyle: { color: "red" } }, [
       _c("li", [
         _vm._v(
-          "All adverts must be clear, fair and not misleading and be in plain and easy to understand language;"
+          "All adverts must be clear, fair and not misleading and be in plain and easy to understand\n                        language;\n                    "
         ),
       ]),
       _vm._v(" "),
@@ -52517,7 +52805,7 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("li", [
         _vm._v(
-          "Advertising and marketing communications must be legal, decent, honest, truthful, responsible, and must not mislead or offend."
+          "Advertising and marketing communications must be legal, decent, honest, truthful,\n                        responsible, and must not mislead or offend.\n                    "
         ),
       ]),
     ])
@@ -54804,6 +55092,39 @@ var render = function () {
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "form-group col-xs-12" }, [
+                  _c("label", { attrs: { for: "position" } }, [
+                    _vm._v("Position in Company"),
+                  ]),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.position,
+                        expression: "position",
+                      },
+                    ],
+                    staticClass: "form-control",
+                    attrs: {
+                      type: "text",
+                      name: "position",
+                      placeholder: "Position",
+                      value: "",
+                    },
+                    domProps: { value: _vm.position },
+                    on: {
+                      input: function ($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.position = $event.target.value
+                      },
+                    },
+                  }),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group col-xs-12" }, [
                   _c("label", { attrs: { for: "address" } }, [
                     _vm._v("Address"),
                   ]),
@@ -54818,7 +55139,6 @@ var render = function () {
                       },
                     ],
                     staticClass: "form-control",
-                    staticStyle: { height: "114px" },
                     attrs: {
                       type: "text",
                       name: "address",
@@ -55494,7 +55814,7 @@ var render = function () {
                   "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitTwo },
                   },
                   [_vm._v("Accept Page")]
@@ -55510,7 +55830,9 @@ var render = function () {
                       attrs: { id: "questionTwo" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
@@ -55669,7 +55991,7 @@ var render = function () {
                   "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitThree },
                   },
                   [_vm._v("Accept Page")]
@@ -55685,7 +56007,9 @@ var render = function () {
                       attrs: { id: "questionThree" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
@@ -55823,7 +56147,7 @@ var render = function () {
                   "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitFour },
                   },
                   [_vm._v("Accept Page")]
@@ -55839,7 +56163,9 @@ var render = function () {
                       attrs: { id: "questionFour" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
@@ -56075,6 +56401,39 @@ var render = function () {
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "form-group col-xs-12" }, [
+                  _c("label", { attrs: { for: "position" } }, [
+                    _vm._v("Position in Company"),
+                  ]),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.position,
+                        expression: "position",
+                      },
+                    ],
+                    staticClass: "form-control",
+                    attrs: {
+                      type: "text",
+                      name: "position",
+                      placeholder: "Position",
+                      value: "",
+                    },
+                    domProps: { value: _vm.position },
+                    on: {
+                      input: function ($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.position = $event.target.value
+                      },
+                    },
+                  }),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group col-xs-12" }, [
                   _c("label", { attrs: { for: "address" } }, [
                     _vm._v("Address"),
                   ]),
@@ -56089,7 +56448,6 @@ var render = function () {
                       },
                     ],
                     staticClass: "form-control",
-                    staticStyle: { height: "114px" },
                     attrs: {
                       type: "text",
                       name: "address",
@@ -56949,7 +57307,7 @@ var render = function () {
                           "button",
                           {
                             staticClass: "btn btn-success col-xs-3",
-                            attrs: { type: "button" },
+                            attrs: { type: "button", href: "#" },
                             on: { click: _vm.nextFour },
                           },
                           [_vm._v("Next")]
@@ -57076,7 +57434,7 @@ var render = function () {
                           "button",
                           {
                             staticClass: "btn btn-success col-xs-3",
-                            attrs: { type: "button" },
+                            attrs: { type: "button", href: "#" },
                             on: { click: _vm.nextFive },
                           },
                           [_vm._v("Next")]
@@ -57201,7 +57559,7 @@ var render = function () {
                           "button",
                           {
                             staticClass: "btn btn-success col-xs-3",
-                            attrs: { type: "button" },
+                            attrs: { type: "button", href: "#" },
                             on: { click: _vm.nextSix },
                           },
                           [_vm._v("Next")]
@@ -57318,7 +57676,7 @@ var render = function () {
                           "button",
                           {
                             staticClass: "btn btn-success col-xs-3",
-                            attrs: { type: "button" },
+                            attrs: { type: "button", href: "#" },
                             on: { click: _vm.nextSeven },
                           },
                           [_vm._v("Next")]
@@ -57447,7 +57805,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextEight },
                             },
                             [_vm._v("Next")]
@@ -57575,7 +57933,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextNine },
                             },
                             [_vm._v("Next")]
@@ -57695,7 +58053,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextTen },
                             },
                             [_vm._v("Next")]
@@ -57815,7 +58173,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextEleven },
                             },
                             [_vm._v("Next")]
@@ -57935,7 +58293,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextTwelve },
                             },
                             [_vm._v("Next")]
@@ -58091,7 +58449,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextThirteen },
                             },
                             [_vm._v("Next")]
@@ -58265,7 +58623,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextFourteen },
                             },
                             [_vm._v("Next")]
@@ -58405,7 +58763,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextFifteen },
                             },
                             [_vm._v("Next")]
@@ -58559,7 +58917,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextSixteen },
                             },
                             [_vm._v("Next")]
@@ -58723,7 +59081,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextSeventeen },
                             },
                             [_vm._v("Next")]
@@ -58897,7 +59255,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextEighteen },
                             },
                             [_vm._v("Next")]
@@ -59045,7 +59403,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextNineteen },
                             },
                             [_vm._v("Next")]
@@ -59181,7 +59539,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextTwenty },
                             },
                             [_vm._v("Next")]
@@ -59341,7 +59699,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextTwentyone },
                             },
                             [_vm._v("Next")]
@@ -59471,7 +59829,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextTwentytwo },
                             },
                             [_vm._v("Next")]
@@ -59654,6 +60012,39 @@ var render = function () {
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "form-group col-xs-12" }, [
+                    _c("label", { attrs: { for: "position" } }, [
+                      _vm._v("Position in Company"),
+                    ]),
+                    _vm._v(" "),
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.position,
+                          expression: "position",
+                        },
+                      ],
+                      staticClass: "form-control",
+                      attrs: {
+                        type: "text",
+                        name: "position",
+                        placeholder: "Position",
+                        value: "",
+                      },
+                      domProps: { value: _vm.position },
+                      on: {
+                        input: function ($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.position = $event.target.value
+                        },
+                      },
+                    }),
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "form-group col-xs-12" }, [
                     _c("label", { attrs: { for: "address" } }, [
                       _vm._v("Address"),
                     ]),
@@ -59668,7 +60059,6 @@ var render = function () {
                         },
                       ],
                       staticClass: "form-control",
-                      staticStyle: { height: "114px" },
                       attrs: {
                         type: "text",
                         name: "address",
@@ -61118,7 +61508,7 @@ var render = function () {
                           "button",
                           {
                             staticClass: "btn btn-success col-xs-3",
-                            attrs: { type: "button" },
+                            attrs: { type: "button", href: "#" },
                             on: { click: _vm.nextFour },
                           },
                           [_vm._v("Next")]
@@ -61231,7 +61621,7 @@ var render = function () {
                           "button",
                           {
                             staticClass: "btn btn-success col-xs-3",
-                            attrs: { type: "button" },
+                            attrs: { type: "button", href: "#" },
                             on: { click: _vm.nextFive },
                           },
                           [_vm._v("Next")]
@@ -61352,7 +61742,7 @@ var render = function () {
                           "button",
                           {
                             staticClass: "btn btn-success col-xs-3",
-                            attrs: { type: "button" },
+                            attrs: { type: "button", href: "#" },
                             on: { click: _vm.nextSix },
                           },
                           [_vm._v("Next")]
@@ -61469,7 +61859,7 @@ var render = function () {
                           "button",
                           {
                             staticClass: "btn btn-success col-xs-3",
-                            attrs: { type: "button" },
+                            attrs: { type: "button", href: "#" },
                             on: { click: _vm.nextSeven },
                           },
                           [_vm._v("Next")]
@@ -61612,7 +62002,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextEight },
                             },
                             [_vm._v("Next")]
@@ -61742,7 +62132,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextNine },
                             },
                             [_vm._v("Next")]
@@ -61878,7 +62268,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextTen },
                             },
                             [_vm._v("Next")]
@@ -62014,7 +62404,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextEleven },
                             },
                             [_vm._v("Next")]
@@ -62156,7 +62546,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextTwelve },
                             },
                             [_vm._v("Next")]
@@ -62320,7 +62710,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextThirteen },
                             },
                             [_vm._v("Next")]
@@ -62440,7 +62830,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextFourteen },
                             },
                             [_vm._v("Next")]
@@ -62566,7 +62956,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextFifteen },
                             },
                             [_vm._v("Next")]
@@ -62712,7 +63102,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextSixteen },
                             },
                             [_vm._v("Next")]
@@ -62866,7 +63256,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextSeventeen },
                             },
                             [_vm._v("Next")]
@@ -62996,7 +63386,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextEighteen },
                             },
                             [_vm._v("Next")]
@@ -63120,7 +63510,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextNineteen },
                             },
                             [_vm._v("Next")]
@@ -63246,7 +63636,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextTwenty },
                             },
                             [_vm._v("Next")]
@@ -63386,7 +63776,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextTwentyone },
                             },
                             [_vm._v("Next")]
@@ -63516,7 +63906,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextTwentytwo },
                             },
                             [_vm._v("Next")]
@@ -63658,7 +64048,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextTwentythree },
                             },
                             [_vm._v("Next")]
@@ -63792,7 +64182,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextTwentyfour },
                             },
                             [_vm._v("Next")]
@@ -65696,7 +66086,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextThirtyeight },
                             },
                             [_vm._v("Next")]
@@ -65836,7 +66226,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextThirtynine },
                             },
                             [_vm._v("Next")]
@@ -65962,7 +66352,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextFourty },
                             },
                             [_vm._v("Next")]
@@ -66086,7 +66476,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextFourtyone },
                             },
                             [_vm._v("Next")]
@@ -66224,7 +66614,7 @@ var render = function () {
                             "button",
                             {
                               staticClass: "btn btn-success col-xs-3",
-                              attrs: { type: "button" },
+                              attrs: { type: "button", href: "#" },
                               on: { click: _vm.nextFourtytwo },
                             },
                             [_vm._v("Next")]
@@ -66414,6 +66804,40 @@ var render = function () {
                       ]),
                       _vm._v(" "),
                       _c("div", { staticClass: "form-group col-xs-12" }, [
+                        _c("label", { attrs: { for: "position" } }, [
+                          _vm._v("Position in Company"),
+                        ]),
+                        _vm._v(" "),
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.position,
+                              expression: "position",
+                            },
+                          ],
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "text",
+                            name: "position",
+                            id: "position",
+                            placeholder: "Position",
+                            value: "",
+                          },
+                          domProps: { value: _vm.position },
+                          on: {
+                            input: function ($event) {
+                              if ($event.target.composing) {
+                                return
+                              }
+                              _vm.position = $event.target.value
+                            },
+                          },
+                        }),
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "form-group col-xs-12" }, [
                         _c("label", { attrs: { for: "address" } }, [
                           _vm._v("Address"),
                         ]),
@@ -66428,7 +66852,6 @@ var render = function () {
                             },
                           ],
                           staticClass: "form-control",
-                          staticStyle: { height: "114px" },
                           attrs: {
                             type: "text",
                             name: "address",
@@ -67403,6 +67826,39 @@ var render = function () {
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "form-group col-xs-12" }, [
+                  _c("label", { attrs: { for: "position" } }, [
+                    _vm._v("Position in Company"),
+                  ]),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.position,
+                        expression: "position",
+                      },
+                    ],
+                    staticClass: "form-control",
+                    attrs: {
+                      type: "text",
+                      name: "position",
+                      placeholder: "Position",
+                      value: "",
+                    },
+                    domProps: { value: _vm.position },
+                    on: {
+                      input: function ($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.position = $event.target.value
+                      },
+                    },
+                  }),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group col-xs-12" }, [
                   _c("label", { attrs: { for: "address" } }, [
                     _vm._v("Address"),
                   ]),
@@ -67417,7 +67873,6 @@ var render = function () {
                       },
                     ],
                     staticClass: "form-control",
-                    staticStyle: { height: "114px" },
                     attrs: {
                       type: "text",
                       name: "address",
@@ -67555,10 +68010,10 @@ var render = function () {
               _vm._v(" "),
               _c("div", { staticClass: "form-group" }, [
                 _c(
-                  "button",
+                  "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitTwo },
                   },
                   [_vm._v("Accept Page")]
@@ -67574,7 +68029,9 @@ var render = function () {
                       attrs: { id: "questionTwo" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
@@ -67711,7 +68168,7 @@ var render = function () {
                   "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitThree },
                   },
                   [_vm._v("Accept Page")]
@@ -67727,7 +68184,9 @@ var render = function () {
                       attrs: { id: "questionThree" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
@@ -67836,7 +68295,7 @@ var render = function () {
                   "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitFour },
                   },
                   [_vm._v("Accept Page")]
@@ -67852,7 +68311,9 @@ var render = function () {
                       attrs: { id: "questionFour" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
@@ -68083,6 +68544,39 @@ var render = function () {
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "form-group col-xs-12" }, [
+                    _c("label", { attrs: { for: "position" } }, [
+                      _vm._v("Position in Company"),
+                    ]),
+                    _vm._v(" "),
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.position,
+                          expression: "position",
+                        },
+                      ],
+                      staticClass: "form-control",
+                      attrs: {
+                        type: "text",
+                        name: "position",
+                        placeholder: "Position",
+                        value: "",
+                      },
+                      domProps: { value: _vm.position },
+                      on: {
+                        input: function ($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.position = $event.target.value
+                        },
+                      },
+                    }),
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "form-group col-xs-12" }, [
                     _c("label", { attrs: { for: "address" } }, [
                       _vm._v("Address"),
                     ]),
@@ -68097,7 +68591,6 @@ var render = function () {
                         },
                       ],
                       staticClass: "form-control",
-                      staticStyle: { height: "114px" },
                       attrs: {
                         type: "text",
                         name: "address",
@@ -69044,7 +69537,7 @@ var render = function () {
                   "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitTwo },
                   },
                   [_vm._v("Accept Page")]
@@ -69060,7 +69553,9 @@ var render = function () {
                       attrs: { id: "questionTwo" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
@@ -69147,7 +69642,7 @@ var render = function () {
                   "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitThree },
                   },
                   [_vm._v("Accept Page")]
@@ -69163,7 +69658,9 @@ var render = function () {
                       attrs: { id: "questionThree" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
@@ -69279,7 +69776,7 @@ var render = function () {
                   "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitFour },
                   },
                   [_vm._v("Accept Page")]
@@ -69295,7 +69792,9 @@ var render = function () {
                       attrs: { id: "questionFour" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
@@ -69432,7 +69931,7 @@ var render = function () {
                   "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitFive },
                   },
                   [_vm._v("Accept Page")]
@@ -69448,7 +69947,9 @@ var render = function () {
                       attrs: { id: "questionFive" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
@@ -69571,7 +70072,7 @@ var render = function () {
                   "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitSix },
                   },
                   [_vm._v("Accept Page")]
@@ -69587,7 +70088,9 @@ var render = function () {
                       attrs: { id: "questionSix" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
@@ -69696,7 +70199,7 @@ var render = function () {
                   "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitSeven },
                   },
                   [_vm._v("Accept Page")]
@@ -69712,7 +70215,9 @@ var render = function () {
                       attrs: { id: "questionSeven" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
@@ -69945,6 +70450,40 @@ var render = function () {
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "form-group col-xs-12" }, [
+                  _c("label", { attrs: { for: "position" } }, [
+                    _vm._v("Position in Company"),
+                  ]),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.position,
+                        expression: "position",
+                      },
+                    ],
+                    staticClass: "form-control",
+                    attrs: {
+                      type: "text",
+                      name: "position",
+                      id: "position",
+                      placeholder: "Position",
+                      value: "",
+                    },
+                    domProps: { value: _vm.position },
+                    on: {
+                      input: function ($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.position = $event.target.value
+                      },
+                    },
+                  }),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group col-xs-12" }, [
                   _c("label", { attrs: { for: "address" } }, [
                     _vm._v("Address"),
                   ]),
@@ -69959,7 +70498,6 @@ var render = function () {
                       },
                     ],
                     staticClass: "form-control",
-                    staticStyle: { height: "114px" },
                     attrs: {
                       type: "text",
                       name: "address",
@@ -70276,6 +70814,39 @@ var render = function () {
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "form-group col-xs-12" }, [
+                  _c("label", { attrs: { for: "position" } }, [
+                    _vm._v("Position in Company"),
+                  ]),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.position,
+                        expression: "position",
+                      },
+                    ],
+                    staticClass: "form-control",
+                    attrs: {
+                      type: "text",
+                      name: "position",
+                      placeholder: "Position",
+                      value: "",
+                    },
+                    domProps: { value: _vm.position },
+                    on: {
+                      input: function ($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.position = $event.target.value
+                      },
+                    },
+                  }),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group col-xs-12" }, [
                   _c("label", { attrs: { for: "address" } }, [
                     _vm._v("Address"),
                   ]),
@@ -70290,7 +70861,6 @@ var render = function () {
                       },
                     ],
                     staticClass: "form-control",
-                    staticStyle: { height: "114px" },
                     attrs: {
                       type: "text",
                       name: "address",
@@ -72074,6 +72644,39 @@ var render = function () {
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "form-group col-xs-12" }, [
+                  _c("label", { attrs: { for: "position" } }, [
+                    _vm._v("Position in company"),
+                  ]),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.position,
+                        expression: "position",
+                      },
+                    ],
+                    staticClass: "form-control",
+                    attrs: {
+                      type: "text",
+                      name: "position",
+                      placeholder: "Position",
+                      value: "",
+                    },
+                    domProps: { value: _vm.position },
+                    on: {
+                      input: function ($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.position = $event.target.value
+                      },
+                    },
+                  }),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group col-xs-12" }, [
                   _c("label", { attrs: { for: "address" } }, [
                     _vm._v("Address"),
                   ]),
@@ -72088,7 +72691,6 @@ var render = function () {
                       },
                     ],
                     staticClass: "form-control",
-                    staticStyle: { height: "114px" },
                     attrs: {
                       type: "text",
                       name: "address",
@@ -72235,7 +72837,7 @@ var render = function () {
                   "button",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitTwo },
                   },
                   [_vm._v("Accept Page")]
@@ -72251,7 +72853,9 @@ var render = function () {
                       attrs: { id: "questionTwo" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
@@ -72348,7 +72952,7 @@ var render = function () {
                   "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitThree },
                   },
                   [_vm._v("Accept Page")]
@@ -72364,7 +72968,9 @@ var render = function () {
                       attrs: { id: "questionThree" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
@@ -72485,7 +73091,7 @@ var render = function () {
                   "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitFour },
                   },
                   [_vm._v("Accept Page")]
@@ -72501,7 +73107,9 @@ var render = function () {
                       attrs: { id: "questionFour" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
@@ -72732,6 +73340,39 @@ var render = function () {
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "form-group col-xs-12" }, [
+                    _c("label", { attrs: { for: "position" } }, [
+                      _vm._v("Position in company"),
+                    ]),
+                    _vm._v(" "),
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.position,
+                          expression: "position",
+                        },
+                      ],
+                      staticClass: "form-control",
+                      attrs: {
+                        type: "text",
+                        name: "position",
+                        placeholder: "Position",
+                        value: "",
+                      },
+                      domProps: { value: _vm.position },
+                      on: {
+                        input: function ($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.position = $event.target.value
+                        },
+                      },
+                    }),
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "form-group col-xs-12" }, [
                     _c("label", { attrs: { for: "address" } }, [
                       _vm._v("Address"),
                     ]),
@@ -72746,7 +73387,6 @@ var render = function () {
                         },
                       ],
                       staticClass: "form-control",
-                      staticStyle: { height: "114px" },
                       attrs: {
                         type: "text",
                         name: "address",
@@ -73276,7 +73916,7 @@ var render = function () {
                   "button",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { name: "acceptTwo" },
+                    attrs: { href: "#acceptPage", name: "acceptTwo" },
                     on: { click: _vm.submitTwo },
                   },
                   [_vm._v("Accept Page")]
@@ -73292,7 +73932,9 @@ var render = function () {
                       attrs: { id: "questionTwo" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
@@ -73395,7 +74037,7 @@ var render = function () {
                   "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitThree },
                   },
                   [_vm._v("Accept Page")]
@@ -73411,7 +74053,9 @@ var render = function () {
                       attrs: { id: "questionThree" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
@@ -73526,7 +74170,7 @@ var render = function () {
                   "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitFour },
                   },
                   [_vm._v("Accept Page")]
@@ -73542,7 +74186,9 @@ var render = function () {
                       attrs: { id: "questionFour" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
@@ -73599,7 +74245,7 @@ var render = function () {
                           "button",
                           {
                             staticClass: "btn btn-success col-xs-3",
-                            attrs: { type: "button" },
+                            attrs: { type: "button", href: "#" },
                             on: { click: _vm.nextFour },
                           },
                           [_vm._v("Next")]
@@ -73657,7 +74303,7 @@ var render = function () {
                   "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitFive },
                   },
                   [_vm._v("Accept Page")]
@@ -73673,7 +74319,9 @@ var render = function () {
                       attrs: { id: "questionFive" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
@@ -73730,7 +74378,7 @@ var render = function () {
                           "button",
                           {
                             staticClass: "btn btn-success col-xs-3",
-                            attrs: { type: "button" },
+                            attrs: { type: "button", href: "#" },
                             on: { click: _vm.nextFive },
                           },
                           [_vm._v("Next")]
@@ -73800,7 +74448,7 @@ var render = function () {
                   "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitSix },
                   },
                   [_vm._v("Accept Page")]
@@ -73816,7 +74464,9 @@ var render = function () {
                       attrs: { id: "questionSix" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
@@ -73873,7 +74523,7 @@ var render = function () {
                           "button",
                           {
                             staticClass: "btn btn-success col-xs-3",
-                            attrs: { type: "button" },
+                            attrs: { type: "button", href: "#" },
                             on: { click: _vm.nextSix },
                           },
                           [_vm._v("Next")]
@@ -73937,7 +74587,7 @@ var render = function () {
                   "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitSeven },
                   },
                   [_vm._v("Accept Page")]
@@ -73953,7 +74603,9 @@ var render = function () {
                       attrs: { id: "questionSeven" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
@@ -74010,7 +74662,7 @@ var render = function () {
                           "button",
                           {
                             staticClass: "btn btn-success col-xs-3",
-                            attrs: { type: "button" },
+                            attrs: { type: "button", href: "#" },
                             on: { click: _vm.nextSeven },
                           },
                           [_vm._v("Next")]
@@ -74192,6 +74844,40 @@ var render = function () {
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "form-group col-xs-12" }, [
+                    _c("label", { attrs: { for: "position" } }, [
+                      _vm._v("Position in Company"),
+                    ]),
+                    _vm._v(" "),
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.position,
+                          expression: "position",
+                        },
+                      ],
+                      staticClass: "form-control",
+                      attrs: {
+                        type: "text",
+                        name: "position",
+                        id: "position",
+                        placeholder: "Position",
+                        value: "",
+                      },
+                      domProps: { value: _vm.position },
+                      on: {
+                        input: function ($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.position = $event.target.value
+                        },
+                      },
+                    }),
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "form-group col-xs-12" }, [
                     _c("label", { attrs: { for: "address" } }, [
                       _vm._v("Address"),
                     ]),
@@ -74206,7 +74892,6 @@ var render = function () {
                         },
                       ],
                       staticClass: "form-control",
-                      staticStyle: { height: "114px" },
                       attrs: {
                         type: "text",
                         name: "address",
@@ -74765,7 +75450,6 @@ var render = function () {
                       },
                     ],
                     staticClass: "form-control",
-                    staticStyle: { height: "114px" },
                     attrs: {
                       type: "text",
                       name: "address",
@@ -74839,10 +75523,10 @@ var render = function () {
               _vm._v(" "),
               _c("div", { staticClass: "form-group" }, [
                 _c(
-                  "button",
+                  "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitTwo },
                   },
                   [_vm._v("Accept Page")]
@@ -74858,7 +75542,9 @@ var render = function () {
                       attrs: { id: "questionTwo" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
@@ -74961,7 +75647,7 @@ var render = function () {
                   "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitThree },
                   },
                   [_vm._v("Accept Page")]
@@ -74977,7 +75663,9 @@ var render = function () {
                       attrs: { id: "questionThree" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
@@ -75094,7 +75782,7 @@ var render = function () {
                   "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitFour },
                   },
                   [_vm._v("Accept Page")]
@@ -75110,7 +75798,9 @@ var render = function () {
                       attrs: { id: "questionFour" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
@@ -75253,7 +75943,7 @@ var render = function () {
                   "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitFive },
                   },
                   [_vm._v("Accept Page")]
@@ -75269,7 +75959,9 @@ var render = function () {
                       attrs: { id: "questionFive" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
@@ -75382,7 +76074,7 @@ var render = function () {
                   "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitSix },
                   },
                   [_vm._v("Accept Page")]
@@ -75398,7 +76090,9 @@ var render = function () {
                       attrs: { id: "questionSix" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
@@ -75573,7 +76267,7 @@ var render = function () {
                   "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitSeven },
                   },
                   [_vm._v("Accept Page")]
@@ -75589,7 +76283,9 @@ var render = function () {
                       attrs: { id: "questionSeven" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
@@ -75826,6 +76522,40 @@ var render = function () {
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "form-group col-xs-12" }, [
+                    _c("label", { attrs: { for: "position" } }, [
+                      _vm._v("Position in Company"),
+                    ]),
+                    _vm._v(" "),
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.position,
+                          expression: "position",
+                        },
+                      ],
+                      staticClass: "form-control",
+                      attrs: {
+                        type: "text",
+                        name: "position",
+                        id: "position",
+                        placeholder: "Position",
+                        value: "",
+                      },
+                      domProps: { value: _vm.position },
+                      on: {
+                        input: function ($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.position = $event.target.value
+                        },
+                      },
+                    }),
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "form-group col-xs-12" }, [
                     _c("label", { attrs: { for: "address" } }, [
                       _vm._v("Address"),
                     ]),
@@ -75840,7 +76570,6 @@ var render = function () {
                         },
                       ],
                       staticClass: "form-control",
-                      staticStyle: { height: "114px" },
                       attrs: {
                         type: "text",
                         name: "address",
@@ -76658,10 +77387,10 @@ var render = function () {
               _vm._v(" "),
               _c("div", { staticClass: "form-group" }, [
                 _c(
-                  "button",
+                  "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitTwo },
                   },
                   [_vm._v("Accept Page")]
@@ -76677,7 +77406,9 @@ var render = function () {
                       attrs: { id: "questionTwo" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
@@ -76830,7 +77561,7 @@ var render = function () {
                   "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitThree },
                   },
                   [_vm._v("Accept Page")]
@@ -76846,7 +77577,9 @@ var render = function () {
                       attrs: { id: "questionThree" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
@@ -76903,7 +77636,7 @@ var render = function () {
                           "button",
                           {
                             staticClass: "btn btn-success col-xs-3",
-                            attrs: { type: "button" },
+                            attrs: { type: "button", href: "#" },
                             on: { click: _vm.nextThree },
                           },
                           [_vm._v("Next\n                            ")]
@@ -77029,7 +77762,7 @@ var render = function () {
                   "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitFour },
                   },
                   [_vm._v("Accept Page")]
@@ -77045,7 +77778,9 @@ var render = function () {
                       attrs: { id: "questionFour" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
@@ -77102,7 +77837,7 @@ var render = function () {
                           "button",
                           {
                             staticClass: "btn btn-success col-xs-3",
-                            attrs: { type: "button" },
+                            attrs: { type: "button", href: "#" },
                             on: { click: _vm.nextFour },
                           },
                           [_vm._v("Next\n                            ")]
@@ -77176,7 +77911,7 @@ var render = function () {
                   "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitFive },
                   },
                   [_vm._v("Accept Page")]
@@ -77192,7 +77927,9 @@ var render = function () {
                       attrs: { id: "questionFive" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
@@ -77249,7 +77986,7 @@ var render = function () {
                           "button",
                           {
                             staticClass: "btn btn-success col-xs-3",
-                            attrs: { type: "button" },
+                            attrs: { type: "button", href: "#" },
                             on: { click: _vm.nextFive },
                           },
                           [_vm._v("Next\n                            ")]
@@ -77325,7 +78062,7 @@ var render = function () {
                   "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitSix },
                   },
                   [_vm._v("Accept Page")]
@@ -77341,7 +78078,9 @@ var render = function () {
                       attrs: { id: "questionSix" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
@@ -77398,7 +78137,7 @@ var render = function () {
                           "button",
                           {
                             staticClass: "btn btn-success col-xs-3",
-                            attrs: { type: "button" },
+                            attrs: { type: "button", href: "#" },
                             on: { click: _vm.nextSix },
                           },
                           [_vm._v("Next\n                            ")]
@@ -77618,7 +78357,6 @@ var render = function () {
                         },
                       ],
                       staticClass: "form-control",
-                      staticStyle: { height: "114px" },
                       attrs: {
                         type: "text",
                         name: "address",
@@ -78145,6 +78883,40 @@ var render = function () {
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "form-group col-xs-12" }, [
+                  _c("label", { attrs: { for: "position" } }, [
+                    _vm._v("Position in Company"),
+                  ]),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.position,
+                        expression: "position",
+                      },
+                    ],
+                    staticClass: "form-control",
+                    attrs: {
+                      type: "text",
+                      name: "position",
+                      id: "position",
+                      placeholder: "Position",
+                      value: "",
+                    },
+                    domProps: { value: _vm.position },
+                    on: {
+                      input: function ($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.position = $event.target.value
+                      },
+                    },
+                  }),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group col-xs-12" }, [
                   _c("label", { attrs: { for: "address" } }, [
                     _vm._v("Address"),
                   ]),
@@ -78159,7 +78931,6 @@ var render = function () {
                       },
                     ],
                     staticClass: "form-control",
-                    staticStyle: { height: "114px" },
                     attrs: {
                       type: "text",
                       name: "address",
@@ -78192,7 +78963,7 @@ var render = function () {
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n            Welcome and thank you for taking part in this e-learning training presentation.\n        "
+                  "\n                    Welcome and thank you for taking part in this e-learning training presentation.\n                "
                 ),
               ]),
               _vm._v(" "),
@@ -78202,13 +78973,13 @@ var render = function () {
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n            It is important that any organisation providing installations can demonstrate that they have a level of business integrity and ethics and at a minimum have a documented Quality, Health & Safety and Environmental Management System that they follow to meet the requirements of any legislation and codes of practice showing commitment to all aspects of the work it undertakes.\n        "
+                  "\n                    It is important that any organisation providing installations can demonstrate that they have a\n                    level of business integrity and ethics and at a minimum have a documented Quality, Health &\n                    Safety and Environmental Management System that they follow to meet the requirements of any\n                    legislation and codes of practice showing commitment to all aspects of the work it undertakes.\n                "
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n            This training course helps you to understand some of the main requirements and responsibilities.\n        "
+                  "\n                    This training course helps you to understand some of the main requirements and responsibilities.\n                "
                 ),
               ]),
               _vm._v(" "),
@@ -78216,19 +78987,19 @@ var render = function () {
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n            The specification and accreditation required for the installation of energy efficiency measures in existing buildings (PAS – Publicly Available Specification) was commissioned by the Department for Business, Energy & Industrial Strategy (BEIS) and documents the range of measures and necessary design and installation processes, management process and service provision for energy efficiency improvements made to existing UK residential and commercial properties.\n        "
+                  "\n                    The specification and accreditation required for the installation of energy efficiency measures\n                    in existing buildings (PAS – Publicly Available Specification) was commissioned by the\n                    Department for Business, Energy & Industrial Strategy (BEIS) and documents the range of measures\n                    and necessary design and installation processes, management process and service provision for\n                    energy efficiency improvements made to existing UK residential and commercial properties.\n                "
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n            A Quality Management System (QMS) should contain all the documents, records, legislation and procedures to ensure quality in all aspects of work undertaken and ideally this should be assured by an accreditation body. A formal document control process should be in place including issuing and withdrawal of documents, document archiving, secure disposal of confidential documentation and a master list of controlled documents.\n        "
+                  "\n                    A Quality Management System (QMS) should contain all the documents, records, legislation and\n                    procedures to ensure quality in all aspects of work undertaken and ideally this should be\n                    assured by an accreditation body. A formal document control process should be in place including\n                    issuing and withdrawal of documents, document archiving, secure disposal of confidential\n                    documentation and a master list of controlled documents.\n                "
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n            There should be a documented process for Quality Control which would include the management of documentation and processes for completion of agreed contractual work and specifications of how long the handover records will be retained. Internal audit inspections should take place that are regularly programmed with a register retained for any outstanding issues raised through audit in order to close out non-conformities from previous audits.\n        "
+                  "\n                    There should be a documented process for Quality Control which would include the management of\n                    documentation and processes for completion of agreed contractual work and specifications of how\n                    long the handover records will be retained. Internal audit inspections should take place that\n                    are regularly programmed with a register retained for any outstanding issues raised through\n                    audit in order to close out non-conformities from previous audits.\n                "
                 ),
               ]),
               _vm._v(" "),
@@ -78236,7 +79007,7 @@ var render = function () {
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n            Your organisation should have a policy statement that is reviewed at least on an annual basis and is signed and endorsed by a senior management representative. The policy should relate to the company activities and the period for review documented.\n        "
+                  "\n                    Your organisation should have a policy statement that is reviewed at least on an annual basis\n                    and is signed and endorsed by a senior management representative. The policy should relate to\n                    the company activities and the period for review documented.\n                "
                 ),
               ]),
               _vm._v(" "),
@@ -78244,7 +79015,7 @@ var render = function () {
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          Your organisation should appoint someone with the competency requirements who is ultimately responsible for the Quality Management System.\n        "
+                  "\n                    Your organisation should appoint someone with the competency requirements who is ultimately\n                    responsible for the Quality Management System.\n                "
                 ),
               ]),
               _vm._v(" "),
@@ -78256,7 +79027,7 @@ var render = function () {
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          An organisation should be able to demonstrate compliance with the Construction, Design and Management Regulations (CDM). The CDM Regulations cover the management of health, safety and welfare when carrying out construction projects and applies to the whole construction process. Areas to be considered include:\n        "
+                  "\n                    An organisation should be able to demonstrate compliance with the Construction, Design and\n                    Management Regulations (CDM). The CDM Regulations cover the management of health, safety and\n                    welfare when carrying out construction projects and applies to the whole construction process.\n                    Areas to be considered include:\n                "
                 ),
               ]),
               _vm._v(" "),
@@ -78264,13 +79035,13 @@ var render = function () {
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          Although you may not carry out any major construction or installation work, boilers, CWI, IWI and Loft Insulation are fairly typical under the Energy Company Obligation scheme, you must still document your processes for meeting and discharging your duties under CDM 2015 which should include Health and Safety Procedures, Quality Manual and a procedure for monitoring and effective ongoing safety management of contractors.\n        "
+                  "\n                    Although you may not carry out any major construction or installation work, boilers, CWI, IWI\n                    and Loft Insulation are fairly typical under the Energy Company Obligation scheme, you must\n                    still document your processes for meeting and discharging your duties under CDM 2015 which\n                    should include Health and Safety Procedures, Quality Manual and a procedure for monitoring and\n                    effective ongoing safety management of contractors.\n                "
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          Your company should identify all applicable licenses and permits for the scope of services it provides and ensure contractors dispose of all waste in a legal and proper manner.\n        "
+                  "\n                    Your company should identify all applicable licenses and permits for the scope of services it\n                    provides and ensure contractors dispose of all waste in a legal and proper manner.\n                "
                 ),
               ]),
               _vm._v(" "),
@@ -78279,7 +79050,7 @@ var render = function () {
                 { staticClass: "alert alert-danger", attrs: { role: "alert" } },
                 [
                   _vm._v(
-                    'Have you read and fully understood this section? Click the "Accept Page" button and then fill out the short question. If you would need extra information please contact ' +
+                    'Have you read and fully understood this section? Click\n                    the "Accept Page" button and then fill out the short question. If you would need extra\n                    information please contact ' +
                       _vm._s(_vm.contactName) +
                       " on " +
                       _vm._s(_vm.companyNumber) +
@@ -78296,10 +79067,14 @@ var render = function () {
                   "button",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitTwo },
                   },
-                  [_vm._v("Accept Page")]
+                  [
+                    _vm._v(
+                      "Accept\n                        Page\n                    "
+                    ),
+                  ]
                 ),
               ]),
               _vm._v(" "),
@@ -78312,11 +79087,13 @@ var render = function () {
                       attrs: { id: "questionTwo" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
-                          'If you have read the above document, please type "yes" into the box below and then click next'
+                          'If you have read the above document, please type "yes" into the box below and then click\n                        next'
                         ),
                       ]),
                       _vm._v(" "),
@@ -78371,7 +79148,7 @@ var render = function () {
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          An organisation should have a documented management system in place which mitigates your environmental impact and is aligned to the principles of ISO14001. The system requires you to have a working knowledge of applicable legislations, standards and codes of practice and to demonstrate statutory compliance.\n        "
+                  "\n                    An organisation should have a documented management system in place which mitigates your\n                    environmental impact and is aligned to the principles of ISO14001. The system requires you to\n                    have a working knowledge of applicable legislations, standards and codes of practice and to\n                    demonstrate statutory compliance.\n                "
                 ),
               ]),
               _vm._v(" "),
@@ -78379,25 +79156,25 @@ var render = function () {
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          Your company should have an Environmental Policy Statement as part of its Environmental Management System that is endorsed by a senior management representative and which relates to your activities and is signed and reviewed at least on an annual basis. This will identify, assess and manage environmental risks identified in your supply chain/subcontractors along with having a formal process for recording, reporting and investigating environmental incidents and near misses.\n        "
+                  "\n                    Your company should have an Environmental Policy Statement as part of its Environmental\n                    Management System that is endorsed by a senior management representative and which relates to\n                    your activities and is signed and reviewed at least on an annual basis. This will identify,\n                    assess and manage environmental risks identified in your supply chain/subcontractors along with\n                    having a formal process for recording, reporting and investigating environmental incidents and\n                    near misses.\n                "
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          You should utilise a variety of sources to ensure the content of the EMS is appropriate and up to date and maintain a register of appropriate legislation and sign up to a subscription for legislations with gov.uk.\n        "
+                  "\n                    You should utilise a variety of sources to ensure the content of the EMS is appropriate and up\n                    to date and maintain a register of appropriate legislation and sign up to a subscription for\n                    legislations with gov.uk.\n                "
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          When it comes to the scope of services associated with your installation work you should manage the Aspects and Impacts of this. This would include completing an Aspects and Impacts Register and Risk Assessment with control measures put in place to reduce/remove identified environmental risk.\n        "
+                  "\n                    When it comes to the scope of services associated with your installation work you should manage\n                    the Aspects and Impacts of this. This would include completing an Aspects and Impacts Register\n                    and Risk Assessment with control measures put in place to reduce/remove identified environmental\n                    risk.\n                "
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          You should also be able to provide the number of environmental incidents and near misses per calendar year, including those that relate to sub-contractors working on your behalf.\n        "
+                  "\n                    You should also be able to provide the number of environmental incidents and near misses per\n                    calendar year, including those that relate to sub-contractors working on your behalf.\n                "
                 ),
               ]),
               _vm._v(" "),
@@ -78405,13 +79182,13 @@ var render = function () {
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          You should have a nominated representative within your organisation to assist you with the identification and management of environmental responsibilities.\n        "
+                  "\n                    You should have a nominated representative within your organisation to assist you with the\n                    identification and management of environmental responsibilities.\n                "
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          The person should be suitably qualified with relevant experience and it should be their responsibility to identify environmental laws and regulations which apply to your business and ensure there is a procedure to comply with them.\n        "
+                  "\n                    The person should be suitably qualified with relevant experience and it should be their\n                    responsibility to identify environmental laws and regulations which apply to your business and\n                    ensure there is a procedure to comply with them.\n                "
                 ),
               ]),
               _vm._v(" "),
@@ -78419,25 +79196,25 @@ var render = function () {
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          You should have processes or systems in place to manage waste produced as a result of your activities on site so that it is managed in a controlled way. A Waste Management Procedure would typically form part of an Environmental Management System and it is likely you would complete a Waste Transfer Note and have a Waste Transfer License.\n        "
+                  "\n                    You should have processes or systems in place to manage waste produced as a result of your\n                    activities on site so that it is managed in a controlled way. A Waste Management Procedure would\n                    typically form part of an Environmental Management System and it is likely you would complete a\n                    Waste Transfer Note and have a Waste Transfer License.\n                "
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          Any waste that has been created inside the customer’s home, usually packaging and the removal of old parts, must be disposed of using a licensed waste company in a legal and proper manner. Any waste stored on site should be stored and handled correctly and within certain documented guidelines and procedures which includes solid wastes, waste water, materials handling, storage and spill control.\n        "
+                  "\n                    Any waste that has been created inside the customer’s home, usually packaging and the removal of\n                    old parts, must be disposed of using a licensed waste company in a legal and proper manner. Any\n                    waste stored on site should be stored and handled correctly and within certain documented\n                    guidelines and procedures which includes solid wastes, waste water, materials handling, storage\n                    and spill control.\n                "
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          You should make a list of the environmental permits which your company requires to have in place to undertake the activities.\n        "
+                  "\n                    You should make a list of the environmental permits which your company requires to have in place\n                    to undertake the activities.\n                "
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          Waste can also relate to internal office waste, such as paper shredding, ink cartridges, old office equipment, recycling bins and so this should also be identified and any risks mitigated.\n        "
+                  "\n                    Waste can also relate to internal office waste, such as paper shredding, ink cartridges, old\n                    office equipment, recycling bins and so this should also be identified and any risks mitigated.\n                "
                 ),
               ]),
               _vm._v(" "),
@@ -78446,7 +79223,7 @@ var render = function () {
                 { staticClass: "alert alert-danger", attrs: { role: "alert" } },
                 [
                   _vm._v(
-                    'Have you read and fully understood this section? Click the "Accept Page" button and then fill out the short question. If you would need extra information please contact ' +
+                    'Have you read and fully understood this section? Click\n                    the "Accept Page" button and then fill out the short question. If you would need extra\n                    information please contact ' +
                       _vm._s(_vm.contactName) +
                       " on " +
                       _vm._s(_vm.companyNumber) +
@@ -78463,7 +79240,7 @@ var render = function () {
                   "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitThree },
                   },
                   [_vm._v("Accept Page")]
@@ -78479,11 +79256,13 @@ var render = function () {
                       attrs: { id: "questionThree" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
-                          'If you have read the above document, please type "yes" into the box below and then click next'
+                          'If you have read the above document, please type "yes" into the box below and then click\n                        next'
                         ),
                       ]),
                       _vm._v(" "),
@@ -78552,7 +79331,7 @@ var render = function () {
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          The Health and Safety at Work etc. Act 1974, often referred to as HASAW or HSW, is an Act of Parliament and the main piece of UK health and safety legislation. It places a duty on all employers “to ensure, so far as is reasonably practicable, the health, safety and welfare at work” of all employees and includes work processes (e.g. manual handling, use of display screen equipment), and specific standards such as the controlling, keeping, use and prevention of dangerous substances and controlling certain emissions into the atmosphere (e.g. exposure to chemicals).\n        "
+                  "\n                    The Health and Safety at Work etc. Act 1974, often referred to as HASAW or HSW, is an Act of\n                    Parliament and the main piece of UK health and safety legislation. It places a duty on all\n                    employers “to ensure, so far as is reasonably practicable, the health, safety and welfare at\n                    work” of all employees and includes work processes (e.g. manual handling, use of display screen\n                    equipment), and specific standards such as the controlling, keeping, use and prevention of\n                    dangerous substances and controlling certain emissions into the atmosphere (e.g. exposure to\n                    chemicals).\n                "
                 ),
               ]),
               _vm._v(" "),
@@ -78560,25 +79339,25 @@ var render = function () {
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          Your company should have a clear Health and Safety Policy Statement relating to the provision of health and safety in the workplace which extends to not only workers but also third parties and people who are not employed but may be affected by your activities. This should be signed by a senior member of staff and reviewed at least on an annual basis.\n        "
+                  "\n                    Your company should have a clear Health and Safety Policy Statement relating to the provision of\n                    health and safety in the workplace which extends to not only workers but also third parties and\n                    people who are not employed but may be affected by your activities. This should be signed by a\n                    senior member of staff and reviewed at least on an annual basis.\n                "
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          Your company should then have a communication process to provide guidance to the workforce on workplace safety issues. This can be achieved in a number of ways such as supplying a copy of the Health and Safety Procedures and Handbook, providing initial and ongoing training and encouraging all employees and suppliers to participate in all elements of health and safety management. An up to date organisational chart with individual duties and responsibilities will help along with implementing initiatives such as fortnightly toolbox talks around the office, posters around the office enforcing the health and safety message, and internal health and safety updates and extracts from related bulletins and articles. Regular management meetings with minutes recorded discussing areas for improvement will also help you evidence your approach to this.\n        "
+                  "\n                    Your company should then have a communication process to provide guidance to the workforce on\n                    workplace safety issues. This can be achieved in a number of ways such as supplying a copy of\n                    the Health and Safety Procedures and Handbook, providing initial and ongoing training and\n                    encouraging all employees and suppliers to participate in all elements of health and safety\n                    management. An up to date organisational chart with individual duties and responsibilities will\n                    help along with implementing initiatives such as fortnightly toolbox talks around the office,\n                    posters around the office enforcing the health and safety message, and internal health and\n                    safety updates and extracts from related bulletins and articles. Regular management meetings\n                    with minutes recorded discussing areas for improvement will also help you evidence your approach\n                    to this.\n                "
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          Your company should also have established and documented processes to ensure compliance to legal and other legislative requirements that are applicable.\n        "
+                  "\n                    Your company should also have established and documented processes to ensure compliance to legal\n                    and other legislative requirements that are applicable.\n                "
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          You should sign up to the HSE Legislative Notification Service in order to keep in touch with any potential alerts, notices and advisories issued by HSE and maintain a register and documented procedure which specifically details a process for ensuring compliance to legislative requirements and Health and Safety Legal Changes.\n        "
+                  "\n                    You should sign up to the HSE Legislative Notification Service in order to keep in touch with\n                    any potential alerts, notices and advisories issued by HSE and maintain a register and\n                    documented procedure which specifically details a process for ensuring compliance to legislative\n                    requirements and Health and Safety Legal Changes.\n                "
                 ),
               ]),
               _vm._v(" "),
@@ -78586,19 +79365,19 @@ var render = function () {
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          A person should be chosen within your organisation who has the delegated responsibility for workplace and products safety. The person responsible should hold a recognised Health and Safety Qualification or alternatively appoint a qualified Health and Safety Consultant in order to provide specialised advice and responsibility.\n        "
+                  "\n                    A person should be chosen within your organisation who has the delegated responsibility for\n                    workplace and products safety. The person responsible should hold a recognised Health and Safety\n                    Qualification or alternatively appoint a qualified Health and Safety Consultant in order to\n                    provide specialised advice and responsibility.\n                "
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          Areas to consider are formal health and safety targets and objectives and introducing measures and procedures to reduce/remove identified Health and Safety Risks.\n        "
+                  "\n                    Areas to consider are formal health and safety targets and objectives and introducing measures\n                    and procedures to reduce/remove identified Health and Safety Risks.\n                "
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          Risk assessments should be used that are not templates, but site specific and developed in advance of any installation and read and understood by all operatives involved in the work on that day. The company Installation Methods Procedure outlines how all installations should be carried out in an appropriate manner and that hazards should be identified and documented pre-installation and on a Method Statement. Additional evidence is in the form of the Permit to Work Procedure and Permit to Work Forms and Driver Risk Assessments.\n        "
+                  "\n                    Risk assessments should be used that are not templates, but site specific and developed in\n                    advance of any installation and read and understood by all operatives involved in the work on\n                    that day. The company Installation Methods Procedure outlines how all installations should be\n                    carried out in an appropriate manner and that hazards should be identified and documented\n                    pre-installation and on a Method Statement. Additional evidence is in the form of the Permit to\n                    Work Procedure and Permit to Work Forms and Driver Risk Assessments.\n                "
                 ),
               ]),
               _vm._v(" "),
@@ -78606,7 +79385,7 @@ var render = function () {
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          These should be issued free of charge to all workers (migrant workers, contract/labour, full time) that may be exposed to workplace hazards. A PPE Issue Record Sheet should be used in conjunction with a Personal Protective Equipment Policy. It is necessary for each employee to sign and date the sheet each time a new item of PPE is issued.\n        "
+                  "\n                    These should be issued free of charge to all workers (migrant workers, contract/labour, full\n                    time) that may be exposed to workplace hazards. A PPE Issue Record Sheet should be used in\n                    conjunction with a Personal Protective Equipment Policy. It is necessary for each employee to\n                    sign and date the sheet each time a new item of PPE is issued.\n                "
                 ),
               ]),
               _vm._v(" "),
@@ -78615,7 +79394,7 @@ var render = function () {
                 { staticClass: "alert alert-danger", attrs: { role: "alert" } },
                 [
                   _vm._v(
-                    'Have you read and fully understood this section? Click the "Accept Page" button and then fill out the short question. If you would need extra information please contact ' +
+                    'Have you read and fully understood this section? Click\n                    the "Accept Page" button and then fill out the short question. If you would need extra\n                    information please contact ' +
                       _vm._s(_vm.contactName) +
                       " on " +
                       _vm._s(_vm.companyNumber) +
@@ -78632,7 +79411,7 @@ var render = function () {
                   "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitFour },
                   },
                   [_vm._v("Accept Page")]
@@ -78648,11 +79427,13 @@ var render = function () {
                       attrs: { id: "questionFour" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
-                          'If you have read the above document, please type "yes" into the box below and then click next'
+                          'If you have read the above document, please type "yes" into the box below and then click\n                        next'
                         ),
                       ]),
                       _vm._v(" "),
@@ -78715,31 +79496,31 @@ var render = function () {
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          COSHH is the law that requires employers to control substances that are hazardous to health. A company must prevent or reduce workers exposure to hazardous substances by providing information, instruction and training for employees and others and you should have a clear Hazardous Substances Procedure that also demonstrates that you have assessed the hazards associated with applicable chemicals and/or hazardous substances by putting in place a collection of documents that has been divided into categories to ensure someone can quickly and easily find the file needed.\n        "
+                  "\n                    COSHH is the law that requires employers to control substances that are hazardous to health. A\n                    company must prevent or reduce workers exposure to hazardous substances by providing\n                    information, instruction and training for employees and others and you should have a clear\n                    Hazardous Substances Procedure that also demonstrates that you have assessed the hazards\n                    associated with applicable chemicals and/or hazardous substances by putting in place a\n                    collection of documents that has been divided into categories to ensure someone can quickly and\n                    easily find the file needed.\n                "
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          There should be a system and directive in place for the correct handling and storage of hazardous substances and goods.\n        "
+                  "\n                    There should be a system and directive in place for the correct handling and storage of\n                    hazardous substances and goods.\n                "
                 ),
               ]),
               _vm._v(" "),
               _c("h2", [
                 _vm._v(
-                  "Injury in the workplace and Reporting of Injuries, Diseases and Dangerous Occurrences (RIDDOR)"
+                  "Injury in the workplace and Reporting of Injuries, Diseases and Dangerous Occurrences\n                    (RIDDOR)"
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          In the event of an injury in the workplace a company must be able to demonstrate that they have adequate emergency first aid facilities on site. This can include medical points and qualified first aid personnel that are easily identified. An accident book should be used to report accidents to members of staff.\n        "
+                  "\n                    In the event of an injury in the workplace a company must be able to demonstrate that they have\n                    adequate emergency first aid facilities on site. This can include medical points and qualified\n                    first aid personnel that are easily identified. An accident book should be used to report\n                    accidents to members of staff.\n                "
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          Arrangements must be in place for investigating and report of Accidents and Near Misses. A nominated person should report all accidents and incidents as part of an Accident and Incident Reporting Investigation Procedure and a procedure for incident reporting and the requirements under RIDDOR regulations are detailed.\n        "
+                  "\n                    Arrangements must be in place for investigating and report of Accidents and Near Misses. A\n                    nominated person should report all accidents and incidents as part of an Accident and Incident\n                    Reporting Investigation Procedure and a procedure for incident reporting and the requirements\n                    under RIDDOR regulations are detailed.\n                "
                 ),
               ]),
               _vm._v(" "),
@@ -78747,37 +79528,37 @@ var render = function () {
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          An organisation should communicate it’s quality, environmental and health and safety requirements effectively and  induct new and existing workers into these processes when they first start on site. This should include employees, sub-contractors, self-employed and visitors.\n        "
+                  "\n                    An organisation should communicate it’s quality, environmental and health and safety\n                    requirements effectively and induct new and existing workers into these processes when they\n                    first start on site. This should include employees, sub-contractors, self-employed and visitors.\n                "
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          The purpose of the induction policy for staff is to ensure that all employees have the benefit of a properly structured induction programme that will help them to integrate into their role in the organisation quickly and effectively.\n        "
+                  "\n                    The purpose of the induction policy for staff is to ensure that all employees have the benefit\n                    of a properly structured induction programme that will help them to integrate into their role in\n                    the organisation quickly and effectively.\n                "
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          The purpose of the induction policy for workers/subcontractors is to ensure they are selected and approved to ensure that work carried out is in compliance with the appropriate standards and within the current versions of the Code of Practices and regulations.\n        "
+                  "\n                    The purpose of the induction policy for workers/subcontractors is to ensure they are selected\n                    and approved to ensure that work carried out is in compliance with the appropriate standards and\n                    within the current versions of the Code of Practices and regulations.\n                "
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          An organisation should identify the training standards and all work activities relating to their scope of service that requires formal training and deliver that training in order to ensure the competency to carry out the tasks that your business requires and identify where staff may require further training or are suitable for advancement.\n        "
+                  "\n                    An organisation should identify the training standards and all work activities relating to their\n                    scope of service that requires formal training and deliver that training in order to ensure the\n                    competency to carry out the tasks that your business requires and identify where staff may\n                    require further training or are suitable for advancement.\n                "
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          At a minimum you should provide your staff with your Environmental, Health and Safety and Quality Management Policies and Procedures in writing and then through one to one meetings and training courses effectively deploy these polices.\n        "
+                  "\n                    At a minimum you should provide your staff with your Environmental, Health and Safety and\n                    Quality Management Policies and Procedures in writing and then through one to one meetings and\n                    training courses effectively deploy these polices.\n                "
                 ),
               ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          Any training certificates should be checked and validated on a regular basis.\n        "
+                  "\n                    Any training certificates should be checked and validated on a regular basis.\n                "
                 ),
               ]),
               _vm._v(" "),
@@ -78785,7 +79566,7 @@ var render = function () {
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n          An organisation should be able to demonstrate that it’s quality, environmental and health and safety management systems have been audited, at least on an annual basis, and achieve an acceptable level of achievement.\n        "
+                  "\n                    An organisation should be able to demonstrate that it’s quality, environmental and health and\n                    safety management systems have been audited, at least on an annual basis, and achieve an\n                    acceptable level of achievement.\n                "
                 ),
               ]),
               _vm._v(" "),
@@ -78794,7 +79575,7 @@ var render = function () {
                 { staticClass: "alert alert-danger", attrs: { role: "alert" } },
                 [
                   _vm._v(
-                    'Have you read and fully understood this section? Click the "Accept Page" button and then fill out the short question. If you would need extra information please contact ' +
+                    'Have you read and fully understood this section? Click\n                    the "Accept Page" button and then fill out the short question. If you would need extra\n                    information please contact ' +
                       _vm._s(_vm.contactName) +
                       " on " +
                       _vm._s(_vm.companyNumber) +
@@ -78811,7 +79592,7 @@ var render = function () {
                   "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitFive },
                   },
                   [_vm._v("Accept Page")]
@@ -78827,11 +79608,13 @@ var render = function () {
                       attrs: { id: "questionFive" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
-                          'If you have read the above document, please type "yes" into the box below and then click next'
+                          'If you have read the above document, please type "yes" into the box below and then click\n                        next'
                         ),
                       ]),
                       _vm._v(" "),
@@ -78895,7 +79678,7 @@ var render = function () {
                 _vm._v(" "),
                 _c("p", [
                   _vm._v(
-                    "Many thanks for taking the time to read this training course, which we hope has helped to educate you."
+                    "Many thanks for taking the time to read this training course, which we hope has helped to\n                        educate you."
                   ),
                 ]),
                 _vm._v(" "),
@@ -78918,7 +79701,7 @@ var render = function () {
                 _vm._v(" "),
                 _c("p", [
                   _vm._v(
-                    "If your details below are correct, please click on the submit bar below to submit your details."
+                    "If your details below are correct, please click on the submit bar below to submit your\n                        details."
                   ),
                 ]),
                 _vm._v(" "),
@@ -79058,6 +79841,40 @@ var render = function () {
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "form-group col-xs-12" }, [
+                    _c("label", { attrs: { for: "position" } }, [
+                      _vm._v("Position in Company"),
+                    ]),
+                    _vm._v(" "),
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.position,
+                          expression: "position",
+                        },
+                      ],
+                      staticClass: "form-control",
+                      attrs: {
+                        type: "text",
+                        name: "position",
+                        id: "position",
+                        placeholder: "Position",
+                        value: "",
+                      },
+                      domProps: { value: _vm.position },
+                      on: {
+                        input: function ($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.position = $event.target.value
+                        },
+                      },
+                    }),
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "form-group col-xs-12" }, [
                     _c("label", { attrs: { for: "address" } }, [
                       _vm._v("Address"),
                     ]),
@@ -79072,7 +79889,6 @@ var render = function () {
                         },
                       ],
                       staticClass: "form-control",
-                      staticStyle: { height: "114px" },
                       attrs: {
                         type: "text",
                         name: "address",
@@ -79104,7 +79920,7 @@ var render = function () {
         _vm.last == true
           ? _c("div", { staticClass: "alert alert-success" }, [
               _vm._v(
-                "\n        Thank you, Your details have been sent!\n      "
+                "\n                Thank you, Your details have been sent!\n            "
               ),
             ])
           : _vm._e(),
@@ -79337,6 +80153,40 @@ var render = function () {
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "form-group col-xs-12" }, [
+                  _c("label", { attrs: { for: "position" } }, [
+                    _vm._v("Position in Company"),
+                  ]),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.position,
+                        expression: "position",
+                      },
+                    ],
+                    staticClass: "form-control",
+                    attrs: {
+                      type: "text",
+                      name: "position",
+                      id: "position",
+                      placeholder: "Position",
+                      value: "",
+                    },
+                    domProps: { value: _vm.position },
+                    on: {
+                      input: function ($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.position = $event.target.value
+                      },
+                    },
+                  }),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group col-xs-12" }, [
                   _c("label", { attrs: { for: "address" } }, [
                     _vm._v("Address"),
                   ]),
@@ -79351,7 +80201,6 @@ var render = function () {
                       },
                     ],
                     staticClass: "form-control",
-                    staticStyle: { height: "114px" },
                     attrs: {
                       type: "text",
                       name: "address",
@@ -79473,10 +80322,10 @@ var render = function () {
               _vm._v(" "),
               _c("div", { staticClass: "form-group" }, [
                 _c(
-                  "button",
+                  "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitTwo },
                   },
                   [_vm._v("Accept Page")]
@@ -79492,7 +80341,9 @@ var render = function () {
                       attrs: { id: "questionTwo" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
@@ -79605,7 +80456,7 @@ var render = function () {
                   "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitThree },
                   },
                   [_vm._v("Accept Page")]
@@ -79621,7 +80472,9 @@ var render = function () {
                       attrs: { id: "questionThree" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
@@ -79736,7 +80589,7 @@ var render = function () {
                   "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitFour },
                   },
                   [_vm._v("Accept Page")]
@@ -79752,7 +80605,9 @@ var render = function () {
                       attrs: { id: "questionFour" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
@@ -79983,6 +80838,40 @@ var render = function () {
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "form-group col-xs-12" }, [
+                    _c("label", { attrs: { for: "position" } }, [
+                      _vm._v("Position in Company"),
+                    ]),
+                    _vm._v(" "),
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.position,
+                          expression: "position",
+                        },
+                      ],
+                      staticClass: "form-control",
+                      attrs: {
+                        type: "text",
+                        name: "position",
+                        id: "position",
+                        placeholder: "Position",
+                        value: "",
+                      },
+                      domProps: { value: _vm.position },
+                      on: {
+                        input: function ($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.position = $event.target.value
+                        },
+                      },
+                    }),
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "form-group col-xs-12" }, [
                     _c("label", { attrs: { for: "address" } }, [
                       _vm._v("Address"),
                     ]),
@@ -79997,7 +80886,6 @@ var render = function () {
                         },
                       ],
                       staticClass: "form-control",
-                      staticStyle: { height: "114px" },
                       attrs: {
                         type: "text",
                         name: "address",
@@ -80468,6 +81356,40 @@ var render = function () {
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "form-group col-xs-12" }, [
+                  _c("label", { attrs: { for: "position" } }, [
+                    _vm._v("Position in Company"),
+                  ]),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.position,
+                        expression: "position",
+                      },
+                    ],
+                    staticClass: "form-control",
+                    attrs: {
+                      type: "text",
+                      name: "position",
+                      id: "position",
+                      placeholder: "Position",
+                      value: "",
+                    },
+                    domProps: { value: _vm.position },
+                    on: {
+                      input: function ($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.position = $event.target.value
+                      },
+                    },
+                  }),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group col-xs-12" }, [
                   _c("label", { attrs: { for: "address" } }, [
                     _vm._v("Address"),
                   ]),
@@ -80482,7 +81404,6 @@ var render = function () {
                       },
                     ],
                     staticClass: "form-control",
-                    staticStyle: { height: "114px" },
                     attrs: {
                       type: "text",
                       name: "address",
@@ -80635,7 +81556,7 @@ var render = function () {
                   "button",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitTwo },
                   },
                   [_vm._v("Accept Page")]
@@ -80651,7 +81572,9 @@ var render = function () {
                       attrs: { id: "questionTwo" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
@@ -80905,7 +81828,7 @@ var render = function () {
                     "a",
                     {
                       staticClass: "btn btn-success col-xs-12",
-                      attrs: { href: "#" },
+                      attrs: { href: "#acceptPage" },
                       on: { click: _vm.submitThree },
                     },
                     [_vm._v("Accept Page")]
@@ -80921,7 +81844,9 @@ var render = function () {
                         attrs: { id: "questionThree" },
                       },
                       [
-                        _c("label", [_vm._v("Short question")]),
+                        _c("label", { attrs: { id: "acceptPage" } }, [
+                          _vm._v("Short question"),
+                        ]),
                         _vm._v(" "),
                         _c("p", [
                           _vm._v(
@@ -81078,7 +82003,7 @@ var render = function () {
                   "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitFour },
                   },
                   [_vm._v("Accept Page")]
@@ -81094,7 +82019,9 @@ var render = function () {
                       attrs: { id: "questionFour" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
@@ -81233,7 +82160,7 @@ var render = function () {
                   "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitFive },
                   },
                   [_vm._v("Accept Page")]
@@ -81249,7 +82176,9 @@ var render = function () {
                       attrs: { id: "questionFive" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
@@ -81480,6 +82409,40 @@ var render = function () {
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "form-group col-xs-12" }, [
+                    _c("label", { attrs: { for: "position" } }, [
+                      _vm._v("Position in Company"),
+                    ]),
+                    _vm._v(" "),
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.position,
+                          expression: "position",
+                        },
+                      ],
+                      staticClass: "form-control",
+                      attrs: {
+                        type: "text",
+                        name: "position",
+                        id: "position",
+                        placeholder: "Position",
+                        value: "",
+                      },
+                      domProps: { value: _vm.position },
+                      on: {
+                        input: function ($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.position = $event.target.value
+                        },
+                      },
+                    }),
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "form-group col-xs-12" }, [
                     _c("label", { attrs: { for: "address" } }, [
                       _vm._v("Address"),
                     ]),
@@ -81494,7 +82457,6 @@ var render = function () {
                         },
                       ],
                       staticClass: "form-control",
-                      staticStyle: { height: "114px" },
                       attrs: {
                         type: "text",
                         name: "address",

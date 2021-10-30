@@ -442,8 +442,12 @@
                         <input type="email" class="form-control" v-model="email" name="email" id="email" placeholder="Email" value="">
                     </div>
                     <div class="form-group col-xs-12">
+                        <label for="position">Position in Company</label>
+                        <input type="text" class="form-control" v-model="position" name="position" placeholder="Position" value="">
+                    </div>
+                    <div class="form-group col-xs-12">
                         <label for="address">Address</label>
-                        <textarea type="text" class="form-control" v-model="address" name="address" id="address" style="height: 114px" placeholder="Your Address"></textarea>
+                        <textarea type="text" class="form-control" v-model="address" name="address" id="address" placeholder="Your Address"></textarea>
                     </div>
                 </div>
                 <input type="submit" v-on:click="submitForm" class="btn btn-success col-xs-12" name="submit">
@@ -782,8 +786,6 @@ export default {
             formData.append("company", this.company);
             formData.append("address", this.address);
             formData.append("position", this.position);
-
-
 
             axios.post('/fcatwo', formData, config);
 

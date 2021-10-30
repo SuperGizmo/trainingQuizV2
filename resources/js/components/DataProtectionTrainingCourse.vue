@@ -171,7 +171,7 @@
                     <nav>
                         <ul class="pager">
                             <li style="display: inline;"><a v-on:click="previousFour" class=" col-xs-3"  href="#">Previous</a></li>
-                            <li v-if="answerFour == 'yes'"  style="display: inline;"><button type="button" class="btn btn-success col-xs-3" v-on:click="nextFour">Next</button></li>
+                            <li v-if="answerFour == 'yes'"  style="display: inline;"><button type="button" class="btn btn-success col-xs-3" href="#" v-on:click="nextFour">Next</button></li>
                         </ul>
                     </nav>
                 </div>
@@ -198,7 +198,7 @@
                     <nav>
                         <ul class="pager">
                             <li style="display: inline;"><a v-on:click="previousFive" class=" col-xs-3"  href="#">Previous</a></li>
-                            <li v-if="answerFive == 'yes' "  style="display: inline;"><button type="button" class="btn btn-success col-xs-3" v-on:click="nextFive">Next</button></li>
+                            <li v-if="answerFive == 'yes' "  style="display: inline;"><button type="button" class="btn btn-success col-xs-3" href="#" v-on:click="nextFive">Next</button></li>
                         </ul>
                     </nav>
                 </div>
@@ -232,8 +232,12 @@
                                 <input type="email" class="form-control" v-model="email" name="email" id="email" placeholder="Email" value="">
                             </div>
                             <div class="form-group col-xs-12">
+                                <label for="position">Position in Company</label>
+                                <input type="text" class="form-control" v-model="position" name="position" placeholder="Position" value="">
+                            </div>
+                            <div class="form-group col-xs-12">
                                 <label for="address">Address</label>
-                                <textarea type="text" class="form-control" v-model="address" name="address" id="address" style="height: 114px" placeholder="Your Address"></textarea>
+                                <textarea type="text" class="form-control" v-model="address" name="address" id="address" placeholder="Your Address"></textarea>
                             </div>
                         </div>
                         <input type="submit" v-on:click="submitForm" class="btn btn-success col-xs-12" name="submit">
@@ -399,7 +403,7 @@
                 formData.append("contactNumber", this.contactNumber);
                 formData.append("company", this.company);
                 formData.append("address", this.address);
-            formData.append("position", this.position);
+                formData.append("position", this.position);
                 axios.post('/DataProtectionTrainingCourse', formData, config);
             },
         },

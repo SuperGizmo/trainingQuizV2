@@ -34,9 +34,13 @@
                                    value="">
                         </div>
                         <div class="form-group col-xs-12">
+                            <label for="position">Position in Company</label>
+                            <input type="text" class="form-control" v-model="position" name="position" placeholder="Position" value="">
+                        </div>
+                        <div class="form-group col-xs-12">
                             <label for="address">Address</label>
                             <textarea type="text" class="form-control" v-model="address" name="address"
-                                      style="height: 114px" placeholder="Your Address"></textarea>
+                                      placeholder="Your Address"></textarea>
                         </div>
                     </div>
                     <input type="submit" v-on:click="submit" v-if="firstSubmit == false"
@@ -453,6 +457,7 @@ export default {
             contactNumber: '',
             company: '',
             address: '',
+            position: '',
             firstSubmit: false,
             secondSubmit: false,
             question_1: "0",
@@ -504,6 +509,7 @@ export default {
           formData.append("contactNumber", this.contactNumber);
           formData.append("company", this.company);
           formData.append("address", this.address);
+          formData.append("position", this.position);
           formData.append("question_1", this.question_1);
           formData.append("question_2", this.question_2);
           formData.append("question_3", this.question_3);

@@ -6,6 +6,7 @@ Name: {{ $name }}<br />
 Email: {{ $email }}<br />
 Contact Number: {{ $contactNumber }}<br />
 Company: {{ $company }}<br />
+Position: {{ $position }}<br />
 Address: {{ $address }}<br />
 <br />
 Percentage: {{ $percent }}%<br />

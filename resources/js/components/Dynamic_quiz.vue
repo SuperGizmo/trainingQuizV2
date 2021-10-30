@@ -149,7 +149,7 @@ export default {
         }
       };
       axios.get(this.questionsUrl).then(response => {
-        this.questions = response.body;
+        this.questions = response.data;
       }, response => {
       });
     }
