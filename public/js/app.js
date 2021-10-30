@@ -10570,6 +10570,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -10578,6 +10586,7 @@ __webpack_require__.r(__webpack_exports__);
       contactNumber: '',
       company: '',
       address: '',
+      position: '',
       one: false,
       last: false,
       two: false,
@@ -10669,6 +10678,7 @@ __webpack_require__.r(__webpack_exports__);
       formData.append("contactNumber", this.contactNumber);
       formData.append("company", this.company);
       formData.append("address", this.address);
+      formData.append("position", this.position);
       axios.post('/DisplayScreenEquipmentTrainingCourse', formData, config);
     }
   },
@@ -72228,6 +72238,39 @@ var render = function () {
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "form-group col-xs-12" }, [
+                  _c("label", { attrs: { for: "position" } }, [
+                    _vm._v("Position in company"),
+                  ]),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.position,
+                        expression: "position",
+                      },
+                    ],
+                    staticClass: "form-control",
+                    attrs: {
+                      type: "text",
+                      name: "position",
+                      placeholder: "Position",
+                      value: "",
+                    },
+                    domProps: { value: _vm.position },
+                    on: {
+                      input: function ($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.position = $event.target.value
+                      },
+                    },
+                  }),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group col-xs-12" }, [
                   _c("label", { attrs: { for: "address" } }, [
                     _vm._v("Address"),
                   ]),
@@ -72242,7 +72285,6 @@ var render = function () {
                       },
                     ],
                     staticClass: "form-control",
-                    staticStyle: { height: "114px" },
                     attrs: {
                       type: "text",
                       name: "address",
@@ -72389,7 +72431,7 @@ var render = function () {
                   "button",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitTwo },
                   },
                   [_vm._v("Accept Page")]
@@ -72405,7 +72447,9 @@ var render = function () {
                       attrs: { id: "questionTwo" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
@@ -72502,7 +72546,7 @@ var render = function () {
                   "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitThree },
                   },
                   [_vm._v("Accept Page")]
@@ -72518,7 +72562,9 @@ var render = function () {
                       attrs: { id: "questionThree" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
@@ -72639,7 +72685,7 @@ var render = function () {
                   "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitFour },
                   },
                   [_vm._v("Accept Page")]
@@ -72655,7 +72701,9 @@ var render = function () {
                       attrs: { id: "questionFour" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
@@ -72886,6 +72934,39 @@ var render = function () {
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "form-group col-xs-12" }, [
+                    _c("label", { attrs: { for: "position" } }, [
+                      _vm._v("Position in company"),
+                    ]),
+                    _vm._v(" "),
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.position,
+                          expression: "position",
+                        },
+                      ],
+                      staticClass: "form-control",
+                      attrs: {
+                        type: "text",
+                        name: "position",
+                        placeholder: "Position",
+                        value: "",
+                      },
+                      domProps: { value: _vm.position },
+                      on: {
+                        input: function ($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.position = $event.target.value
+                        },
+                      },
+                    }),
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "form-group col-xs-12" }, [
                     _c("label", { attrs: { for: "address" } }, [
                       _vm._v("Address"),
                     ]),
@@ -72900,7 +72981,6 @@ var render = function () {
                         },
                       ],
                       staticClass: "form-control",
-                      staticStyle: { height: "114px" },
                       attrs: {
                         type: "text",
                         name: "address",
@@ -73430,7 +73510,7 @@ var render = function () {
                   "button",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { name: "acceptTwo" },
+                    attrs: { href: "#acceptPage", name: "acceptTwo" },
                     on: { click: _vm.submitTwo },
                   },
                   [_vm._v("Accept Page")]
@@ -73446,7 +73526,9 @@ var render = function () {
                       attrs: { id: "questionTwo" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
@@ -73549,7 +73631,7 @@ var render = function () {
                   "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitThree },
                   },
                   [_vm._v("Accept Page")]
@@ -73565,7 +73647,9 @@ var render = function () {
                       attrs: { id: "questionThree" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
@@ -73680,7 +73764,7 @@ var render = function () {
                   "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitFour },
                   },
                   [_vm._v("Accept Page")]
@@ -73696,7 +73780,9 @@ var render = function () {
                       attrs: { id: "questionFour" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
@@ -73811,7 +73897,7 @@ var render = function () {
                   "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitFive },
                   },
                   [_vm._v("Accept Page")]
@@ -73827,7 +73913,9 @@ var render = function () {
                       attrs: { id: "questionFive" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
@@ -73954,7 +74042,7 @@ var render = function () {
                   "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitSix },
                   },
                   [_vm._v("Accept Page")]
@@ -73970,7 +74058,9 @@ var render = function () {
                       attrs: { id: "questionSix" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
@@ -74091,7 +74181,7 @@ var render = function () {
                   "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitSeven },
                   },
                   [_vm._v("Accept Page")]
@@ -74107,7 +74197,9 @@ var render = function () {
                       attrs: { id: "questionSeven" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
