@@ -11568,6 +11568,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -76812,6 +76813,8 @@ var staticRenderFns = [
       _c("li", [
         _vm._v("Whether the work equipment allows passage without risk."),
       ]),
+      _vm._v(" "),
+      _c("li", [_vm._v("Whether a permit is required.")]),
     ])
   },
   function () {
@@ -80251,7 +80254,7 @@ var render = function () {
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "Employers under the Management of Health and Safety at Work Regulations 1999, the minimum\n                    they must do is:"
+                  "Employers under the Management of Health and Safety at Work Regulations 1999, the minimum they must do is:"
                 ),
               ]),
               _vm._v(" "),
@@ -80264,6 +80267,12 @@ var render = function () {
               ]),
               _vm._v(" "),
               _vm._m(1),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "Your risk assessment should only include what you could reasonably be expected to know - you are not expected to anticipate unforeseeable risks."
+                ),
+              ]),
               _vm._v(" "),
               _c("p", [
                 _vm._v(

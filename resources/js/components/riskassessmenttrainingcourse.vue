@@ -43,8 +43,7 @@
                     <p>Welcome and thank you for taking part in this training presentation.</p>
                     <p>This training course explains what a risk assessment is and that a sufficient and suitable risk assessment is essential for all workplaces, regardless of the profession or environment.</p>
                     <p>Employers have a legal duty to ensure that the risks are assessed, managed and monitored so that their employees remain safe from harm.</p>
-                    <p>Employers under the Management of Health and Safety at Work Regulations 1999, the minimum
-                        they must do is:</p>
+                    <p>Employers under the Management of Health and Safety at Work Regulations 1999, the minimum they must do is:</p>
                     <ul>
                         <li>identify what could cause injury or illness in the business (hazards)</li>
                         <li>decide how likely it is that someone could be harmed and how seriously (the risk)</li>
@@ -62,6 +61,7 @@
                         <li>you involved your workers or their representatives in the process</li>
                         <li>The level of detail in a risk assessment should be proportionate to the risk and appropriate to the nature of the work. Insignificant risks can usually be ignored, as can risks arising from routine activities associated with life in general, unless the work activity compounds or significantly alters those risks. Your risk assessment should only include what you could reasonably be expected to know - you are not expected to anticipate unforeseeable risks.</li>
                     </ul>
+                    <p>Your risk assessment should only include what you could reasonably be expected to know - you are not expected to anticipate unforeseeable risks.</p>
                     <p>This section of the course looks at each of the vital elements of a risk assessment so that you can carry out an assessment of your own workplace.</p>
                     <h2>What is a Risk Assessment?</h2>
                     <p>A risk assessment is simply a careful examination of what in your work could cause harm to people, so that you can weigh up whether you have taken enough precautions or should do more to prevent harm.</p>

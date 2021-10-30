@@ -185,6 +185,7 @@
                         <li>Any additional risk posed by the use, installation or removal of that work equipment or by evacuation and rescue from it.</li>
                         <li>Whether the work equipment is appropriate to the nature of the work being performed and the foreseeable loadings.</li>
                         <li>Whether the work equipment allows passage without risk.</li>
+                        <li>Whether a permit is required.</li>
                     </ul>
                     <h2>Reducing the Risks</h2>
                     <p>In the first instance, employers should always try to avoid the need for working at height. If it is not possible to avoid working at height, then measures should be taken to ensure that the risks are reduced.</p>
@@ -195,7 +196,7 @@
                         <li>Fall arrest harnesses with clearance from the ground to allow the shock absorbing lanyard or inertia reel to deploy.</li>
                     </ul>
 
-                    <p>A Working At Heights - Permit to Work allows you and a contractor to consider and record all the hazards connected with the work they are going to conduct along with the necessary precautions that must be taken. By considering these hazards, the opportunity for accidents is greatly reduced and, therefore, the permit will help to protect the health & safety of employees and contractors.</p>
+                    <p>A Working At Heights - Permit to Work allows you and a contractor to consider and record all the hazards connected with the work they are going to conduct along with the necessary precautions that must be taken. By considering these hazards, the opportunity for accidents is greatly reduced and, therefore, the permit will help to protect the health &amp; safety of employees and contractors.</p>
 
                     <div class="alert alert-danger" role="alert">Have you read and fully understood this section? Click the "Accept Page" button and then fill out the short question. If you would need extra information please contact {{ contactName }} on {{ companyNumber }} or email <a v-bind:href="adminEmail">{{ adminEmail }}</a></div>
                     <div class="form-group">
