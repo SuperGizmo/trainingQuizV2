@@ -171,7 +171,7 @@
                     <nav>
                         <ul class="pager">
                             <li style="display: inline;"><a v-on:click="previousFour" class=" col-xs-3"  href="#">Previous</a></li>
-                            <li v-if="answerFour == 'yes'"  style="display: inline;"><button type="button" class="btn btn-success col-xs-3" v-on:click="nextFour">Next</button></li>
+                            <li v-if="answerFour == 'yes'"  style="display: inline;"><button type="button" class="btn btn-success col-xs-3" href="#" v-on:click="nextFour">Next</button></li>
                         </ul>
                     </nav>
                 </div>
@@ -198,7 +198,7 @@
                     <nav>
                         <ul class="pager">
                             <li style="display: inline;"><a v-on:click="previousFive" class=" col-xs-3"  href="#">Previous</a></li>
-                            <li v-if="answerFive == 'yes' "  style="display: inline;"><button type="button" class="btn btn-success col-xs-3" v-on:click="nextFive">Next</button></li>
+                            <li v-if="answerFive == 'yes' "  style="display: inline;"><button type="button" class="btn btn-success col-xs-3" href="#" v-on:click="nextFive">Next</button></li>
                         </ul>
                     </nav>
                 </div>

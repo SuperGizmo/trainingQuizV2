@@ -178,7 +178,7 @@
                             <li style="display: inline;"><a v-on:click="previousThree" class=" col-xs-3" href="#">Previous</a>
                             </li>
                             <li v-if="answerThree.toLowerCase() == 'yes' " style="display: inline;">
-                                <button type="button" class="btn btn-success col-xs-3" v-on:click="nextThree">Next
+                                <button type="button" class="btn btn-success col-xs-3" href="#" v-on:click="nextThree">Next
                                 </button>
                             </li>
                         </ul>
@@ -278,7 +278,7 @@
                             <li style="display: inline;"><a v-on:click="previousFour" class=" col-xs-3" href="#">Previous</a>
                             </li>
                             <li v-if="answerFour.toLowerCase() == 'yes'" style="display: inline;">
-                                <button type="button" class="btn btn-success col-xs-3" v-on:click="nextFour">Next
+                                <button type="button" class="btn btn-success col-xs-3" href="#" v-on:click="nextFour">Next
                                 </button>
                             </li>
                         </ul>
@@ -349,7 +349,7 @@
                             <li style="display: inline;"><a v-on:click="previousFive" class=" col-xs-3" href="#">Previous</a>
                             </li>
                             <li v-if="answerFive.toLowerCase() == 'yes'" style="display: inline;">
-                                <button type="button" class="btn btn-success col-xs-3" v-on:click="nextFive">Next
+                                <button type="button" class="btn btn-success col-xs-3" href="#" v-on:click="nextFive">Next
                                 </button>
                             </li>
                         </ul>
@@ -401,7 +401,7 @@
                             <li style="display: inline;"><a v-on:click="previousSix" class=" col-xs-3"
                                                             href="#">Previous</a></li>
                             <li v-if="answerSix.toLowerCase() == 'yes'" style="display: inline;">
-                                <button type="button" class="btn btn-success col-xs-3" v-on:click="nextSix">Next
+                                <button type="button" class="btn btn-success col-xs-3" href="#" v-on:click="nextSix">Next
                                 </button>
                             </li>
                         </ul>
