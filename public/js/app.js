@@ -3211,7 +3211,7 @@ __webpack_require__.r(__webpack_exports__);
         }
       };
       axios.get(this.linksUrl).then(function (response) {
-        _this.legislationLinks = response.body;
+        _this.legislationLinks = response.data;
       });
     },
     submitForm: function submitForm() {
@@ -3397,7 +3397,7 @@ __webpack_require__.r(__webpack_exports__);
         }
       };
       axios.get(this.questionsUrl).then(function (response) {
-        _this.questions = response.body;
+        _this.questions = response.data;
       }, function (response) {});
     }
   },
@@ -49265,7 +49265,7 @@ var render = function () {
                   "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.pressAccept },
                   },
                   [_vm._v("Accept Page")]
@@ -49280,7 +49280,9 @@ var render = function () {
                       staticStyle: { "margin-top": "95px" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(

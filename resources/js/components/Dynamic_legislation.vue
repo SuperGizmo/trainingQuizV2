@@ -76,10 +76,10 @@
 
         <div class="alert alert-danger" role="alert">Have you read and fully understood this section? Click the "Accept Page" button and then fill out the short question. If you would need extra information please contact {{ contactName }} on {{ companyNumber }}</div>
         <div class="form-group" id="next">
-          <a href="#" v-on:click="pressAccept" class="btn btn-success col-xs-12" >Accept Page</a>
+          <a href="#acceptPage" v-on:click="pressAccept" class="btn btn-success col-xs-12" >Accept Page</a>
         </div>
         <div class="form-group" style="margin-top: 95px;" v-if="pageAccepted">
-          <label>Short question</label>
+          <label id="acceptPage">Short question</label>
           <p>If you have read the above document, please type "yes" into the box below and then click next</p>
           <input type="text" class="form-control" v-model="inputShortQuestion" placeholder="Answer">
         </div>
@@ -209,7 +209,7 @@ table tbody:nth-child(odd) {
           }
         };
         axios.get(this.linksUrl).then(response => {
-          this.legislationLinks = response.body;
+          this.legislationLinks = response.data;
         });
       },
       submitForm: function() {
