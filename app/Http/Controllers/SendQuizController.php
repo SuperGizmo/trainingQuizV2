@@ -29,22 +29,22 @@ class SendQuizController extends Controller
     $percent = substr($percent, 0, 5);
     $status = $this->status($percent);
 
-    Mail::to($request->email)->send(new customer_Dynamic_Quiz($request, $percent, $status));
+    Mail::to($request->email)->queue(new customer_Dynamic_Quiz($request, $percent, $status));
 
     if(env('ADMIN_EMAIL') != ""){
-      Mail::to(env('ADMIN_EMAIL'))->send(new admin_Dynamic_Quiz($request, $percent, $status));
+      Mail::to(env('ADMIN_EMAIL'))->queue(new admin_Dynamic_Quiz($request, $percent, $status));
     }
     if(env('ADMIN_EMAIL_TWO') != ""){
-      Mail::to(env('ADMIN_EMAIL_TWO'))->send(new admin_Dynamic_Quiz($request, $percent, $status));
+      Mail::to(env('ADMIN_EMAIL_TWO'))->queue(new admin_Dynamic_Quiz($request, $percent, $status));
     }
     if(env('ADMIN_EMAIL_THREE') != ""){
-      Mail::to(env('ADMIN_EMAIL_THREE'))->send(new admin_Dynamic_Quiz($request, $percent, $status));
+      Mail::to(env('ADMIN_EMAIL_THREE'))->queue(new admin_Dynamic_Quiz($request, $percent, $status));
     }
     if(env('ADMIN_EMAIL_FOUR') != ""){
-      Mail::to(env('ADMIN_EMAIL_FOUR'))->send(new admin_Dynamic_Quiz($request, $percent, $status));
+      Mail::to(env('ADMIN_EMAIL_FOUR'))->queue(new admin_Dynamic_Quiz($request, $percent, $status));
     }
     if(env('ADMIN_EMAIL_FIVE') != ""){
-      Mail::to(env('ADMIN_EMAIL_FIVE'))->send(new admin_Dynamic_Quiz($request, $percent, $status));
+      Mail::to(env('ADMIN_EMAIL_FIVE'))->queue(new admin_Dynamic_Quiz($request, $percent, $status));
     }
   }
 
