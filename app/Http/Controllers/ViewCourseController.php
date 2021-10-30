@@ -9,7 +9,7 @@ class ViewCourseController extends Controller
 
   public function duskTests(){
     return ['ManualHandlingHealthAndSafetyTraining','AntiMoneyLaunderingAndFinancialCrimeTrainingCourse'];
-  } 
+  }
 
 
 // Start Course
@@ -1748,7 +1748,7 @@ class ViewCourseController extends Controller
             <li>
             STANDARD Disclosure & Barring Service check which is what the FCA want you to undertake and covers common law, unspent criminal cautions (which do not show on a Disclosure Scotland), and unspent criminal convictions as per the Police and Criminal Evidence Act.
             </li>
-        </ol>        
+        </ol>
         <p>A firm may register with the Disclosure and Barring Service (DBS) in order to carry out these checks.</p>
         <p>Although a firm is not required to carry out criminal record checks for Certification staff it may opt to carry out these checks on staff where it is legally allowed to do so.</p>
         <h2>Regulatory References</h2>
@@ -1972,6 +1972,7 @@ class ViewCourseController extends Controller
         'content' => '<h2>Why is Asbestos Dangerous?</h2>
         <p>Asbestos was used in a wide variety of building products and was used extensively in the building and construction industry between the 1950’s and the mid 1980’s.</p>
         <p>Asbestos in all its forms was finally banned in 1999 but there are still millions of building and facilities including industrial, commercial and domestic, which contain asbestos materials. Many people today think that they are free from the risks associated with asbestos, as it has been banned for so long. However, the NHS advise that asbestos still remains in many buildings even today, with an estimated half a million buildings still thought to contain asbestos. This means it can still provide a risk to present day workers.</p>
+        <p>When materials that contain asbestos are disturbed or damaged, fibres are released into the air. When these fibres are inhaled they can cause serious diseases. These diseases will not affect you immediately; they often take a long time to develop, but once diagnosed, it is often too late to do anything. This is why it is important that you protect yourself now.</p>
         <p>Asbestos is made up of tiny fibres which can be released when asbestos containing materials are disturbed. These airborne fibres can be inhaled and cause asbestos related diseases.</p>
         <p>The health effects from asbestos exposure were not fully understood for many decades as the symptoms of asbestos related diseases can take many years, even decades, to develop.</p>
         <h2>Asbestos Key Considerations</h2>
@@ -2718,8 +2719,8 @@ class ViewCourseController extends Controller
         </ul>
         <h2>How to recognise benefit fraud</h2>
         <p>
-        Customer states they are working and their benefits statement states they are not. <br> 
-        The customer states they are living with a partner but their benefit statements list them as living alone. <br> 
+        Customer states they are working and their benefits statement states they are not. <br>
+        The customer states they are living with a partner but their benefit statements list them as living alone. <br>
         The customer states they are working cash in hand and are claiming job seekers allowance.
         </p>
         <h2>What to do if you suspect benefit fraud</h2>
