@@ -36,7 +36,7 @@
                         <div class="form-group col-xs-12">
                             <label for="address">Address</label>
                             <textarea type="text" class="form-control" v-model="address" name="address"
-                                      style="height: 114px" placeholder="Your Address"></textarea>
+                                      placeholder="Your Address"></textarea>
                         </div>
                     </div>
                     <input type="submit" v-on:click="submit" v-if="firstSubmit == false"

@@ -79866,10 +79866,10 @@ var render = function () {
               _vm._v(" "),
               _c("div", { staticClass: "form-group" }, [
                 _c(
-                  "button",
+                  "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitTwo },
                   },
                   [_vm._v("Accept Page")]
@@ -79885,7 +79885,9 @@ var render = function () {
                       attrs: { id: "questionTwo" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
@@ -79998,7 +80000,7 @@ var render = function () {
                   "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitThree },
                   },
                   [_vm._v("Accept Page")]
@@ -80014,7 +80016,9 @@ var render = function () {
                       attrs: { id: "questionThree" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
@@ -80129,7 +80133,7 @@ var render = function () {
                   "a",
                   {
                     staticClass: "btn btn-success col-xs-12",
-                    attrs: { href: "#" },
+                    attrs: { href: "#acceptPage" },
                     on: { click: _vm.submitFour },
                   },
                   [_vm._v("Accept Page")]
@@ -80145,7 +80149,9 @@ var render = function () {
                       attrs: { id: "questionFour" },
                     },
                     [
-                      _c("label", [_vm._v("Short question")]),
+                      _c("label", { attrs: { id: "acceptPage" } }, [
+                        _vm._v("Short question"),
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(

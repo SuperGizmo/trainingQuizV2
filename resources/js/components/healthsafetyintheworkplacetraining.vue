@@ -454,7 +454,7 @@
                             <div class="form-group col-xs-12">
                                 <label for="address">Address</label>
                                 <textarea type="text" class="form-control" v-model="address" name="address" id="address"
-                                          style="height: 114px" placeholder="Your Address"></textarea>
+                                          placeholder="Your Address"></textarea>
                             </div>
                         </div>
                         <input type="submit" v-on:click="submitForm" class="btn btn-success col-xs-12" name="submit">

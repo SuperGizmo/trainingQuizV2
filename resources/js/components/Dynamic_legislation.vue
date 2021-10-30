@@ -124,7 +124,7 @@
           </div>
           <div class="form-group col-xs-12">
             <label for="address">Address</label>
-            <textarea type="text" class="form-control" v-model="address" name="address" id="address" style="height: 114px" placeholder="Your Address"></textarea>
+            <textarea type="text" class="form-control" v-model="address" name="address" id="address" placeholder="Your Address"></textarea>
           </div>
         </div>
         <p>By submitting this information you confirm that you have read the register, understand its content and agree to ensure compliance to legal and other legislative requirements that may be applicable to your line of work.</p>
