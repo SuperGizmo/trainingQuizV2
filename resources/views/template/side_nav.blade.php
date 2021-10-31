@@ -2,7 +2,7 @@
 	<div class="panel panel-default">
 		<div class="panel-heading">
 			<a role="button" data-toggle="collapse" href="#fca_compliance_training_course" aria-expanded="false" class="collapsed" aria-controls="fca_compliance_training_course">
-				<h3 class="panel-title" style=" @if(env('NAV_BUTTON_COLOUR') != "") <?php echo env('NAV_BUTTON_COLOUR'); ?> @endif ">FCA Compliance Training Courses <i class="fa fa-arrow-circle-up" style="float: right;" aria-hidden="true"></i></h3>
+				<h3 class="panel-title" style=" @if(config('site.NAV_BUTTON_COLOUR') != "") <?php echo config('site.NAV_BUTTON_COLOUR'); ?> @endif ">FCA Compliance Training Courses <i class="fa fa-arrow-circle-up" style="float: right;" aria-hidden="true"></i></h3>
 			</a>
 		</div>
 		<div class="collapse" id="fca_compliance_training_course">
@@ -22,7 +22,7 @@
 	<div class="panel panel-default">
 		<div class="panel-heading">
 			<a role="button" data-toggle="collapse" href="#fca_compliance_training_course_one" aria-expanded="false" class="collapsed" aria-controls="fca_compliance_training_course_one">
-				<h3 class="panel-title" style=" @if(env('NAV_BUTTON_COLOUR') != "") <?php echo env('NAV_BUTTON_COLOUR'); ?> @endif ">Energy Company Obligation (ECO) Compliance Training Courses <i class="fa fa-arrow-circle-up" style="float: right;" aria-hidden="true"></i></h3></a>
+				<h3 class="panel-title" style=" @if(config('site.NAV_BUTTON_COLOUR') != "") <?php echo config('site.NAV_BUTTON_COLOUR'); ?> @endif ">Energy Company Obligation (ECO) Compliance Training Courses <i class="fa fa-arrow-circle-up" style="float: right;" aria-hidden="true"></i></h3></a>
 		</div>
 		<div class="collapse" id="fca_compliance_training_course_one">
 			<ul class="nav nav-pills nav-stacked">
@@ -33,7 +33,7 @@
 {{--	<div class="panel panel-default">--}}
 {{--		<div class="panel-heading">--}}
 {{--			<a role="button" data-toggle="collapse" href="#green_deal_training_course" aria-expanded="false" class="collapsed" aria-controls="green_deal_training_course">--}}
-{{--				<h3 class="panel-title" style=" @if(env('NAV_BUTTON_COLOUR') != "") <?php echo env('NAV_BUTTON_COLOUR'); ?> @endif ">Green Deal Training Courses <i class="fa fa-arrow-circle-up" style="float: right;" aria-hidden="true"></i></h3>--}}
+{{--				<h3 class="panel-title" style=" @if(config('site.NAV_BUTTON_COLOUR') != "") <?php echo config('site.NAV_BUTTON_COLOUR'); ?> @endif ">Green Deal Training Courses <i class="fa fa-arrow-circle-up" style="float: right;" aria-hidden="true"></i></h3>--}}
 {{--			</a>--}}
 {{--		</div>--}}
 {{--		<div class="collapse" id="green_deal_training_course">--}}
@@ -46,7 +46,7 @@
 	<div class="panel panel-default">
 		<div class="panel-heading">
 			<a role="button" data-toggle="collapse" href="#health_and_safety" aria-expanded="false" class="collapsed" aria-controls="health_and_safety">
-				<h3 class="panel-title" style=" @if(env('NAV_BUTTON_COLOUR') != "") <?php echo env('NAV_BUTTON_COLOUR'); ?> @endif ">Health and Safety Training Courses <i class="fa fa-arrow-circle-up" style="float: right;" aria-hidden="true"></i></h3>
+				<h3 class="panel-title" style=" @if(config('site.NAV_BUTTON_COLOUR') != "") <?php echo config('site.NAV_BUTTON_COLOUR'); ?> @endif ">Health and Safety Training Courses <i class="fa fa-arrow-circle-up" style="float: right;" aria-hidden="true"></i></h3>
 			</a>
 		</div>
 		<div class="collapse" id="health_and_safety">
@@ -67,7 +67,7 @@
 	<div class="panel panel-default">
 		<div class="panel-heading">
 			<a role="button" data-toggle="collapse" href="#toolbox_talks" aria-expanded="false" class="collapsed" aria-controls="toolbox_talks">
-				<h3 class="panel-title" style=" @if(env('NAV_BUTTON_COLOUR') != "") <?php echo env('NAV_BUTTON_COLOUR'); ?> @endif ">Toolbox Talks <i class="fa fa-arrow-circle-up" style="float: right;" aria-hidden="true"></i></h3>
+				<h3 class="panel-title" style=" @if(config('site.NAV_BUTTON_COLOUR') != "") <?php echo config('site.NAV_BUTTON_COLOUR'); ?> @endif ">Toolbox Talks <i class="fa fa-arrow-circle-up" style="float: right;" aria-hidden="true"></i></h3>
 			</a>
 		</div>
 		<div class="collapse" id="toolbox_talks">
@@ -88,7 +88,7 @@
 	<div class="panel panel-default">
 		<div class="panel-heading">
 			<a role="button" data-toggle="collapse" href="#credit_card_processing" aria-expanded="false" class="collapsed" aria-controls="credit_card_processing">
-				<h3 class="panel-title" style=" @if(env('NAV_BUTTON_COLOUR') != "") <?php echo env('NAV_BUTTON_COLOUR'); ?> @endif ">Credit Card Processing Training Courses <i class="fa fa-arrow-circle-up" style="float: right;" aria-hidden="true"></i></h3>
+				<h3 class="panel-title" style=" @if(config('site.NAV_BUTTON_COLOUR') != "") <?php echo config('site.NAV_BUTTON_COLOUR'); ?> @endif ">Credit Card Processing Training Courses <i class="fa fa-arrow-circle-up" style="float: right;" aria-hidden="true"></i></h3>
 			</a>
 		</div>
 		<div class="collapse" id="credit_card_processing">
@@ -100,7 +100,7 @@
   <div class="panel panel-default">
     <div class="panel-heading">
       <a role="button" data-toggle="collapse" href="#LegislativeRegisters" aria-expanded="false" class="collapsed" aria-controls="LegislativeRegisters">
-        <h3 class="panel-title" style=" @if(env('NAV_BUTTON_COLOUR') != "") <?php echo env('NAV_BUTTON_COLOUR'); ?> @endif ">Legislative Registers <i class="fa fa-arrow-circle-up" style="float: right;" aria-hidden="true"></i></h3>
+        <h3 class="panel-title" style=" @if(config('site.NAV_BUTTON_COLOUR') != "") <?php echo config('site.NAV_BUTTON_COLOUR'); ?> @endif ">Legislative Registers <i class="fa fa-arrow-circle-up" style="float: right;" aria-hidden="true"></i></h3>
       </a>
     </div>
     <div class="collapse" id="LegislativeRegisters">
@@ -115,7 +115,7 @@
 	<div class="panel panel-default">
 		<div class="panel-heading">
 			<a role="button" data-toggle="collapse" href="#assessments" aria-expanded="false" class="collapsed" aria-controls="assessments">
-				<h3 class="panel-title" style=" @if(env('NAV_BUTTON_COLOUR') != "") <?php echo env('NAV_BUTTON_COLOUR'); ?> @endif ">Assessments <i class="fa fa-arrow-circle-up" style="float: right;" aria-hidden="true"></i></h3>
+				<h3 class="panel-title" style=" @if(config('site.NAV_BUTTON_COLOUR') != "") <?php echo config('site.NAV_BUTTON_COLOUR'); ?> @endif ">Assessments <i class="fa fa-arrow-circle-up" style="float: right;" aria-hidden="true"></i></h3>
 			</a>
 		</div>
 		<div class="collapse" id="assessments">
@@ -139,7 +139,7 @@
 	<div class="panel panel-default">
 		<div class="panel-heading">
 			<a role="button" data-toggle="collapse" href="#Declaration" aria-expanded="false" class="collapsed" aria-controls="Declaration">
-				<h3 class="panel-title" style=" @if(env('NAV_BUTTON_COLOUR') != "") <?php echo env('NAV_BUTTON_COLOUR'); ?> @endif ">Declaration <i class="fa fa-arrow-circle-up" style="float: right;" aria-hidden="true"></i></h3>
+				<h3 class="panel-title" style=" @if(config('site.NAV_BUTTON_COLOUR') != "") <?php echo config('site.NAV_BUTTON_COLOUR'); ?> @endif ">Declaration <i class="fa fa-arrow-circle-up" style="float: right;" aria-hidden="true"></i></h3>
 			</a>
 		</div>
 		<div class="collapse" id="Declaration">

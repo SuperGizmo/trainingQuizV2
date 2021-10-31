@@ -50,7 +50,7 @@
             }
         </style>
     @endif
-    @if(env('SITE_ID') == "2" || env('SITE_ID') == "3")
+    @if(config('site.SITE_ID') == "2" || config('site.SITE_ID') == "3")
         <style>
             a {
                 color: #333 !important;
@@ -140,9 +140,9 @@ $pages = [
         <div class="panel panel-default">
             <div class="panel-body">
                 <div class="col-xs-12">
-                    <strong>Registered Address:</strong> {{ env('COMPANY_ADDRESS') }} - @if(env('COMPANY_REG') != "")
-                        <strong>Company Reg:</strong> {{ env('COMPANY_REG') }} - @endif<strong>Call us
-                        on:</strong> {{ env('COMPANY_NUMBER') }}
+                    <strong>Registered Address:</strong> {{ config('site.COMPANY_ADDRESS') }} - @if(config('site.COMPANY_REG') != "")
+                        <strong>Company Reg:</strong> {{ config('site.COMPANY_REG') }} - @endif<strong>Call us
+                        on:</strong> {{ config('site.COMPANY_NUMBER') }}
                 </div>
             </div>
         </div>
