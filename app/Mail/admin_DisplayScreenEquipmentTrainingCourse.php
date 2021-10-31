@@ -33,11 +33,11 @@ class admin_DisplayScreenEquipmentTrainingCourse extends Mailable
     public function build()
     {
 
-        $hash = md5(uniqid().'01810479f2856f9ebab37a9b4a9b4f29'.microtime().config('.siteNAME').config('.siteCOMPANY_ADDRESS'));
+        $hash = md5(uniqid().'01810479f2856f9ebab37a9b4a9b4f29'.microtime().config('site.NAME').config('site.COMPANY_ADDRESS'));
 
         $data = [
-                'logo' => config('.sitePDF_LOGO'),
-                'company_name' => config('.siteNAME'),
+                'logo' => config('site.PDF_LOGO'),
+                'company_name' => config('site.NAME'),
                 'name' => $this->data['name'],
                 'course' => 'Display Screen Equipment Training Course',
                 'course_topics' => [
@@ -47,8 +47,8 @@ class admin_DisplayScreenEquipmentTrainingCourse extends Mailable
                     'Eye tests and DSE associated with eye strains',
                     'Skin disorders, pregnancies, epilepsy and other potential health problem.'
                 ],
-                'company_address' => config('.siteCOMPANY_ADDRESS'),
-                'company_number' => config('.siteCOMPANY_NUMBER'),
+                'company_address' => config('site.COMPANY_ADDRESS'),
+                'company_number' => config('site.COMPANY_NUMBER'),
         ];
 
 
@@ -59,9 +59,9 @@ class admin_DisplayScreenEquipmentTrainingCourse extends Mailable
 
         Storage::put("public".$url, $pdf->stream());
 
-        $this->data['pdf'] = config('.siteAPP_URL').'/storage'.$url;
+        $this->data['pdf'] = config('site.APP_URL').'/storage'.$url;
 
-        return $this->from(config('.siteADMIN_EMAIL'))
+        return $this->from(config('site.ADMIN_EMAIL'))
             ->subject('Display Screen Equipment Training Course')
             ->view('emails.admin_DisplayScreenEquipmentTrainingCourse')->with($this->data);
     }
