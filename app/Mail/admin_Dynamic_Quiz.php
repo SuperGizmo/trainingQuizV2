@@ -25,9 +25,9 @@ class admin_Dynamic_Quiz extends Mailable
     public function __construct($data, $percent, $status)
     {
         $this->data = $data->all();
-        
+
         // dd($this->data);
-        
+
         $this->percent = $percent;
         $this->status = $status;
     }
@@ -40,17 +40,17 @@ class admin_Dynamic_Quiz extends Mailable
     public function build()
     {
 
-        $hash = md5(uniqid().'01810479f2856f9ebab37a9b4a9b4f29'.microtime().env('NAME').env('COMPANY_ADDRESS'));
+        $hash = md5(uniqid().'01810479f2856f9ebab37a9b4a9b4f29'.microtime().config('.siteNAME').config('.siteCOMPANY_ADDRESS'));
 
         $data = [
-            'logo' => env('PDF_LOGO'),
-            'company_name' => env('NAME'),
+            'logo' => config('.sitePDF_LOGO'),
+            'company_name' => config('.siteNAME'),
             'name' => $this->data['name'],
             'course' => $this->data['quizTitle'],
             'percent' => $this->percent,
             'status' => $this->status,
-            'company_address' => env('COMPANY_ADDRESS'),
-            'company_number' => env('COMPANY_NUMBER'),
+            'company_address' => config('.siteCOMPANY_ADDRESS'),
+            'company_number' => config('.siteCOMPANY_NUMBER'),
         ];
 
         $pdf = PDF::loadView('pdf.answer', $data);
@@ -60,9 +60,9 @@ class admin_Dynamic_Quiz extends Mailable
 
         Storage::put("public".$url, $pdf->stream());
 
-        $this->data['pdf'] = env('APP_URL').'/storage'.$url;
+        $this->data['pdf'] = config('.siteAPP_URL').'/storage'.$url;
 
-        return $this->from(env('ADMIN_EMAIL'))
+        return $this->from(config('.siteADMIN_EMAIL'))
             ->subject($this->data['quizTitle'])
             ->view('emails.admin_Dynamic_Quiz')->with($this->data);
     }
