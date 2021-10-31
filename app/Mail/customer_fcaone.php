@@ -33,16 +33,16 @@ class customer_fcaone extends Mailable
     public function build()
     {
 
-        $hash = md5(uniqid().'01810479f2856f9ebab37a9b4a9b4f29'.microtime().env('NAME').env('COMPANY_ADDRESS'));
+        $hash = md5(uniqid().'01810479f2856f9ebab37a9b4a9b4f29'.microtime().config('.siteNAME').config('.siteCOMPANY_ADDRESS'));
 
         $data = [
-                'logo' => env('PDF_LOGO'),
-                'company_name' => env('NAME'),
+                'logo' => config('.sitePDF_LOGO'),
+                'company_name' => config('.siteNAME'),
                 'name' => $this->data['name'],
                 'course' => 'FCA Compliance Training Course 1',
                 'course_topics' => ['Consumer Credit Act & Consumer Credit Directive','Treating Customers Fairly','Vulnerable Customers','Visiting Consumers in their Home','Financial Promotions','Data Protection','Anti-Money Laundering','Complaints Handling'],
-                'company_address' => env('COMPANY_ADDRESS'),
-                'company_number' => env('COMPANY_NUMBER'),
+                'company_address' => config('.siteCOMPANY_ADDRESS'),
+                'company_number' => config('.siteCOMPANY_NUMBER'),
         ];
 
         // return view('pdf.certificate')->with($data);
@@ -54,9 +54,9 @@ class customer_fcaone extends Mailable
 
         Storage::put("public".$url, $pdf->stream());
 
-        $this->data['pdf'] = env('APP_URL').'/storage'.$url;
+        $this->data['pdf'] = config('.siteAPP_URL').'/storage'.$url;
 
-        return $this->from(env('ADMIN_EMAIL'))
+        return $this->from(config('.siteADMIN_EMAIL'))
             ->subject('FCA Compliance Training Course 1')
             ->view('emails.customer_fcaone')->with($this->data);
     }

@@ -54,20 +54,20 @@ class QuizController extends Controller
   public function NoiseVibrationAndVehicleSafetyTrainingCourse(Request $request){
 
     Mail::to($request->email)->queue(new customer_NoiseVibrationAndVehicleSafetyTrainingCourse($request));
-    if(env('ADMIN_EMAIL') != ""){
-      Mail::to(env('ADMIN_EMAIL'))->queue(new admin_NoiseVibrationAndVehicleSafetyTrainingCourse($request));
+    if(config('.siteADMIN_EMAIL') != ""){
+      Mail::to(config('.siteADMIN_EMAIL'))->queue(new admin_NoiseVibrationAndVehicleSafetyTrainingCourse($request));
     }
-    if(env('ADMIN_EMAIL_TWO') != ""){
-      Mail::to(env('ADMIN_EMAIL_TWO'))->queue(new admin_NoiseVibrationAndVehicleSafetyTrainingCourse($request));
+    if(config('.siteADMIN_EMAIL_TWO') != ""){
+      Mail::to(config('.siteADMIN_EMAIL_TWO'))->queue(new admin_NoiseVibrationAndVehicleSafetyTrainingCourse($request));
     }
-    if(env('ADMIN_EMAIL_THREE') != ""){
-      Mail::to(env('ADMIN_EMAIL_THREE'))->queue(new admin_NoiseVibrationAndVehicleSafetyTrainingCourse($request));
+    if(config('.siteADMIN_EMAIL_THREE') != ""){
+      Mail::to(config('.siteADMIN_EMAIL_THREE'))->queue(new admin_NoiseVibrationAndVehicleSafetyTrainingCourse($request));
     }
-    if(env('ADMIN_EMAIL_FOUR') != ""){
-      Mail::to(env('ADMIN_EMAIL_FOUR'))->queue(new admin_NoiseVibrationAndVehicleSafetyTrainingCourse($request));
+    if(config('.siteADMIN_EMAIL_FOUR') != ""){
+      Mail::to(config('.siteADMIN_EMAIL_FOUR'))->queue(new admin_NoiseVibrationAndVehicleSafetyTrainingCourse($request));
     }
-    if(env('ADMIN_EMAIL_FIVE') != ""){
-      Mail::to(env('ADMIN_EMAIL_FIVE'))->queue(new admin_NoiseVibrationAndVehicleSafetyTrainingCourse($request));
+    if(config('.siteADMIN_EMAIL_FIVE') != ""){
+      Mail::to(config('.siteADMIN_EMAIL_FIVE'))->queue(new admin_NoiseVibrationAndVehicleSafetyTrainingCourse($request));
     }
   }
   /**
@@ -96,40 +96,40 @@ class QuizController extends Controller
   public function RiskAssessmentTrainingCourse(Request $request){
 
     Mail::to($request->email)->queue(new customer_RiskAssessmentTrainingCourse($request));
-    if(env('ADMIN_EMAIL') != ""){
-      Mail::to(env('ADMIN_EMAIL'))->queue(new admin_RiskAssessmentTrainingCourse($request));
+    if(config('.siteADMIN_EMAIL') != ""){
+      Mail::to(config('.siteADMIN_EMAIL'))->queue(new admin_RiskAssessmentTrainingCourse($request));
     }
-    if(env('ADMIN_EMAIL_TWO') != ""){
-      Mail::to(env('ADMIN_EMAIL_TWO'))->queue(new admin_RiskAssessmentTrainingCourse($request));
+    if(config('.siteADMIN_EMAIL_TWO') != ""){
+      Mail::to(config('.siteADMIN_EMAIL_TWO'))->queue(new admin_RiskAssessmentTrainingCourse($request));
     }
-    if(env('ADMIN_EMAIL_THREE') != ""){
-      Mail::to(env('ADMIN_EMAIL_THREE'))->queue(new admin_RiskAssessmentTrainingCourse($request));
+    if(config('.siteADMIN_EMAIL_THREE') != ""){
+      Mail::to(config('.siteADMIN_EMAIL_THREE'))->queue(new admin_RiskAssessmentTrainingCourse($request));
     }
-    if(env('ADMIN_EMAIL_FOUR') != ""){
-      Mail::to(env('ADMIN_EMAIL_FOUR'))->queue(new admin_RiskAssessmentTrainingCourse($request));
+    if(config('.siteADMIN_EMAIL_FOUR') != ""){
+      Mail::to(config('.siteADMIN_EMAIL_FOUR'))->queue(new admin_RiskAssessmentTrainingCourse($request));
     }
-    if(env('ADMIN_EMAIL_FIVE') != ""){
-      Mail::to(env('ADMIN_EMAIL_FIVE'))->queue(new admin_RiskAssessmentTrainingCourse($request));
+    if(config('.siteADMIN_EMAIL_FIVE') != ""){
+      Mail::to(config('.siteADMIN_EMAIL_FIVE'))->queue(new admin_RiskAssessmentTrainingCourse($request));
     }
   }
 
   public function WorkplaceSafetyandWelfareTrainingCourse(Request $request){
 
     Mail::to($request->email)->queue(new customer_WorkplaceSafetyandWelfareTrainingCourse($request));
-    if(env('ADMIN_EMAIL') != ""){
-      Mail::to(env('ADMIN_EMAIL'))->queue(new admin_WorkplaceSafetyandWelfareTrainingCourse($request));
+    if(config('.siteADMIN_EMAIL') != ""){
+      Mail::to(config('.siteADMIN_EMAIL'))->queue(new admin_WorkplaceSafetyandWelfareTrainingCourse($request));
     }
-    if(env('ADMIN_EMAIL_TWO') != ""){
-      Mail::to(env('ADMIN_EMAIL_TWO'))->queue(new admin_WorkplaceSafetyandWelfareTrainingCourse($request));
+    if(config('.siteADMIN_EMAIL_TWO') != ""){
+      Mail::to(config('.siteADMIN_EMAIL_TWO'))->queue(new admin_WorkplaceSafetyandWelfareTrainingCourse($request));
     }
-    if(env('ADMIN_EMAIL_THREE') != ""){
-      Mail::to(env('ADMIN_EMAIL_THREE'))->queue(new admin_WorkplaceSafetyandWelfareTrainingCourse($request));
+    if(config('.siteADMIN_EMAIL_THREE') != ""){
+      Mail::to(config('.siteADMIN_EMAIL_THREE'))->queue(new admin_WorkplaceSafetyandWelfareTrainingCourse($request));
     }
-    if(env('ADMIN_EMAIL_FOUR') != ""){
-      Mail::to(env('ADMIN_EMAIL_FOUR'))->queue(new admin_WorkplaceSafetyandWelfareTrainingCourse($request));
+    if(config('.siteADMIN_EMAIL_FOUR') != ""){
+      Mail::to(config('.siteADMIN_EMAIL_FOUR'))->queue(new admin_WorkplaceSafetyandWelfareTrainingCourse($request));
     }
-    if(env('ADMIN_EMAIL_FIVE') != ""){
-      Mail::to(env('ADMIN_EMAIL_FIVE'))->queue(new admin_WorkplaceSafetyandWelfareTrainingCourse($request));
+    if(config('.siteADMIN_EMAIL_FIVE') != ""){
+      Mail::to(config('.siteADMIN_EMAIL_FIVE'))->queue(new admin_WorkplaceSafetyandWelfareTrainingCourse($request));
     }
   }
 
@@ -138,20 +138,20 @@ class QuizController extends Controller
   public function HazardousSubstancesandWorkingatHeight(Request $request){
 
     Mail::to($request->email)->queue(new customer_HazardousSubstancesandWorkingatHeight($request));
-    if(env('ADMIN_EMAIL') != ""){
-      Mail::to(env('ADMIN_EMAIL'))->queue(new admin_HazardousSubstancesandWorkingatHeight($request));
+    if(config('.siteADMIN_EMAIL') != ""){
+      Mail::to(config('.siteADMIN_EMAIL'))->queue(new admin_HazardousSubstancesandWorkingatHeight($request));
     }
-    if(env('ADMIN_EMAIL_TWO') != ""){
-      Mail::to(env('ADMIN_EMAIL_TWO'))->queue(new admin_HazardousSubstancesandWorkingatHeight($request));
+    if(config('.siteADMIN_EMAIL_TWO') != ""){
+      Mail::to(config('.siteADMIN_EMAIL_TWO'))->queue(new admin_HazardousSubstancesandWorkingatHeight($request));
     }
-    if(env('ADMIN_EMAIL_THREE') != ""){
-      Mail::to(env('ADMIN_EMAIL_THREE'))->queue(new admin_HazardousSubstancesandWorkingatHeight($request));
+    if(config('.siteADMIN_EMAIL_THREE') != ""){
+      Mail::to(config('.siteADMIN_EMAIL_THREE'))->queue(new admin_HazardousSubstancesandWorkingatHeight($request));
     }
-    if(env('ADMIN_EMAIL_FOUR') != ""){
-      Mail::to(env('ADMIN_EMAIL_FOUR'))->queue(new admin_HazardousSubstancesandWorkingatHeight($request));
+    if(config('.siteADMIN_EMAIL_FOUR') != ""){
+      Mail::to(config('.siteADMIN_EMAIL_FOUR'))->queue(new admin_HazardousSubstancesandWorkingatHeight($request));
     }
-    if(env('ADMIN_EMAIL_FIVE') != ""){
-      Mail::to(env('ADMIN_EMAIL_FIVE'))->queue(new admin_HazardousSubstancesandWorkingatHeight($request));
+    if(config('.siteADMIN_EMAIL_FIVE') != ""){
+      Mail::to(config('.siteADMIN_EMAIL_FIVE'))->queue(new admin_HazardousSubstancesandWorkingatHeight($request));
     }
   }
 
@@ -159,20 +159,20 @@ class QuizController extends Controller
 
     Mail::to($request->email)->queue(new customer_HealthSafetyintheWorkplaceTraining($request));
 
-    if(env('ADMIN_EMAIL') != ""){
-      Mail::to(env('ADMIN_EMAIL'))->queue(new admin_HealthSafetyintheWorkplaceTraining($request));
+    if(config('.siteADMIN_EMAIL') != ""){
+      Mail::to(config('.siteADMIN_EMAIL'))->queue(new admin_HealthSafetyintheWorkplaceTraining($request));
     }
-    if(env('ADMIN_EMAIL_TWO') != ""){
-      Mail::to(env('ADMIN_EMAIL_TWO'))->queue(new admin_HealthSafetyintheWorkplaceTraining($request));
+    if(config('.siteADMIN_EMAIL_TWO') != ""){
+      Mail::to(config('.siteADMIN_EMAIL_TWO'))->queue(new admin_HealthSafetyintheWorkplaceTraining($request));
     }
-    if(env('ADMIN_EMAIL_THREE') != ""){
-      Mail::to(env('ADMIN_EMAIL_THREE'))->queue(new admin_HealthSafetyintheWorkplaceTraining($request));
+    if(config('.siteADMIN_EMAIL_THREE') != ""){
+      Mail::to(config('.siteADMIN_EMAIL_THREE'))->queue(new admin_HealthSafetyintheWorkplaceTraining($request));
     }
-    if(env('ADMIN_EMAIL_FOUR') != ""){
-      Mail::to(env('ADMIN_EMAIL_FOUR'))->queue(new admin_HealthSafetyintheWorkplaceTraining($request));
+    if(config('.siteADMIN_EMAIL_FOUR') != ""){
+      Mail::to(config('.siteADMIN_EMAIL_FOUR'))->queue(new admin_HealthSafetyintheWorkplaceTraining($request));
     }
-    if(env('ADMIN_EMAIL_FIVE') != ""){
-      Mail::to(env('ADMIN_EMAIL_FIVE'))->queue(new admin_HealthSafetyintheWorkplaceTraining($request));
+    if(config('.siteADMIN_EMAIL_FIVE') != ""){
+      Mail::to(config('.siteADMIN_EMAIL_FIVE'))->queue(new admin_HealthSafetyintheWorkplaceTraining($request));
     }
   }
 
@@ -180,27 +180,27 @@ class QuizController extends Controller
 
     Mail::to($request->email)->queue(new customer_FCATreatingCustomersFairlyTrainingCourse($request));
 
-    if(env('ADMIN_EMAIL') != ""){
-      Mail::to(env('ADMIN_EMAIL'))->queue(new admin_FCATreatingCustomersFairlyTrainingCourse($request));
+    if(config('.siteADMIN_EMAIL') != ""){
+      Mail::to(config('.siteADMIN_EMAIL'))->queue(new admin_FCATreatingCustomersFairlyTrainingCourse($request));
     }
-    if(env('ADMIN_EMAIL_TWO') != ""){
-      Mail::to(env('ADMIN_EMAIL_TWO'))->queue(new admin_FCATreatingCustomersFairlyTrainingCourse($request));
+    if(config('.siteADMIN_EMAIL_TWO') != ""){
+      Mail::to(config('.siteADMIN_EMAIL_TWO'))->queue(new admin_FCATreatingCustomersFairlyTrainingCourse($request));
     }
-    if(env('ADMIN_EMAIL_THREE') != ""){
-      Mail::to(env('ADMIN_EMAIL_THREE'))->queue(new admin_FCATreatingCustomersFairlyTrainingCourse($request));
+    if(config('.siteADMIN_EMAIL_THREE') != ""){
+      Mail::to(config('.siteADMIN_EMAIL_THREE'))->queue(new admin_FCATreatingCustomersFairlyTrainingCourse($request));
     }
-    if(env('ADMIN_EMAIL_FOUR') != ""){
-      Mail::to(env('ADMIN_EMAIL_FOUR'))->queue(new admin_FCATreatingCustomersFairlyTrainingCourse($request));
+    if(config('.siteADMIN_EMAIL_FOUR') != ""){
+      Mail::to(config('.siteADMIN_EMAIL_FOUR'))->queue(new admin_FCATreatingCustomersFairlyTrainingCourse($request));
     }
-    if(env('ADMIN_EMAIL_FIVE') != ""){
-      Mail::to(env('ADMIN_EMAIL_FIVE'))->queue(new admin_FCATreatingCustomersFairlyTrainingCourse($request));
+    if(config('.siteADMIN_EMAIL_FIVE') != ""){
+      Mail::to(config('.siteADMIN_EMAIL_FIVE'))->queue(new admin_FCATreatingCustomersFairlyTrainingCourse($request));
     }
   }
 
 
   public function saveAnswers($request){
     $answer = new Answers;
-    $answer->site_id = env('SITE_ID');
+    $answer->site_id = config('.siteSITE_ID');
     $answer->data = \GuzzleHttp\json_encode($request->all());
     $answer->save();
   }
@@ -211,20 +211,20 @@ class QuizController extends Controller
 
     Mail::to($request->email)->queue(new customer_fcaone($request));
 
-    if(env('ADMIN_EMAIL') != ""){
-      Mail::to(env('ADMIN_EMAIL'))->queue(new fcaone($request));
+    if(config('.siteADMIN_EMAIL') != ""){
+      Mail::to(config('.siteADMIN_EMAIL'))->queue(new fcaone($request));
     }
-    if(env('ADMIN_EMAIL_TWO') != ""){
-      Mail::to(env('ADMIN_EMAIL_TWO'))->queue(new fcaone($request));
+    if(config('.siteADMIN_EMAIL_TWO') != ""){
+      Mail::to(config('.siteADMIN_EMAIL_TWO'))->queue(new fcaone($request));
     }
-    if(env('ADMIN_EMAIL_THREE') != ""){
-      Mail::to(env('ADMIN_EMAIL_THREE'))->queue(new fcaone($request));
+    if(config('.siteADMIN_EMAIL_THREE') != ""){
+      Mail::to(config('.siteADMIN_EMAIL_THREE'))->queue(new fcaone($request));
     }
-    if(env('ADMIN_EMAIL_FOUR') != ""){
-      Mail::to(env('ADMIN_EMAIL_FOUR'))->queue(new fcaone($request));
+    if(config('.siteADMIN_EMAIL_FOUR') != ""){
+      Mail::to(config('.siteADMIN_EMAIL_FOUR'))->queue(new fcaone($request));
     }
-    if(env('ADMIN_EMAIL_FIVE') != ""){
-      Mail::to(env('ADMIN_EMAIL_FIVE'))->queue(new fcaone($request));
+    if(config('.siteADMIN_EMAIL_FIVE') != ""){
+      Mail::to(config('.siteADMIN_EMAIL_FIVE'))->queue(new fcaone($request));
     }
   }
 
@@ -235,20 +235,20 @@ class QuizController extends Controller
 
     Mail::to($request->email)->queue(new customer_fcatwo($request));
 
-    if(env('ADMIN_EMAIL') != ""){
-      Mail::to(env('ADMIN_EMAIL'))->queue(new fcatwo($request));
+    if(config('.siteADMIN_EMAIL') != ""){
+      Mail::to(config('.siteADMIN_EMAIL'))->queue(new fcatwo($request));
     }
-    if(env('ADMIN_EMAIL_TWO') != ""){
-      Mail::to(env('ADMIN_EMAIL_TWO'))->queue(new fcatwo($request));
+    if(config('.siteADMIN_EMAIL_TWO') != ""){
+      Mail::to(config('.siteADMIN_EMAIL_TWO'))->queue(new fcatwo($request));
     }
-    if(env('ADMIN_EMAIL_THREE') != ""){
-      Mail::to(env('ADMIN_EMAIL_THREE'))->queue(new fcatwo($request));
+    if(config('.siteADMIN_EMAIL_THREE') != ""){
+      Mail::to(config('.siteADMIN_EMAIL_THREE'))->queue(new fcatwo($request));
     }
-    if(env('ADMIN_EMAIL_FOUR') != ""){
-      Mail::to(env('ADMIN_EMAIL_FOUR'))->queue(new fcatwo($request));
+    if(config('.siteADMIN_EMAIL_FOUR') != ""){
+      Mail::to(config('.siteADMIN_EMAIL_FOUR'))->queue(new fcatwo($request));
     }
-    if(env('ADMIN_EMAIL_FIVE') != ""){
-      Mail::to(env('ADMIN_EMAIL_FIVE'))->queue(new fcatwo($request));
+    if(config('.siteADMIN_EMAIL_FIVE') != ""){
+      Mail::to(config('.siteADMIN_EMAIL_FIVE'))->queue(new fcatwo($request));
     }
   }
 
@@ -259,20 +259,20 @@ class QuizController extends Controller
 
     Mail::to($request->email)->queue(new customer_antiBriberyCourse($request));
 
-    if(env('ADMIN_EMAIL') != ""){
-      Mail::to(env('ADMIN_EMAIL'))->queue(new antiBriberyCourse($request));
+    if(config('.siteADMIN_EMAIL') != ""){
+      Mail::to(config('.siteADMIN_EMAIL'))->queue(new antiBriberyCourse($request));
     }
-    if(env('ADMIN_EMAIL_TWO') != ""){
-      Mail::to(env('ADMIN_EMAIL_TWO'))->queue(new antiBriberyCourse($request));
+    if(config('.siteADMIN_EMAIL_TWO') != ""){
+      Mail::to(config('.siteADMIN_EMAIL_TWO'))->queue(new antiBriberyCourse($request));
     }
-    if(env('ADMIN_EMAIL_THREE') != ""){
-      Mail::to(env('ADMIN_EMAIL_THREE'))->queue(new antiBriberyCourse($request));
+    if(config('.siteADMIN_EMAIL_THREE') != ""){
+      Mail::to(config('.siteADMIN_EMAIL_THREE'))->queue(new antiBriberyCourse($request));
     }
-    if(env('ADMIN_EMAIL_FOUR') != ""){
-      Mail::to(env('ADMIN_EMAIL_FOUR'))->queue(new antiBriberyCourse($request));
+    if(config('.siteADMIN_EMAIL_FOUR') != ""){
+      Mail::to(config('.siteADMIN_EMAIL_FOUR'))->queue(new antiBriberyCourse($request));
     }
-    if(env('ADMIN_EMAIL_FIVE') != ""){
-      Mail::to(env('ADMIN_EMAIL_FIVE'))->queue(new antiBriberyCourse($request));
+    if(config('.siteADMIN_EMAIL_FIVE') != ""){
+      Mail::to(config('.siteADMIN_EMAIL_FIVE'))->queue(new antiBriberyCourse($request));
     }
   }
 
@@ -282,20 +282,20 @@ class QuizController extends Controller
 
     Mail::to($request->email)->queue(new customer_GDACourse($request));
 
-    if(env('ADMIN_EMAIL') != ""){
-      Mail::to(env('ADMIN_EMAIL'))->queue(new GDACourse($request));
+    if(config('.siteADMIN_EMAIL') != ""){
+      Mail::to(config('.siteADMIN_EMAIL'))->queue(new GDACourse($request));
     }
-    if(env('ADMIN_EMAIL_TWO') != ""){
-      Mail::to(env('ADMIN_EMAIL_TWO'))->queue(new GDACourse($request));
+    if(config('.siteADMIN_EMAIL_TWO') != ""){
+      Mail::to(config('.siteADMIN_EMAIL_TWO'))->queue(new GDACourse($request));
     }
-    if(env('ADMIN_EMAIL_THREE') != ""){
-      Mail::to(env('ADMIN_EMAIL_THREE'))->queue(new GDACourse($request));
+    if(config('.siteADMIN_EMAIL_THREE') != ""){
+      Mail::to(config('.siteADMIN_EMAIL_THREE'))->queue(new GDACourse($request));
     }
-    if(env('ADMIN_EMAIL_FOUR') != ""){
-      Mail::to(env('ADMIN_EMAIL_FOUR'))->queue(new GDACourse($request));
+    if(config('.siteADMIN_EMAIL_FOUR') != ""){
+      Mail::to(config('.siteADMIN_EMAIL_FOUR'))->queue(new GDACourse($request));
     }
-    if(env('ADMIN_EMAIL_FIVE') != ""){
-      Mail::to(env('ADMIN_EMAIL_FIVE'))->queue(new GDACourse($request));
+    if(config('.siteADMIN_EMAIL_FIVE') != ""){
+      Mail::to(config('.siteADMIN_EMAIL_FIVE'))->queue(new GDACourse($request));
     }
   }
 
@@ -306,20 +306,20 @@ class QuizController extends Controller
 
     Mail::to($request->email)->queue(new customer_GDGCourse($request));
 
-    if(env('ADMIN_EMAIL') != ""){
-      Mail::to(env('ADMIN_EMAIL'))->queue(new GDGCourse($request));
+    if(config('.siteADMIN_EMAIL') != ""){
+      Mail::to(config('.siteADMIN_EMAIL'))->queue(new GDGCourse($request));
     }
-    if(env('ADMIN_EMAIL_TWO') != ""){
-      Mail::to(env('ADMIN_EMAIL_TWO'))->queue(new GDGCourse($request));
+    if(config('.siteADMIN_EMAIL_TWO') != ""){
+      Mail::to(config('.siteADMIN_EMAIL_TWO'))->queue(new GDGCourse($request));
     }
-    if(env('ADMIN_EMAIL_THREE') != ""){
-      Mail::to(env('ADMIN_EMAIL_THREE'))->queue(new GDGCourse($request));
+    if(config('.siteADMIN_EMAIL_THREE') != ""){
+      Mail::to(config('.siteADMIN_EMAIL_THREE'))->queue(new GDGCourse($request));
     }
-    if(env('ADMIN_EMAIL_FOUR') != ""){
-      Mail::to(env('ADMIN_EMAIL_FOUR'))->queue(new GDGCourse($request));
+    if(config('.siteADMIN_EMAIL_FOUR') != ""){
+      Mail::to(config('.siteADMIN_EMAIL_FOUR'))->queue(new GDGCourse($request));
     }
-    if(env('ADMIN_EMAIL_FIVE') != ""){
-      Mail::to(env('ADMIN_EMAIL_FIVE'))->queue(new GDGCourse($request));
+    if(config('.siteADMIN_EMAIL_FIVE') != ""){
+      Mail::to(config('.siteADMIN_EMAIL_FIVE'))->queue(new GDGCourse($request));
     }
   }
 
@@ -327,20 +327,20 @@ class QuizController extends Controller
     $this->saveAnswers($request);
     Mail::to($request->email)->queue(new customer_DataProtectionTrainingCourse($request));
 
-    if(env('ADMIN_EMAIL') != ""){
-      Mail::to(env('ADMIN_EMAIL'))->queue(new DataProtectionTrainingCourse($request));
+    if(config('.siteADMIN_EMAIL') != ""){
+      Mail::to(config('.siteADMIN_EMAIL'))->queue(new DataProtectionTrainingCourse($request));
     }
-    if(env('ADMIN_EMAIL_TWO') != ""){
-      Mail::to(env('ADMIN_EMAIL_TWO'))->queue(new DataProtectionTrainingCourse($request));
+    if(config('.siteADMIN_EMAIL_TWO') != ""){
+      Mail::to(config('.siteADMIN_EMAIL_TWO'))->queue(new DataProtectionTrainingCourse($request));
     }
-    if(env('ADMIN_EMAIL_THREE') != ""){
-      Mail::to(env('ADMIN_EMAIL_THREE'))->queue(new DataProtectionTrainingCourse($request));
+    if(config('.siteADMIN_EMAIL_THREE') != ""){
+      Mail::to(config('.siteADMIN_EMAIL_THREE'))->queue(new DataProtectionTrainingCourse($request));
     }
-    if(env('ADMIN_EMAIL_FOUR') != ""){
-      Mail::to(env('ADMIN_EMAIL_FOUR'))->queue(new DataProtectionTrainingCourse($request));
+    if(config('.siteADMIN_EMAIL_FOUR') != ""){
+      Mail::to(config('.siteADMIN_EMAIL_FOUR'))->queue(new DataProtectionTrainingCourse($request));
     }
-    if(env('ADMIN_EMAIL_FIVE') != ""){
-      Mail::to(env('ADMIN_EMAIL_FIVE'))->queue(new DataProtectionTrainingCourse($request));
+    if(config('.siteADMIN_EMAIL_FIVE') != ""){
+      Mail::to(config('.siteADMIN_EMAIL_FIVE'))->queue(new DataProtectionTrainingCourse($request));
     }
   }
 
@@ -348,40 +348,40 @@ class QuizController extends Controller
     $this->saveAnswers($request);
     Mail::to($request->email)->queue(new customer_GeneralHealthandSafetyTrainingCourse($request));
 
-    if(env('ADMIN_EMAIL') != ""){
-      Mail::to(env('ADMIN_EMAIL'))->queue(new GeneralHealthandSafetyTrainingCourse($request));
+    if(config('.siteADMIN_EMAIL') != ""){
+      Mail::to(config('.siteADMIN_EMAIL'))->queue(new GeneralHealthandSafetyTrainingCourse($request));
     }
-    if(env('ADMIN_EMAIL_TWO') != ""){
-      Mail::to(env('ADMIN_EMAIL_TWO'))->queue(new GeneralHealthandSafetyTrainingCourse($request));
+    if(config('.siteADMIN_EMAIL_TWO') != ""){
+      Mail::to(config('.siteADMIN_EMAIL_TWO'))->queue(new GeneralHealthandSafetyTrainingCourse($request));
     }
-    if(env('ADMIN_EMAIL_THREE') != ""){
-      Mail::to(env('ADMIN_EMAIL_THREE'))->queue(new GeneralHealthandSafetyTrainingCourse($request));
+    if(config('.siteADMIN_EMAIL_THREE') != ""){
+      Mail::to(config('.siteADMIN_EMAIL_THREE'))->queue(new GeneralHealthandSafetyTrainingCourse($request));
     }
-    if(env('ADMIN_EMAIL_FOUR') != ""){
-      Mail::to(env('ADMIN_EMAIL_FOUR'))->queue(new GeneralHealthandSafetyTrainingCourse($request));
+    if(config('.siteADMIN_EMAIL_FOUR') != ""){
+      Mail::to(config('.siteADMIN_EMAIL_FOUR'))->queue(new GeneralHealthandSafetyTrainingCourse($request));
     }
-    if(env('ADMIN_EMAIL_FIVE') != ""){
-      Mail::to(env('ADMIN_EMAIL_FIVE'))->queue(new GeneralHealthandSafetyTrainingCourse($request));
+    if(config('.siteADMIN_EMAIL_FIVE') != ""){
+      Mail::to(config('.siteADMIN_EMAIL_FIVE'))->queue(new GeneralHealthandSafetyTrainingCourse($request));
     }
   }
 
   public function DisplayScreenEquipmentTrainingCourse(Request $request){
 
     Mail::to($request->email)->queue(new customer_DisplayScreenEquipmentTrainingCourse($request));
-    if(env('ADMIN_EMAIL') != ""){
-      Mail::to(env('ADMIN_EMAIL'))->queue(new admin_DisplayScreenEquipmentTrainingCourse($request));
+    if(config('.siteADMIN_EMAIL') != ""){
+      Mail::to(config('.siteADMIN_EMAIL'))->queue(new admin_DisplayScreenEquipmentTrainingCourse($request));
     }
-    if(env('ADMIN_EMAIL_TWO') != ""){
-      Mail::to(env('ADMIN_EMAIL_TWO'))->queue(new admin_DisplayScreenEquipmentTrainingCourse($request));
+    if(config('.siteADMIN_EMAIL_TWO') != ""){
+      Mail::to(config('.siteADMIN_EMAIL_TWO'))->queue(new admin_DisplayScreenEquipmentTrainingCourse($request));
     }
-    if(env('ADMIN_EMAIL_THREE') != ""){
-      Mail::to(env('ADMIN_EMAIL_THREE'))->queue(new admin_DisplayScreenEquipmentTrainingCourse($request));
+    if(config('.siteADMIN_EMAIL_THREE') != ""){
+      Mail::to(config('.siteADMIN_EMAIL_THREE'))->queue(new admin_DisplayScreenEquipmentTrainingCourse($request));
     }
-    if(env('ADMIN_EMAIL_FOUR') != ""){
-      Mail::to(env('ADMIN_EMAIL_FOUR'))->queue(new admin_DisplayScreenEquipmentTrainingCourse($request));
+    if(config('.siteADMIN_EMAIL_FOUR') != ""){
+      Mail::to(config('.siteADMIN_EMAIL_FOUR'))->queue(new admin_DisplayScreenEquipmentTrainingCourse($request));
     }
-    if(env('ADMIN_EMAIL_FIVE') != ""){
-      Mail::to(env('ADMIN_EMAIL_FIVE'))->queue(new admin_DisplayScreenEquipmentTrainingCourse($request));
+    if(config('.siteADMIN_EMAIL_FIVE') != ""){
+      Mail::to(config('.siteADMIN_EMAIL_FIVE'))->queue(new admin_DisplayScreenEquipmentTrainingCourse($request));
     }
   }
 
@@ -402,20 +402,20 @@ class QuizController extends Controller
     public function QualityHealthSafetyEnvironmentalCourse(Request $request){
 
         Mail::to($request->email)->queue(new customer_QualityHealthSafetyEnvironmentalCourse($request));
-        if(env('ADMIN_EMAIL') != ""){
-            Mail::to(env('ADMIN_EMAIL'))->queue(new admin_QualityHealthSafetyEnvironmentalCourse($request));
+        if(config('.siteADMIN_EMAIL') != ""){
+            Mail::to(config('.siteADMIN_EMAIL'))->queue(new admin_QualityHealthSafetyEnvironmentalCourse($request));
         }
-        if(env('ADMIN_EMAIL_TWO') != ""){
-            Mail::to(env('ADMIN_EMAIL_TWO'))->queue(new admin_QualityHealthSafetyEnvironmentalCourse($request));
+        if(config('.siteADMIN_EMAIL_TWO') != ""){
+            Mail::to(config('.siteADMIN_EMAIL_TWO'))->queue(new admin_QualityHealthSafetyEnvironmentalCourse($request));
         }
-        if(env('ADMIN_EMAIL_THREE') != ""){
-            Mail::to(env('ADMIN_EMAIL_THREE'))->queue(new admin_QualityHealthSafetyEnvironmentalCourse($request));
+        if(config('.siteADMIN_EMAIL_THREE') != ""){
+            Mail::to(config('.siteADMIN_EMAIL_THREE'))->queue(new admin_QualityHealthSafetyEnvironmentalCourse($request));
         }
-        if(env('ADMIN_EMAIL_FOUR') != ""){
-            Mail::to(env('ADMIN_EMAIL_FOUR'))->queue(new admin_QualityHealthSafetyEnvironmentalCourse($request));
+        if(config('.siteADMIN_EMAIL_FOUR') != ""){
+            Mail::to(config('.siteADMIN_EMAIL_FOUR'))->queue(new admin_QualityHealthSafetyEnvironmentalCourse($request));
         }
-        if(env('ADMIN_EMAIL_FIVE') != ""){
-            Mail::to(env('ADMIN_EMAIL_FIVE'))->queue(new admin_QualityHealthSafetyEnvironmentalCourse($request));
+        if(config('.siteADMIN_EMAIL_FIVE') != ""){
+            Mail::to(config('.siteADMIN_EMAIL_FIVE'))->queue(new admin_QualityHealthSafetyEnvironmentalCourse($request));
         }
     }
 
@@ -494,20 +494,20 @@ class QuizController extends Controller
 
         Mail::to($request->email)->queue(new customer_DeclarationQuiz($request, $percent, $status));
 
-        if(env('ADMIN_EMAIL') != ""){
-            Mail::to(env('ADMIN_EMAIL'))->queue(new admin_DeclarationQuiz($request, $percent, $status, $user_answers));
+        if(config('.siteADMIN_EMAIL') != ""){
+            Mail::to(config('.siteADMIN_EMAIL'))->queue(new admin_DeclarationQuiz($request, $percent, $status, $user_answers));
         }
-        if(env('ADMIN_EMAIL_TWO') != ""){
-            Mail::to(env('ADMIN_EMAIL_TWO'))->queue(new admin_DeclarationQuiz($request, $percent, $status, $user_answers));
+        if(config('.siteADMIN_EMAIL_TWO') != ""){
+            Mail::to(config('.siteADMIN_EMAIL_TWO'))->queue(new admin_DeclarationQuiz($request, $percent, $status, $user_answers));
         }
-        if(env('ADMIN_EMAIL_THREE') != ""){
-            Mail::to(env('ADMIN_EMAIL_THREE'))->queue(new admin_DeclarationQuiz($request, $percent, $status, $user_answers));
+        if(config('.siteADMIN_EMAIL_THREE') != ""){
+            Mail::to(config('.siteADMIN_EMAIL_THREE'))->queue(new admin_DeclarationQuiz($request, $percent, $status, $user_answers));
         }
-        if(env('ADMIN_EMAIL_FOUR') != ""){
-            Mail::to(env('ADMIN_EMAIL_FOUR'))->queue(new admin_DeclarationQuiz($request, $percent, $status, $user_answers));
+        if(config('.siteADMIN_EMAIL_FOUR') != ""){
+            Mail::to(config('.siteADMIN_EMAIL_FOUR'))->queue(new admin_DeclarationQuiz($request, $percent, $status, $user_answers));
         }
-        if(env('ADMIN_EMAIL_FIVE') != ""){
-            Mail::to(env('ADMIN_EMAIL_FIVE'))->queue(new admin_DeclarationQuiz($request, $percent, $status, $user_answers));
+        if(config('.siteADMIN_EMAIL_FIVE') != ""){
+            Mail::to(config('.siteADMIN_EMAIL_FIVE'))->queue(new admin_DeclarationQuiz($request, $percent, $status, $user_answers));
         }
     }
 

@@ -33,11 +33,11 @@ class antiBriberyCourse extends Mailable
     public function build()
     {
 
-        $hash = md5(uniqid().'01810479f2856f9ebab37a9b4a9b4f29'.microtime().env('NAME').env('COMPANY_ADDRESS'));
+        $hash = md5(uniqid().'01810479f2856f9ebab37a9b4a9b4f29'.microtime().config('.siteNAME').config('.siteCOMPANY_ADDRESS'));
 
         $data = [
-                'logo' => env('PDF_LOGO'),
-                'company_name' => env('NAME'),
+                'logo' => config('.sitePDF_LOGO'),
+                'company_name' => config('.siteNAME'),
                 'name' => $this->data['name'],
                 'course' => 'FCA Anti-Bribery Training Course',
                 'course_topics' => [
@@ -47,8 +47,8 @@ class antiBriberyCourse extends Mailable
                     'Gifts, Payments and Hospitality',
                     'Reporting Bribery and Financial Crime'
                 ],
-                'company_address' => env('COMPANY_ADDRESS'),
-                'company_number' => env('COMPANY_NUMBER'),
+                'company_address' => config('.siteCOMPANY_ADDRESS'),
+                'company_number' => config('.siteCOMPANY_NUMBER'),
         ];
 
 
@@ -59,9 +59,9 @@ class antiBriberyCourse extends Mailable
 
         Storage::put("public".$url, $pdf->stream());
 
-        $this->data['pdf'] = env('APP_URL').'/storage'.$url;
+        $this->data['pdf'] = config('.siteAPP_URL').'/storage'.$url;
 
-        return $this->from(env('ADMIN_EMAIL'))
+        return $this->from(config('.siteADMIN_EMAIL'))
             ->subject('Anti-Bribery Course')
             ->view('emails.anti_bribery_course')->with($this->data);
     }
