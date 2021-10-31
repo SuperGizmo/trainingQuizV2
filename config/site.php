@@ -2,6 +2,7 @@
 <?php
 
 return [
+    'APP_URL' => env('APP_URL'),
     'ADMIN_EMAIL' => env('ADMIN_EMAIL'),
     'WELCOME_TEXT' => env('WELCOME_TEXT'),
     'ADMIN_NAME' => env('ADMIN_NAME'),
