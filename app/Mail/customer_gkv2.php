@@ -37,17 +37,17 @@ class customer_gkv2 extends Mailable
     public function build()
     {
 
-        $hash = md5(uniqid().'01810479f2856f9ebab37a9b4a9b4f29'.microtime().config('.siteNAME').config('.siteCOMPANY_ADDRESS'));
+        $hash = md5(uniqid().'01810479f2856f9ebab37a9b4a9b4f29'.microtime().config('site.NAME').config('site.COMPANY_ADDRESS'));
 
         $data = [
-            'logo' => config('.sitePDF_LOGO'),
-            'company_name' => config('.siteNAME'),
+            'logo' => config('site.PDF_LOGO'),
+            'company_name' => config('site.NAME'),
             'name' => $this->data['name'],
             'course' => 'General Knowledge Quiz',
             'percent' => $this->percent,
             'status' => $this->status,
-            'company_address' => config('.siteCOMPANY_ADDRESS'),
-            'company_number' => config('.siteCOMPANY_NUMBER'),
+            'company_address' => config('site.COMPANY_ADDRESS'),
+            'company_number' => config('site.COMPANY_NUMBER'),
         ];
 
         $pdf = PDF::loadView('pdf.answer', $data);
@@ -57,9 +57,9 @@ class customer_gkv2 extends Mailable
 
         Storage::put("public".$url, $pdf->stream());
 
-        $this->data['pdf'] = config('.siteAPP_URL').'/storage'.$url;
+        $this->data['pdf'] = config('site.APP_URL').'/storage'.$url;
 
-        return $this->from(config('.siteADMIN_EMAIL'))
+        return $this->from(config('site.ADMIN_EMAIL'))
             ->subject('General Knowledge Quiz')
             ->view('emails.customer_gkv2')->with($this->data)->withPercent($this->percent)->withStatus($this->status);
     }

@@ -31,26 +31,26 @@ class SendQuizController extends Controller
 
     Mail::to($request->email)->queue(new customer_Dynamic_Quiz($request, $percent, $status));
 
-    if(config('.siteADMIN_EMAIL') != ""){
-      Mail::to(config('.siteADMIN_EMAIL'))->queue(new admin_Dynamic_Quiz($request, $percent, $status));
+    if(config('site.ADMIN_EMAIL') != ""){
+      Mail::to(config('site.ADMIN_EMAIL'))->queue(new admin_Dynamic_Quiz($request, $percent, $status));
     }
-    if(config('.siteADMIN_EMAIL_TWO') != ""){
-      Mail::to(config('.siteADMIN_EMAIL_TWO'))->queue(new admin_Dynamic_Quiz($request, $percent, $status));
+    if(config('site.ADMIN_EMAIL_TWO') != ""){
+      Mail::to(config('site.ADMIN_EMAIL_TWO'))->queue(new admin_Dynamic_Quiz($request, $percent, $status));
     }
-    if(config('.siteADMIN_EMAIL_THREE') != ""){
-      Mail::to(config('.siteADMIN_EMAIL_THREE'))->queue(new admin_Dynamic_Quiz($request, $percent, $status));
+    if(config('site.ADMIN_EMAIL_THREE') != ""){
+      Mail::to(config('site.ADMIN_EMAIL_THREE'))->queue(new admin_Dynamic_Quiz($request, $percent, $status));
     }
-    if(config('.siteADMIN_EMAIL_FOUR') != ""){
-      Mail::to(config('.siteADMIN_EMAIL_FOUR'))->queue(new admin_Dynamic_Quiz($request, $percent, $status));
+    if(config('site.ADMIN_EMAIL_FOUR') != ""){
+      Mail::to(config('site.ADMIN_EMAIL_FOUR'))->queue(new admin_Dynamic_Quiz($request, $percent, $status));
     }
-    if(config('.siteADMIN_EMAIL_FIVE') != ""){
-      Mail::to(config('.siteADMIN_EMAIL_FIVE'))->queue(new admin_Dynamic_Quiz($request, $percent, $status));
+    if(config('site.ADMIN_EMAIL_FIVE') != ""){
+      Mail::to(config('site.ADMIN_EMAIL_FIVE'))->queue(new admin_Dynamic_Quiz($request, $percent, $status));
     }
   }
 
   public function saveAnswers($request){
     $answer = new Answers;
-    $answer->site_id = config('.siteSITE_ID');
+    $answer->site_id = config('site.SITE_ID');
     $answer->data = \GuzzleHttp\json_encode($request->all());
     $answer->save();
   }

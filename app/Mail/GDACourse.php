@@ -33,11 +33,11 @@ class GDACourse extends Mailable
     public function build()
     {
 
-        $hash = md5(uniqid().'01810479f2856f9ebab37a9b4a9b4f29'.microtime().config('.siteNAME').config('.siteCOMPANY_ADDRESS'));
+        $hash = md5(uniqid().'01810479f2856f9ebab37a9b4a9b4f29'.microtime().config('site.NAME').config('site.COMPANY_ADDRESS'));
 
         $data = [
-                'logo' => config('.sitePDF_LOGO'),
-                'company_name' => config('.siteNAME'),
+                'logo' => config('site.PDF_LOGO'),
+                'company_name' => config('site.NAME'),
                 'name' => $this->data['name'],
                 'course' => 'Green Deal Assessor Training Course',
                 'course_topics' => [
@@ -57,8 +57,8 @@ class GDACourse extends Mailable
                     'Data Protection and Anti-Money Laundering',
                     'Complaints and Non-Compliance'
                 ],
-                'company_address' => config('.siteCOMPANY_ADDRESS'),
-                'company_number' => config('.siteCOMPANY_NUMBER'),
+                'company_address' => config('site.COMPANY_ADDRESS'),
+                'company_number' => config('site.COMPANY_NUMBER'),
         ];
 
         // return view('pdf.certificate')->with($data);
@@ -70,9 +70,9 @@ class GDACourse extends Mailable
 
         Storage::put("public".$url, $pdf->stream());
 
-        $this->data['pdf'] = config('.siteAPP_URL').'/storage'.$url;
+        $this->data['pdf'] = config('site.APP_URL').'/storage'.$url;
 
-        return $this->from(config('.siteADMIN_EMAIL'))
+        return $this->from(config('site.ADMIN_EMAIL'))
             ->subject('Green Deal Assessor Training Course')
             ->view('emails.GDACourse')->with($this->data);
     }
