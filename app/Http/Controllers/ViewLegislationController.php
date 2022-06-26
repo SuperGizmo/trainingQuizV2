@@ -634,7 +634,7 @@ class ViewLegislationController extends Controller
         return [
             [
                 'id' => 1,
-                'date' => '25/6/2021',
+                'date' => '25/6/2022',
                 'originator' => 'David Mooney',
                 'source' => 'Gas Safety (Installation and Use) Regulations 2018 (GSIUR)',
                 'links' => [
@@ -646,7 +646,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 2,
-                'date' => '25/6/2021',
+                'date' => '25/6/2022',
                 'originator' => 'David Mooney',
                 'source' => 'Pipelines Safety Regulations 1996 (PSR)',
                 'links' => [
@@ -657,7 +657,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 3,
-                'date' => '25/6/2021',
+                'date' => '25/6/2022',
                 'originator' => 'David Mooney',
                 'source' => 'Gas Safety (Rights of Entry) Regulations 1996',
                 'links' => [
@@ -667,7 +667,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 4,
-                'date' => '25/6/2021',
+                'date' => '25/6/2022',
                 'originator' => 'David Mooney',
                 'source' => 'Gas Act 1986 and 1995 (GA)',
                 'links' => [
@@ -678,7 +678,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 5,
-                'date' => '25/6/2021',
+                'date' => '25/6/2022',
                 'originator' => 'David Mooney',
                 'source' => 'The Gas and Electricity (Consumer Complaints Handling Standards) 2008',
                 'links' => [
@@ -688,7 +688,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 6,
-                'date' => '25/6/2021',
+                'date' => '25/6/2022',
                 'originator' => 'David Mooney',
                 'source' => 'Smart Meter Installation Code of Practice (SMICoP)',
                 'links' => [
@@ -698,18 +698,18 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 7,
-                'date' => '25/6/2021',
+                'date' => '25/6/2022',
                 'originator' => 'David Mooney',
                 'source' => 'Meter Asset Manager Code of Practice (MAMCoP)',
                 'links' => [
                     'https://www.ofgem.gov.uk/ofgem-publications/42356/4970-mamcopfinal.pdf',
-                    'https://www.ofgem.gov.uk/publications-and-updates/meter-asset-manager-code-practice',
+                    'https://www.ofgem.gov.uk/publications-and-updates/meter-asset-manager-code-practice'
                 ],
                 'summary' => 'The MAMCoP was first published in 2005; it was administered by Ofgem and advised by an industry expert group. It sets out the requirements for Meter Asset Managers (MAM) that wish to be accredited under the MAMCoP Registration scheme.',
             ],
             [
                 'id' => 8,
-                'date' => '25/6/2021',
+                'date' => '25/6/2022',
                 'originator' => 'David Mooney',
                 'source' => 'Boiler Plus 2018',
                 'links' => [
@@ -719,20 +719,20 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 9,
-                'date' => '25/6/2021',
+                'date' => '25/6/2022',
                 'originator' => 'David Mooney',
                 'source' => 'Institution of Gas Engineer and Managers - Standards',
                 'links' => [
-                    'https://www.igem.org.uk/technical-standards/standards/)',
+                    'https://www.igem.org.uk/technical-standards/standards/',
                 ],
-                'summary' => 'IGEMUP/1, 1A & 1B, Strength testing, tightness testing and direct purging each standard covers industrial commercial and domestic testing and purging requirements.<br />
-          IGEMUP/2, Installation of pipework on industrial and commercial premises.<br />
-          IGEMUP/7, Gas installations in timber-framed and light steel buildings.<br />
-          IGEMUP/10, Installation of flued gas appliances in industrial and commercial premises incorporating specific requirements for appliances fired by bio-fuels. To Purchase.',
+                'summary' => 'IGEMUP/1, 1A & 1B, Strength testing, tightness testing and direct purging each standard covers industrial commercial and domestic testing and purging requirements. <br />
+                IGEMUP/2, Installation of pipework on industrial and commercial premises. <br />
+                IGEMUP/7, Gas installations in timber-framed and light steel buildings. <br />
+                IGEMUP/10, Installation of flued gas appliances in industrial and commercial premises incorporating specific requirements for appliances fired by bio-fuels. To Purchase.',
             ],
             [
                 'id' => 10,
-                'date' => '25/6/2021',
+                'date' => '25/6/2022',
                 'originator' => 'David Mooney',
                 'source' => 'UKLPG – Code of Practice 22, Design Installation and testing of LPG Piping Systems',
                 'links' => [
@@ -742,7 +742,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 11,
-                'date' => '25/6/2021',
+                'date' => '25/6/2022',
                 'originator' => 'David Mooney',
                 'source' => 'IGEM/G/11 – The Gas Industry Unsafe Situations Procedure (GIUSP)',
                 'links' => [
@@ -752,7 +752,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 12,
-                'date' => '25/6/2021',
+                'date' => '25/6/2022',
                 'originator' => 'David Mooney',
                 'source' => 'Gas Safety (Management) Regulations 1996 (as amended) (GSMR)',
                 'links' => [
@@ -762,7 +762,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 13,
-                'date' => '25/6/2021',
+                'date' => '25/6/2022',
                 'originator' => 'David Mooney',
                 'source' => 'Gas Appliances (Safety) Regulations 1995 (GASR)',
                 'links' => [
@@ -772,7 +772,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 14,
-                'date' => '25/6/2021',
+                'date' => '25/6/2022',
                 'originator' => 'David Mooney',
                 'source' => 'Building Regulations and Building Standards (Scotland) Regulations',
                 'links' => [
@@ -783,7 +783,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 15,
-                'date' => '25/6/2021',
+                'date' => '25/6/2022',
                 'originator' => 'David Mooney',
                 'source' => 'Pressure Systems Safety Regulations 2000 (PSSR)',
                 'links' => [
