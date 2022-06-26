@@ -106,6 +106,7 @@
     <div class="collapse" id="LegislativeRegisters">
       <ul class="nav nav-pills nav-stacked">
         <li><a href="/Legislation/View/RegisterofDataProtectionLegislation">Register of Data Protection Legislation</a></li>
+        <li><a href="/Legislation/View/RegisterofElectricalLegislation">Register of Electrical Legislation</a></li>
         <li><a href="/Legislation/View/RegisterofEnvironmentalLegislation">Register of Environmental Legislation</a></li>
         <li><a href="/Legislation/View/RegisterofGasLegislation">Register of Gas Legislation</a></li>
         <li><a href="/Legislation/View/RegisterofHealthandSafetyLegislation">Register of Health and Safety Legislation</a></li>

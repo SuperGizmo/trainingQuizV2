@@ -110,6 +110,7 @@ $pages = [
     ['name' => 'Noise Vibration And Vehicle Safety Training Course', 'url' => '/NoiseVibrationAndVehicleSafetyTrainingCourse'],
     ['name' => 'Register of Data Protection Legislation', 'url' => '/Legislation/View/RegisterofDataProtectionLegislation'],
     ['name' => 'Register of Environmental Legislation', 'url' => '/Legislation/View/RegisterofEnvironmentalLegislation'],
+    ['name' => 'Register of Electrical Legislation', 'url' => '/Legislation/View/RegisterofElectricalLegislation'],
     ['name' => 'Register of Gas Legislation', 'url' => '/Legislation/View/RegisterofGasLegislation'],
     ['name' => 'Register of Health and Safety Legislation', 'url' => '/Legislation/View/RegisterofHealthandSafetyLegislation'],
     ['name' => 'Senior Managers and Certification Scheme Training Course', 'url' => '/Course/View/SeniorManagersandCertificationSchemeTrainingCourse'],
