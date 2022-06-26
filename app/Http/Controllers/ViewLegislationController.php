@@ -6,13 +6,13 @@ use Illuminate\Http\Request;
 
 class ViewLegislationController extends Controller
 {
-  
+
   public function duskTests(){
     return ['',''];
-  } 
-  
+  }
+
   // // Start Legislation
-  // 
+  //
   // public function Links(){
   //   return [
   //     [
@@ -21,7 +21,7 @@ class ViewLegislationController extends Controller
   //     ],
   //   ];
   // }
-  // 
+  //
   // public function Data(){
   //   return [
   //     'title' => '',
@@ -34,15 +34,220 @@ class ViewLegislationController extends Controller
   //     'LegislationTopics' => '',
   //   ];
   // }
-  // 
+  //
   // public function Legislation(){
   //   return view('Legislation.Legislation')->with($this->Data());
   // }
-  // 
+  //
   // // End Legislation
-  
-  
-  
+
+
+   // Start Legislation
+
+   public function Links(){
+     return [
+         [
+             'id' => 1,
+             'date' => '25/6/2021',
+             'originator' => 'David Mooney',
+             'source' => '',
+             'links' => [
+                 ''
+             ],
+             'summary' => '',
+         ],
+     ];
+   }
+
+   public function Data(){
+        return [
+            'title' => '',
+            'heading' => '',
+            'Legislation' => '',
+            'LinksUrl' => '',
+            'sendUrl' => '/Legislation/Send',
+            'Links' => [
+                $this->Links()
+            ],
+        ];
+   }
+
+   public function Legislation(){
+     return view('Legislation.Legislation')->with($this->Data());
+   }
+
+   // End Legislation
+
+
+   // Start Legislation
+
+   public function RegisterofElectricalLegislationLinks(){
+     return [
+         [
+             'id' => 1,
+             'date' => '25/6/2021',
+             'originator' => 'David Mooney',
+             'source' => 'BS 7671:2008 Requirements for Electrical Installations (IET Wiring Regulations Eighteenth Edition)',
+             'links' => [
+                 'https://electrical.theiet.org/bs-7671/',
+                 'https://shop.theiet.org/bs-7671-2018-requirements-for-electrical-installations-iet-wiring-regulations-18th-edition-blue'
+             ],
+             'summary' => 'The IET co-publishes BS 7671 with the British Standards Institution (BSI) and is the authority on electrical installation. The IET Wiring Regulations is currently in its 18th edition and came into effect in January 2019. From this date, all new and amended electrical installations are to conform to the requirements of BS 7671:2018.',
+         ],
+         [
+             'id' => 2,
+             'date' => '25/6/2021',
+             'originator' => 'David Mooney',
+             'source' => 'The Electricity at Work Regulations 1989',
+             'links' => [
+                 'https://www.legislation.gov.uk/uksi/1989/635/contents/made',
+             ],
+             'summary' => 'These Regulations give technical and legal guidance to highlight the nature of the precautions in general terms to help duty holders achieve high standards of electrical safety in compliance with the duties imposed.',
+         ],
+         [
+             'id' => 3,
+             'date' => '25/6/2021',
+             'originator' => 'David Mooney',
+             'source' => 'Supply of Machinery (Safety) Regulations 2008',
+             'links' => [
+                 'https://www.legislation.gov.uk/uksi/2008/1597/contents/made',
+             ],
+             'summary' => 'These Regulations contain detailed requirements for manufacturing and supplying safe new machinery.',
+         ],
+         [
+             'id' => 4,
+             'date' => '25/6/2021',
+             'originator' => 'David Mooney',
+             'source' => 'Provision and Use of Work Equipment Regulations 1998',
+             'links' => [
+                 'https://www.hse.gov.uk/work-equipment-machinery/puwer.htm',
+             ],
+             'summary' => 'These Regulations require risks to people’s health and safety, from equipment that they use at work, to be prevented or controlled. The Regulations cover a wide range of equipment including those found in the building industry and in an office environment, and require employers to ensure that equipment provided for employees to use at work is safe and suitable for intended use.',
+         ],
+         [
+             'id' => 5,
+             'date' => '25/6/2021',
+             'originator' => 'David Mooney',
+             'source' => 'The Electrical Equipment (Safety) Regulations 2016',
+             'links' => [
+                 'https://www.legislation.gov.uk/uksi/2016/1101/contents',
+             ],
+             'summary' => 'The Regulations apply to all electrical equipment that is designed or adapted for use between 50 and 1,000 volts (in the case of alternating current) and 75 and 1,500 volts (in the case of direct current). The Regulations cover domestic electrical equipment and equipment that is intended for use in the workplace.',
+         ],
+         [
+             'id' => 6,
+             'date' => '25/6/2021',
+             'originator' => 'David Mooney',
+             'source' => 'The Reporting of Injuries, Diseases and Dangerous Occurrences Regulations 1995',
+             'links' => [
+                 'https://www.legislation.gov.uk/uksi/1995/3163/contents/made',
+             ],
+             'summary' => 'By law this is required for employers, as well as people who are self-employed and people who are in control of a premises, to report specified incidents in the workplace. These can include a wide range of things such as dangerous occurrences (when a serious accident was luckily avoided) all the way to work related deaths.',
+         ],
+         [
+             'id' => 7,
+             'date' => '25/6/2021',
+             'originator' => 'David Mooney',
+             'source' => 'The Equipment and Protective Systems Intended for Use in Potentially Explosive Atmospheres Regulations 2016',
+             'links' => [
+                 'https://www.legislation.gov.uk/uksi/2016/1107/contents/made',
+             ],
+             'summary' => 'EPS applies to the supply of equipment and protective systems intended for use in potentially explosive atmospheres. The Regulations cover both electrical and non-electrical equipment.',
+         ],
+         [
+             'id' => 8,
+             'date' => '25/6/2021',
+             'originator' => 'David Mooney',
+             'source' => 'Management of Health and Safety at Work Regulations 1999',
+             'links' => [
+                 'https://www.legislation.gov.uk/uksi/1999/3242/contents',
+             ],
+             'summary' => 'These Regulations were introduced to reinforce the Health and Safety Act 1974. They explicitly outline what employers are required to do to manage health and safety and apply to every work activity. The regulations place a set of duties on employers and employees to maintain a safe and healthy workplace.',
+         ],
+         [
+             'id' => 9,
+             'date' => '25/6/2021',
+             'originator' => 'David Mooney',
+             'source' => 'Memorandum of guidance on the Electricity at Work Regulations 1989',
+             'links' => [
+                 'https://www.hse.gov.uk/pUbns/priced/hsr25.pdf',
+             ],
+             'summary' => 'This sets out the Regulations and gives technical and legal guidance on them. The purpose of this guidance is to highlight the nature of the precautions in general terms to help duty holders achieve high standards of electrical safety in compliance with the duties imposed.',
+         ],
+         [
+             'id' => 10,
+             'date' => '25/6/2021',
+             'originator' => 'David Mooney',
+             'source' => 'The Construction (Design and Management) Regulations 2015',
+             'links' => [
+                 'https://www.legislation.gov.uk/uksi/2015/51/contents/made',
+             ],
+             'summary' => 'These Regulations govern the way construction projects of all sizes and types are planned in the UK. They aim to improve the overall health, safety and welfare of those working in construction. These regulations offer a very broad definition of what construction works are- everyone involved in a construction project, including home maintenance and improvement works, has responsibility for health and safety',
+         ],
+         [
+             'id' => 11,
+             'date' => '25/6/2021',
+             'originator' => 'David Mooney',
+             'source' => 'Waste Electrical Electronic Equipment (WEEE, 2012/19/EU)',
+             'links' => [
+                 'https://www.hse.gov.uk/waste/waste-electrical.htm',
+             ],
+             'summary' => 'The WEEE Directive set collection, recycling and recovery targets for all types of electrical goods.',
+         ],
+         [
+             'id' => 12,
+             'date' => '25/6/2021',
+             'originator' => 'David Mooney',
+             'source' => 'Battery Directive (2006/66/EC)',
+             'links' => [
+                 'https://www.legislation.gov.uk/eudr/2006/66/contents',
+             ],
+             'summary' => 'In essence, the Batteries Directive restricts the placing on the market of certain batteries and accumulators containing Mercury or Cadmium, and is a means of preventing all batteries from being discarded in such a way as to damage the environment.',
+         ],
+         [
+             'id' => 13,
+             'date' => '25/6/2021',
+             'originator' => 'David Mooney',
+             'source' => 'Electromagnetic Compatibility Regulations 2016',
+             'links' => [
+                 'https://www.legislation.gov.uk/uksi/2016/1091/contents',
+             ],
+             'summary' => 'The Electromagnetic Compatibility Regulations 2016 limits electromagnetic emissions from equipment in order to ensure that, when used as intended, such equipment does not disturb radio and telecommunication, as well as other equipment.',
+         ],
+         [
+             'id' => 14,
+             'date' => '25/6/2021',
+             'originator' => 'David Mooney',
+             'source' => 'The Electricity Safety, Quality and Continuity (Amendment) Regulations 2002',
+             'links' => [
+                 'https://www.hse.gov.uk/esqcr/index.htm',
+             ],
+             'summary' => 'ESQCR duty holders have duties to report certain incidents that may involve the safety of those not employed by the duty holder (enforcement by HSE), major supply interruptions (enforced by the Department of Energy and Climate Change) and domestic fatalities (enforced by Department for Business, Innovation and Skills).',
+         ],
+     ];
+   }
+
+   public function RegisterofElectricalLegislationData(){
+        return [
+            'title' => 'Register of Electrical Legislation',
+            'heading' => 'As part of a Management System this is a record of all appropriate legislative, regulatory, policy requirements and codes of practice, which are relevant to electrical safety.',
+            'Legislation' => 'Register of Electrical Legislation',
+            'LinksUrl' => '/Legislation/View/Links/RegisterofElectricalLegislation',
+            'sendUrl' => '/Legislation/Send',
+            'Links' => [
+                $this->RegisterofElectricalLegislationLinks()
+            ],
+        ];
+   }
+
+   public function RegisterofElectricalLegislation(){
+     return view('Legislation.Legislation')->with($this->RegisterofElectricalLegislationData());
+   }
+
+   // End Legislation
+
+
+
   // Start Legislation
   public function RegisterofDataProtectionLegislationLinks(){
     return [
@@ -156,7 +361,7 @@ class ViewLegislationController extends Controller
       ],
     ];
   }
-  
+
   public function RegisterofDataProtectionLegislationData(){
     return [
       'title' => 'Register of Data Protection Legislation',
@@ -169,14 +374,14 @@ class ViewLegislationController extends Controller
       ]
     ];
   }
-  
+
   public function RegisterofDataProtectionLegislation(){
     return view('Legislation.Legislation')->with($this->RegisterofDataProtectionLegislationData());
   }
   // End Legislation
-  
-  
-  
+
+
+
   // Start Legislation
   public function RegisterofEnvironmentalLegislationLinks(){
       return [
@@ -388,7 +593,7 @@ These Regulations set out the regime for the control and tracking of the movemen
           ],
       ];
   }
-  
+
   public function RegisterofEnvironmentalLegislationData(){
     return [
       'title' => 'Register of Environmental Legislation',
@@ -401,14 +606,14 @@ These Regulations set out the regime for the control and tracking of the movemen
       ]
     ];
   }
-  
+
   public function RegisterofEnvironmentalLegislation(){
     return view('Legislation.Legislation')->with($this->RegisterofEnvironmentalLegislationData());
   }
   // End Legislation
-  
-  
-  
+
+
+
   // Start Legislation
   public function RegisterofGasLegislationLinks(){
     return [
@@ -573,7 +778,7 @@ These Regulations set out the regime for the control and tracking of the movemen
       ]
     ];
   }
-  
+
   public function RegisterofGasLegislationData(){
     return [
       'title' => 'Register of Gas Legislation',
@@ -586,14 +791,14 @@ These Regulations set out the regime for the control and tracking of the movemen
       ]
     ];
   }
-  
+
   public function RegisterofGasLegislation(){
     return view('Legislation.Legislation')->with($this->RegisterofGasLegislationData());
   }
   // End Legislation
-  
-  
-  
+
+
+
   // Start Legislation
   public function RegisterofHealthandSafetyLegislationLinks(){
     return [
@@ -884,7 +1089,7 @@ https://www.hse.gov.uk/chemical-classification/legal/clp-regulation.htm'
       ]
     ];
   }
-  
+
   public function RegisterofHealthandSafetyLegislationData(){
     return [
       'title' => 'Register of Health and Safety Legislation',
@@ -897,7 +1102,7 @@ https://www.hse.gov.uk/chemical-classification/legal/clp-regulation.htm'
       ]
     ];
   }
-  
+
   public function RegisterofHealthandSafetyLegislation(){
     return view('Legislation.Legislation')->with($this->RegisterofHealthandSafetyLegislationData());
   }

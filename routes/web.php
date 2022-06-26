@@ -96,11 +96,13 @@ Route::prefix('Legislation')->group(function () {
     Route::prefix('View')->group(function () {
         Route::get('RegisterofDataProtectionLegislation', [ViewLegislationController::class, 'RegisterofDataProtectionLegislation']);
         Route::get('RegisterofEnvironmentalLegislation', [ViewLegislationController::class, 'RegisterofEnvironmentalLegislation']);
+        Route::get('RegisterofElectricalLegislation', [ViewLegislationController::class, 'RegisterofElectricalLegislation']);
         Route::get('RegisterofGasLegislation', [ViewLegislationController::class, 'RegisterofGasLegislation']);
         Route::get('RegisterofHealthandSafetyLegislation', [ViewLegislationController::class, 'RegisterofHealthandSafetyLegislation']);
         Route::prefix('Links')->group(function () {
             Route::get('RegisterofDataProtectionLegislation', [ViewLegislationController::class, 'RegisterofDataProtectionLegislationLinks']);
             Route::get('RegisterofEnvironmentalLegislation', [ViewLegislationController::class, 'RegisterofEnvironmentalLegislationLinks']);
+            Route::get('RegisterofElectricalLegislation', [ViewLegislationController::class, 'RegisterofElectricalLegislationLinks']);
             Route::get('RegisterofGasLegislation', [ViewLegislationController::class, 'RegisterofGasLegislationLinks']);
             Route::get('RegisterofHealthandSafetyLegislation', [ViewLegislationController::class, 'RegisterofHealthandSafetyLegislationLinks']);
         });
