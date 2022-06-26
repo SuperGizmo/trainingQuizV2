@@ -401,7 +401,7 @@ class ViewLegislationController extends Controller
         return [
             [
                 'id' => 1,
-                'date' => '25/6/2021',
+                'date' => '25/6/2022',
                 'originator' => 'David Mooney',
                 'source' => 'Environmental Protection Act 1990 (EPA) including The Environmental Protection (Duty of Care) Regulations 1991',
                 'links' => [
@@ -412,7 +412,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 2,
-                'date' => '25/6/2021',
+                'date' => '25/6/2022',
                 'originator' => 'David Mooney',
                 'source' => 'Gov. UK. Environmental Management',
                 'links' => [
@@ -422,17 +422,17 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 3,
-                'date' => '25/6/2021',
+                'date' => '25/6/2022',
                 'originator' => 'David Mooney',
                 'source' => 'International Organisation for Standardization ISO 14001',
                 'links' => [
                     'https://www.iso.org/home.html',
                 ],
-                'summary' => 'ISO 14001 sets the standard for Environmental Management Systems. If you want to reduce waste management costs and demonstrate your commitment to protect the environment then ISO 14001 certification is the main standard.',
+                    'summary' => 'ISO 14001 sets the standard for Environmental Management Systems. If you want to reduce waste management costs and demonstrate your commitment to protect the environment then ISO 14001 certification is the main standard.'
             ],
             [
                 'id' => 4,
-                'date' => '25/6/2021',
+                'date' => '25/6/2022',
                 'originator' => 'David Mooney',
                 'source' => 'Anti-Pollution Works Regulations 1999.',
                 'links' => [
@@ -442,7 +442,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 5,
-                'date' => '25/6/2021',
+                'date' => '25/6/2022',
                 'originator' => 'David Mooney',
                 'source' => 'The new Waste Electrical and Electronic Equipment recycling WEEE Directive 2012/19/EU',
                 'links' => [
@@ -454,18 +454,18 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 6,
-                'date' => '25/6/2021',
+                'date' => '25/6/2022',
                 'originator' => 'David Mooney',
                 'source' => 'Clean Air Strategy 2019.',
                 'links' => [
                     'https://www.gov.uk/government/publications/clean-air-strategy-2019',
-                    'https://www.gov.uk/government/publications/clean-air-strategy-2019/clean-air-strategy-2019-executive-summary',
+                    'https://www.gov.uk/government/publications/clean-air-strategy-2019/clean-air-strategy-2019-executive-summary'
                 ],
                 'summary' => 'This strategy sets out government plans for dealing with all sources of air pollution, making our air healthier to breathe, protecting nature and boosting the economy.',
             ],
             [
                 'id' => 7,
-                'date' => '25/6/2021',
+                'date' => '25/6/2022',
                 'originator' => 'David Mooney',
                 'source' => 'Climate Change Act 2008',
                 'links' => [
@@ -476,7 +476,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 8,
-                'date' => '25/6/2021',
+                'date' => '25/6/2022',
                 'originator' => 'David Mooney',
                 'source' => 'Clean Neighbourhoods and Environment Act 2005',
                 'links' => [
@@ -486,7 +486,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 9,
-                'date' => '25/6/2021',
+                'date' => '25/6/2022',
                 'originator' => 'David Mooney',
                 'source' => 'Natural Environment and Rural Communities Act 2006 (NERC Act 2006)',
                 'links' => [
@@ -496,7 +496,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 10,
-                'date' => '25/6/2021',
+                'date' => '25/6/2022',
                 'originator' => 'David Mooney',
                 'source' => 'Control of Pollution Act 1974 (COPA)',
                 'links' => [
@@ -506,7 +506,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 11,
-                'date' => '25/6/2021',
+                'date' => '25/6/2022',
                 'originator' => 'David Mooney',
                 'source' => 'The Energy Information Regulations 2011',
                 'links' => [
@@ -516,7 +516,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 12,
-                'date' => '25/6/2021',
+                'date' => '25/6/2022',
                 'originator' => 'David Mooney',
                 'source' => 'Pollution Prevention and Control Act 1999',
                 'links' => [
@@ -526,7 +526,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 13,
-                'date' => '25/6/2021',
+                'date' => '25/6/2022',
                 'originator' => 'David Mooney',
                 'source' => 'The Waste (England and Wales) Regulations 2011',
                 'links' => [
@@ -536,7 +536,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 14,
-                'date' => '25/6/2021',
+                'date' => '25/6/2022',
                 'originator' => 'David Mooney',
                 'source' => 'The Controlled Waste (England and Wales) Regulations 2012',
                 'links' => [
@@ -546,7 +546,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 15,
-                'date' => '25/6/2021',
+                'date' => '25/6/2022',
                 'originator' => 'David Mooney',
                 'source' => 'Producer Responsibility Obligations (Packaging Waste) Regulations 2007',
                 'links' => [
@@ -556,7 +556,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 16,
-                'date' => '25/6/2021',
+                'date' => '25/6/2022',
                 'originator' => 'David Mooney',
                 'source' => 'The Hazardous Waste (England and Wales) Regulations 2005',
                 'links' => [
@@ -566,18 +566,17 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 17,
-                'date' => '25/6/2021',
+                'date' => '25/6/2022',
                 'originator' => 'David Mooney',
                 'source' => 'The Hazardous Waste (Wales) Regulations 2005',
                 'links' => [
                     'https://www.legislation.gov.uk/wsi/2005/1806/contents',
                 ],
-                'summary' => '
-These Regulations set out the regime for the control and tracking of the movement of hazardous waste for the purpose of implementing the Hazardous Waste Directive (Directive 91/689/EC). The Regulations apply in relation to Wales.',
+                'summary' => 'These Regulations set out the regime for the control and tracking of the movement of hazardous waste for the purpose of implementing the Hazardous Waste Directive (Directive 91/689/EC). The Regulations apply in relation to Wales.',
             ],
             [
                 'id' => 18,
-                'date' => '25/6/2021',
+                'date' => '25/6/2022',
                 'originator' => 'David Mooney',
                 'source' => 'The Hazardous Waste (Northern Ireland) Regulations 2005',
                 'links' => [
@@ -587,7 +586,7 @@ These Regulations set out the regime for the control and tracking of the movemen
             ],
             [
                 'id' => 19,
-                'date' => '25/6/2021',
+                'date' => '25/6/2022',
                 'originator' => 'David Mooney',
                 'source' => 'The List of Wastes (England) Regulations 2005',
                 'links' => [
@@ -597,7 +596,7 @@ These Regulations set out the regime for the control and tracking of the movemen
             ],
             [
                 'id' => 20,
-                'date' => '25/6/2021',
+                'date' => '25/6/2022',
                 'originator' => 'David Mooney',
                 'source' => 'The Special Waste Regulations 1996',
                 'links' => [
