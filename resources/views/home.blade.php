@@ -9,7 +9,7 @@
 				<h3 class="panel-title">Welcome</h3>
 			</div>
 			<div class="panel-body">
-				{{ config('site.WELCOME_TEXT') }}
+				{!! config('site.WELCOME_TEXT') !!}
 			</div>
 		</div>
 	</div>
