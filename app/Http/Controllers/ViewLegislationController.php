@@ -260,7 +260,7 @@ class ViewLegislationController extends Controller
         return [
             [
                 'id' => 1,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'ICO Website',
                 'links' => [
@@ -271,7 +271,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 2,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'ICO Website',
                 'links' => [
@@ -284,7 +284,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 3,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'ICO Website',
                 'links' => [
@@ -298,7 +298,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 4,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'ICO Website',
                 'links' => [
@@ -309,7 +309,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 5,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'ICO Website',
                 'links' => [
@@ -320,7 +320,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 6,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'ICO Website',
                 'links' => [
@@ -332,7 +332,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 7,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'ICO Website',
                 'links' => [
@@ -352,14 +352,14 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 9,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'ICO Website',
                 'links' => [
                     'http://www.legislation.gov.uk/uksi/2018/506/introduction/made',
                     'https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32018R0151'
                 ],
-                'summary' => 'The Network and Information Systems Regulations 2018. The ICO regulates relevant digital service providers (RDSPs) under NIS Regulations 2018.',
+                'summary' => 'The Network and Information Systems Regulations 2018. The ICO regulates relevant digital service providers (RDSPs) under NIS Regulations 2018',
             ],
             [
                 'id' => 10,
@@ -370,6 +370,16 @@ class ViewLegislationController extends Controller
                     'http://www.legislation.gov.uk/ukpga/2016/25/contents/made'
                 ],
                 'summary' => 'Investigatory Powers Act 2016. This Act sets out the extent to which certain investigatory powers may be used to interfere with privacy.',
+            ],
+            [
+                'id' => 11,
+                'date' => '25/6/2022',
+                'originator' => 'David Mooney',
+                'source' => 'ICO Website',
+                'links' => [
+                    'https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/data-protection-principles/a-guide-to-the-data-protection-principles/'
+                ],
+                'summary' => 'A Guide to the data protection principles. The UK sets out 7 general principles and these are outlined here.',
             ],
         ];
     }
