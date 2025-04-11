@@ -90,18 +90,30 @@ class ViewLegislationController extends Controller
         return [
             [
                 'id' => 1,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
-                'source' => 'BS 7671:2008 Requirements for Electrical Installations (IET Wiring Regulations Eighteenth Edition)',
+                'source' => 'BS 7671:2008 Requirements for Electrical Installations (IET Wiring Regulations Eighteenth Edition). Regular revisions also align the UK standards with international norms, facilitating global best practices and innovation adoption. Amendment 2 in 2022 addressed critical areas such as protection against electric shock, integration of renewable energy sources, electric vehicle (EV) charging infrastructure and fire safety in cable support systems. Amendment 3 BS 7671:2018+A3:2024 addresses a key issue regarding the selection and installation of protective devices.',
                 'links' => [
                     'https://electrical.theiet.org/bs-7671/',
                     'https://shop.theiet.org/bs-7671-2018-requirements-for-electrical-installations-iet-wiring-regulations-18th-edition-blue',
+                    'https://electrical.theiet.org/bs-7671/updates-to-18th-edition/',
                 ],
-                'summary' => 'The IET co-publishes BS 7671 with the British Standards Institution (BSI) and is the authority on electrical installation. The IET Wiring Regulations is currently in its 18th edition and came into effect in January 2019. From this date, all new and amended electrical installations are to conform to the requirements of BS 7671:2018.',
+                'summary' => 'The IET co-publishes BS 7671 with the British Standards Institution (BSI) and is the authority on electrical installation. The IET Wiring Regulations is currently in its 18th edition and came into effect in January 2019. From this date, all new and amended electrical installations are to conform to the requirements of BS 7671:2018. In September 2022 an amendment was made and which is referred to edition 2. The 18th Edition received its third update on the 1st August 2024 – BS 7671:2018+A3:2024. It addresses a key issue regarding the selection and installation of protective devices, particularly where they are installed with an additional source of power, such as battery storage, EV charging equipment or solar PV. The new regulation (530.3.201) concerns the use of bidirectional and unidirectional devices, and states, “Selection and erection of equipment for protection shall take account of appropriate use of either a unidirectional protective device or a bidirectional protective device.” This became necessary after it became apparent that some protective devices could incur reduced effectiveness if installed in wiring systems that are subject to bidirectional current flow.',
             ],
+            // [
+            //     'id' => 1,
+            //     'date' => '25/6/2022',
+            //     'originator' => 'David Mooney',
+            //     'source' => 'BS 7671:2008 Requirements for Electrical Installations (IET Wiring Regulations Eighteenth Edition)',
+            //     'links' => [
+            //         'https://electrical.theiet.org/bs-7671/',
+            //         'https://shop.theiet.org/bs-7671-2018-requirements-for-electrical-installations-iet-wiring-regulations-18th-edition-blue',
+            //     ],
+            //     'summary' => 'The IET co-publishes BS 7671 with the British Standards Institution (BSI) and is the authority on electrical installation. The IET Wiring Regulations is currently in its 18th edition and came into effect in January 2019. From this date, all new and amended electrical installations are to conform to the requirements of BS 7671:2018.',
+            // ],
             [
                 'id' => 2,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'The Electricity at Work Regulations 1989',
                 'links' => [
@@ -111,17 +123,17 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 3,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'Supply of Machinery (Safety) Regulations 2008',
                 'links' => [
-                    'https://www.legislation.gov.uk/uksi/2008/1597/contents/made',
+                    'https://www.legislation.gov.uk/uksi/2008/1597/contents/made#:~:text=Directive%2098%2F37%2FEC%20was%20implemented%20in%20the%20United%20Kingdom,these%20Regulations%20revoke%20with%20effect%20from%20the%20same',
                 ],
                 'summary' => 'These Regulations contain detailed requirements for manufacturing and supplying safe new machinery.',
             ],
             [
                 'id' => 4,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'Provision and Use of Work Equipment Regulations 1998',
                 'links' => [
@@ -131,7 +143,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 5,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'The Electrical Equipment (Safety) Regulations 2016',
                 'links' => [
@@ -141,7 +153,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 6,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'The Reporting of Injuries, Diseases and Dangerous Occurrences Regulations 1995',
                 'links' => [
@@ -151,7 +163,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 7,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'The Equipment and Protective Systems Intended for Use in Potentially Explosive Atmospheres Regulations 2016',
                 'links' => [
@@ -161,7 +173,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 8,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'Management of Health and Safety at Work Regulations 1999',
                 'links' => [
@@ -171,7 +183,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 9,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'Memorandum of guidance on the Electricity at Work Regulations 1989',
                 'links' => [
@@ -181,7 +193,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 10,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'The Construction (Design and Management) Regulations 2015',
                 'links' => [
@@ -191,7 +203,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 11,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'Waste Electrical Electronic Equipment (WEEE, 2012/19/EU)',
                 'links' => [
@@ -201,7 +213,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 12,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'Battery Directive (2006/66/EC)',
                 'links' => [
@@ -211,7 +223,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 13,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'Electromagnetic Compatibility Regulations 2016',
                 'links' => [
@@ -227,7 +239,7 @@ class ViewLegislationController extends Controller
                 'links' => [
                     'https://www.hse.gov.uk/esqcr/index.htm',
                 ],
-                'summary' => 'ESQCR duty holders have duties to report certain incidents that may involve the safety of those not employed by the duty holder (enforcement by HSE), major supply interruptions (enforced by the Department of Energy and Climate Change) and domestic fatalities (enforced by Department for Business, Innovation and Skills).',
+                'summary' => 'ESQCR duty holders have duties to report certain incidents that may involve the safety of those not employed by the duty holder (enforcement by HSE), major supply interruptions (enforced by the Department of Energy and Climate Change) and domestic fatalities (enforced by Department for Business, Innovation and Skills). The legislation includes the 2006 and 2009 amendments.',
             ],
         ];
     }
