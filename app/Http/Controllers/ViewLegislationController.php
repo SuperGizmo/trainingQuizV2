@@ -233,7 +233,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 14,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'The Electricity Safety, Quality and Continuity (Amendment) Regulations 2002',
                 'links' => [
