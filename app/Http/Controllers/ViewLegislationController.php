@@ -644,7 +644,7 @@ class ViewLegislationController extends Controller
         return [
             [
                 'id' => 1,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'Gas Safety (Installation and Use) Regulations 2018 (GSIUR)',
                 'links' => [
@@ -656,7 +656,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 2,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'Pipelines Safety Regulations 1996 (PSR)',
                 'links' => [
@@ -667,7 +667,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 3,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'Gas Safety (Rights of Entry) Regulations 1996',
                 'links' => [
@@ -677,7 +677,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 4,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'Gas Act 1986 and 1995 (GA)',
                 'links' => [
@@ -688,7 +688,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 5,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'The Gas and Electricity (Consumer Complaints Handling Standards) 2008',
                 'links' => [
@@ -698,7 +698,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 6,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'Smart Meter Installation Code of Practice (SMICoP)',
                 'links' => [
@@ -708,7 +708,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 7,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'Meter Asset Manager Code of Practice (MAMCoP)',
                 'links' => [
@@ -719,7 +719,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 8,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'Boiler Plus 2018',
                 'links' => [
@@ -729,7 +729,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 9,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'Institution of Gas Engineer and Managers - Standards',
                 'links' => [
@@ -742,7 +742,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 10,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'UKLPG – Code of Practice 22, Design Installation and testing of LPG Piping Systems',
                 'links' => [
@@ -752,7 +752,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 11,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'IGEM/G/11 – The Gas Industry Unsafe Situations Procedure (GIUSP)',
                 'links' => [
@@ -762,17 +762,20 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 12,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
-                'source' => 'Gas Safety (Management) Regulations 1996 (as amended) (GSMR)',
+                // 'source' => 'Gas Safety (Management) Regulations 1996 (as amended) (GSMR)',
+                'source' => 'The Gas Safety (Management) (Amendment) Regulations 2023',
                 'links' => [
-                    'http://www.legislation.gov.uk/uksi/1996/551/contents/made',
+                    // 'http://www.legislation.gov.uk/uksi/1996/551/contents/made',
+                    'https://www.legislation.gov.uk/uksi/2023/284',
+                    'https://www.hse.gov.uk/gas/supply/legislation.htm',
                 ],
                 'summary' => 'These Regulations deal with the management of the safe flow of gas (defined as any substance in a gaseous state which consists wholly or mainly of methane), whether in a single system or a network of connected systems. The Regulations make it unlawful for gas to be conveyed in a system or network without a safety case being prepared by the conveyor and accepted by HSE. The Regulations cover requirements for emergency response to and investigation of gas escapes.',
             ],
             [
                 'id' => 13,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'Gas Appliances (Safety) Regulations 1995 (GASR)',
                 'links' => [
@@ -782,7 +785,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 14,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'Building Regulations and Building Standards (Scotland) Regulations',
                 'links' => [
@@ -793,13 +796,23 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 15,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'Pressure Systems Safety Regulations 2000 (PSSR)',
                 'links' => [
                     'http://www.legislation.gov.uk/uksi/2000/128/contents/made',
                 ],
                 'summary' => 'The aim of these Regulations is to prevent serious injury from the hazard of stored energy, as a result of the failure of a pressure system, or one of its component parts. This guidance should be read in conjunction with the publication L82 A guide to the Pipelines Safety Regulations 1996. PSSR places duties on designers, manufacturers, importers, suppliers, installers and users (or owners in the case of mobile systems) of pressure systems. The Regulations also place certain duties on Competent Persons.',
+            ],
+            [
+                'id' => 16,
+                'date' => '25/6/2025',
+                'originator' => 'David Mooney',
+                'source' => 'F gas regulation in Great Britain',
+                'links' => [
+                    'https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1126230/F_gas_regulation_in_Great_Britain.pdf',
+                ],
+                'summary' => 'The F gas Regulation bans the use of F gases in certain applications and sets requirements for leak checks, leakage repairs and recovery of used gas. Your responsibilities to check equipment for fluorinated gas leaks. If you use the following equipment, you’re responsible for getting it checked for F gas leaks: stationary refrigeration equipment, stationary air-conditioning equipment, stationary heat pumps, stationary fire protection equipment, refrigeration units of refrigerated trucks and trailers, electrical switchgear, organic Rankine cycle.',
             ],
         ];
     }
