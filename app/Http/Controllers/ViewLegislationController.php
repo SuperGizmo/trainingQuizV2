@@ -854,7 +854,7 @@ class ViewLegislationController extends Controller
         return [
             [
                 'id' => 1,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'The Health and Safety at Work etc. Act 1974',
                 'links' => [
@@ -865,7 +865,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 2,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'The Management of Health and Safety at Work Regulations 1999 (MHSWR)',
                 'links' => [
@@ -875,7 +875,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 3,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'The Health and Safety (Display Screen Equipment) Regulations 1992',
                 'links' => [
@@ -886,7 +886,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 4,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'Construction (Design and Management) Regulations 2015 (CDM)',
                 'links' => [
@@ -897,7 +897,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 5,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'Construction Phase Plan (CPP)',
                 'links' => [
@@ -907,7 +907,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 6,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'RIDDOR – Reporting of Injuries, Diseases and Dangerous Occurrences Regulations 2013',
                 'links' => [
@@ -918,7 +918,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 7,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'The Manual Handling Operations Regulations 1992',
                 'links' => [
@@ -929,7 +929,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 8,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'The Regulatory Reform (Fire Safety) Order 2005',
                 'links' => [
@@ -940,7 +940,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 9,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'The Workplace (Health, Safety and Welfare) Regulations 1992 (WHSR)',
                 'links' => [
@@ -951,7 +951,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 10,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'Health and Safety (First Aid) Regulations 1981',
                 'links' => [
@@ -962,7 +962,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 11,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'Control of Substances Hazardous to Health Regulations 2002 (COSHH)',
                 'links' => [
@@ -973,7 +973,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 12,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'Work at Height Regulations 2005',
                 'links' => [
@@ -984,7 +984,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 13,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'HSE (Health and Safety Executive)',
                 'links' => [
@@ -994,7 +994,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 14,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'Control of Asbestos Regulations 2012',
                 'links' => [
@@ -1005,7 +1005,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 15,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'The Personal Protective Equipment at Work (Amendment) Regulations 2022 (PPER 2022).',
                 'links' => [
@@ -1016,7 +1016,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 16,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'Control of Noise at Work Regulations 2005',
                 'links' => [
@@ -1027,19 +1027,18 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 17,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'Control of Lead Regulations 2002 (CLAW)',
                 'links' => [
                     'http://www.legislation.gov.uk/uksi/2002/2676/contents/made',
                     'http://www.hse.gov.uk/lead/',
                 ],
-                'summary' => 'Working with lead can put your health at risk, causing symptoms including headaches, stomach pains and anaemia. Other serious health effects include kidney damage, nerve and brain damage and infertility.
-                The Control of Lead at Work Regulations 2002 (CLAW) place a duty on employers to prevent, or where this is not reasonably practicable, to control employee exposure to lead.',
+                'summary' => 'Working with lead can put your health at risk, causing symptoms including headaches, stomach pains and anaemia. Other serious health effects include kidney damage, nerve and brain damage and infertility. The Control of Lead at Work Regulations 2002 (CLAW) place a duty on employers to prevent, or where this is not reasonably practicable, to control employee exposure to lead.',
             ],
             [
                 'id' => 18,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'Provision and Use of Work Equipment Regulations 1998 (PUWER)',
                 'links' => [
@@ -1050,7 +1049,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 19,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'Lifting Operations and Lifting Equipment Regulations (LOLER)',
                 'links' => [
@@ -1061,7 +1060,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 20,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'Electricity at Work Regulations 1989',
                 'links' => [
@@ -1072,7 +1071,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 21,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'Pressure Systems Safety Regulations 2000 (PSSR)',
                 'links' => [
@@ -1083,7 +1082,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 22,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'Health and Safety (Safety Signs and Signals) Regulations 1996 (SSR)',
                 'links' => [
@@ -1094,7 +1093,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 23,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'Dangerous Substances and Explosive Atmospheres Regulations 2002 (DSEAR)',
                 'links' => [
@@ -1105,7 +1104,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 24,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'The Confined Spaces Regulations 1997',
                 'links' => [
@@ -1116,7 +1115,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 25,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'The Working Time Regulations 1998',
                 'links' => [
@@ -1127,7 +1126,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 26,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'The Classification Labelling & Packaging of Chemicals 2015',
                 'links' => [
@@ -1138,7 +1137,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 27,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'Building Safety Act 2022.',
                 'links' => [
