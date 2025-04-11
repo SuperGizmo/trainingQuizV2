@@ -354,7 +354,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 8,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'ICO Website',
                 'links' => [
@@ -375,7 +375,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 10,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'ICO Website',
                 'links' => [
@@ -385,7 +385,7 @@ class ViewLegislationController extends Controller
             ],
             [
                 'id' => 11,
-                'date' => '25/6/2022',
+                'date' => '25/6/2025',
                 'originator' => 'David Mooney',
                 'source' => 'ICO Website',
                 'links' => [
